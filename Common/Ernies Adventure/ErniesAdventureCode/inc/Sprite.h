@@ -67,6 +67,7 @@ class Sprite : public LayeredObject
       // (U) Update which image we're on based on timechange
       void timeChange(double dt);
       virtual BITMAP* getCurrentImage();
+      virtual std::string getOnScreenName();
       virtual void doTimeChange(double dt);
 
       double getFrameRateChange();
@@ -105,6 +106,7 @@ class Sprite : public LayeredObject
       std::string spriteFolder;
       
       std::string spriteName;
+      std::string onScreenName;
       
       double timeOnFrame;
       

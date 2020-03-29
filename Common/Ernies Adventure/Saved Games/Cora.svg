@@ -537,7 +537,7 @@ BirchTree CHARACTER013110212148 false 227 370 true 50 false 0 0  Follow false
 BirchTree CHARACTER013110212149 false 271 320 true 52 false 0 0  Follow false
 BirdTrees CHARACTER122909094807 false 330 222 false 60 false 0 0  Path 5 0 3 false BirdFlying 0 0 0 307 126 1.64528 0 true 367 265
 BirdTrees CHARACTER122909094854 false 369 267 false 30 false 0 0  Path 3 0 1 false BirdSitting 0 350 0 -1 -1 0 0 false 400 318
-BirdTrees CHARACTER122909140425 true 85 159 false 50 false 0 0  Path 5 0 4 false BirdsCaryingErnie 0 0 0 82 81 1.56115 0 true 190 315
+BirdTrees CHARACTER122909140425 false 85 159 false 50 false 0 0  Path 5 0 4 false BirdsCaryingErnie 0 0 0 82 81 1.56115 0 true 190 315
 NorthField2 CHARACTER111709193403 true 483 291 true 60 true 0 0 
 DoorYard CHARACTER121009194426 false 167 87 false 40 false 0 0  Path 0 2 0 true GarageDoor 0 0 0 167 87 2.1 2.101 true 167 171
 DoorYard CHARACTER120509193954 false 282 81 true 40 false 0 0  Path 3 1 1 false YellowLeaf 11746 16362.6 0 327 337 0.180278 0.185 true 282 81

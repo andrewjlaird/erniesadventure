@@ -17,6 +17,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <math.h>
 
 DisplayManager::DisplayManager(DisplayDriver& inDisplayDriver,
                                SpriteManager& inSpriteManager,
@@ -510,6 +511,40 @@ void DisplayManager::mergeToBitmap(BITMAP* mergedBitmap,
          {
             // Draw image to bitmap
             draw_sprite(mergedBitmap, image, xOffset + objects[i]->getX(), yOffset + objects[i]->getY());
+            std::string name = objects[i]->getOnScreenName();
+            
+            if (name.compare("") != 0)
+            {
+               int mainX = spriteManager.getMainCharacterX();
+               int mainY = spriteManager.getMainCharacterY();
+
+               Square objOffset = objects[i]->getOffsetBoundarySquare();
+
+               short myX = objOffset.lowerRight.x;
+               short myY = (objOffset.upperLeft.y - objOffset.lowerRight.y) / 2 + objOffset.upperLeft.y;
+
+               int deltaX = mainX - int(myX);
+               int deltaY = mainY - int(myY);
+               
+               double dist = sqrt(deltaX * deltaX + deltaY * deltaY);
+               int text_intensity = 0;
+               
+               if (dist < 150 && dist > 1)
+               {
+                  text_intensity = int(255 - (dist / 150 * 255));
+               }
+               else if (dist <= 1)
+               {
+                   text_intensity = 255;
+               }
+               
+               set_trans_blender(0, 0, 0, text_intensity);
+               BITMAP* textBitmap = create_bitmap(100, 10);
+               clear_to_color(textBitmap, makecol(255,0,255));
+               textprintf_ex(textBitmap, font, 0, 0, makecol(255, 255, 255), -1, "%s", name.c_str());
+               draw_trans_sprite(mergedBitmap, textBitmap, xOffset + objects[i]->getX(), yOffset + objects[i]->getY() - 7);
+               destroy_bitmap(textBitmap);
+            }
          }
       }
    }
@@ -548,7 +583,7 @@ void DisplayManager::mergeToBitmap(BITMAP* mergedBitmap,
          }
       }
       
-      textprintf_ex(mergedBitmap, font, 5, 470, makecol(255, 255, 255), -1, "> %s", currentCommand.c_str());   
+      textprintf_ex(mergedBitmap, font, 5, 470, makecol(255, 255, 255), -1, "> %s", currentCommand.c_str());
       //textprintf_ex(mergedBitmap, font, 600, 470, makecol(255, 255, 255), -1, "%d", lastChar);
 
       // (U) Recolor the upper 13 pixels so that the text stands out

@@ -64,6 +64,7 @@ class LayeredObject
       Point getReferencePoint();
 
       virtual BITMAP* getCurrentImage() = 0;
+      virtual std::string getOnScreenName() = 0;
       
    protected:
 

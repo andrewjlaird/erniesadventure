@@ -19,6 +19,7 @@ Sprite::Sprite(SpriteManager& inSpriteManager,
    spriteFolder(inSpriteFolder),
    spriteFileName(inSpriteName + ".spt"),
    spriteName(inSpriteName),
+   onScreenName(""),
    timeOnFrame(0),
    currentFrame(0),
    frameRateChange(inFrameRateChange),
@@ -49,10 +50,12 @@ bool Sprite::loadSprite()
    std::ifstream myfile(spriteFilePath.c_str());
    if (myfile.is_open())
    {
+      // sprite name and pps
       std::getline (myfile, line);
       
       if (!myfile.fail())
       {
+         // Try double first and if that fails, assume it's got a name
          std::stringstream ss;
          ss << line;
          double pixelsPerSecond;
@@ -62,8 +65,38 @@ bool Sprite::loadSprite()
          {
             frameRateChange = pixelsPerSecond;
          }
-      }
+         else
+         {
+            // If the double parse fails, then assume it's the name
+            ss.str("");
+            ss.clear();
+            ss << line;
+            std::string name;
+            ss >> name;
+         
+            if (!ss.fail())
+            {
+               onScreenName = name;
+            }
+            
+            // Now parse the pps
+            std::getline (myfile, line);
+            
+            if (!myfile.fail())
+            {
+               ss << line;
+               double pixelsPerSecond;
+               ss >> pixelsPerSecond;
 
+               if (!ss.fail())
+               {
+                  frameRateChange = pixelsPerSecond;
+               }
+            }
+         }
+      }
+      
+      // sprite images
       while (!myfile.fail())
       { 
          std::getline (myfile, line);
@@ -283,6 +316,11 @@ BITMAP* Sprite::getCurrentImage()
    }
 
    return toReturn;
+}
+
+std::string Sprite::getOnScreenName()
+{
+   return onScreenName;
 }
 
 ////////////////////////////////////////////////////////////////////////////////

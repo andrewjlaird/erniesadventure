@@ -312,7 +312,7 @@ INITIAL_ON_SCREEN false
 INITIAL_IN_GAME true
 CHARACTER_TIED_TO_SCENE true
 INITIAL_X 603
-INITIAL_Y 453
+INITIAL_Y 423
 PIXELS_PER_SECOND 1
 
 SCENE_CHARACTER_END
@@ -538,7 +538,7 @@ INPUT_START
 EVENT_ID EVENT121709211208548
 INPUT_TEXT look
 CRITERIA VariableHasValueCriteria gotStrawberry 0
-ACTION DisplayTextAction Ernie is in a grove a trees.  There are trees of many types including oak and maple.  Leaves of many colors are scattered on the ground.  A white fence runs along the screen to the east and long grass is growing between the tree and the fence.~A red object seems burried in the tall grass.
+ACTION DisplayTextAction Ernie is in a grove of trees.  There are trees of many types including oak and maple.  Leaves of many colors are scattered on the ground.  A white fence runs along the screen to the east and long grass is growing between the tree and the fence.~A red object seems burried in the tall grass.
 
 INPUT_END
 
