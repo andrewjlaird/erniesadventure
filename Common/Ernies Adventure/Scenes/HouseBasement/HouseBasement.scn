@@ -1,0 +1,119 @@
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME FilingCabinet
+GUI_ID CHARACTER040310071130
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 29
+INITIAL_Y 268
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME BasementShelves
+GUI_ID CHARACTER040310071142
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 529
+INITIAL_Y 193
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME StairsWall
+GUI_ID CHARACTER041510074441
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 70
+INITIAL_Y 77
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+BORDER_SCENES_START
+
+leftScene UnknownScene
+rightScene UnknownScene
+upScene UnknownScene
+downScene UnknownScene
+
+BORDER_SCENES_END
+
+
+MUSIC
+InTheHouse.mp3
+
+
+INPUT_START
+
+EVENT_ID EVENT041210210801
+INPUT_TEXT dig
+ACTION DisplayTextAction Ernie can't dig when he's inside.  The floor is too hard.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510193001
+INPUT_TEXT pee
+ACTION DisplayTextAction Ernie is naughty and pees inside.  Miraculously it doesn't cause a mess, and some flowers pop up.
+ACTION SpawnCharacterAction CHARACTER021810100900 true CHARACTER111709193403 3 2
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT042710065632
+INPUT_TEXT look cabinet
+INPUT_TEXT look drawers
+ACTION DisplayTextAction There is a large white filing cabinet in the basement.  Ernie can't open it.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT042710065704
+INPUT_TEXT look desk
+ACTION DisplayTextAction There is a large wooden desk in the room with a computer on it.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT042710065732
+INPUT_TEXT look shelves
+INPUT_TEXT look shelf
+ACTION DisplayTextAction 
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT042710065808
+INPUT_TEXT look
+ACTION DisplayTextAction Ernie is in the basement of the Lairds.  There is a small office set up in the far corner and there are two more rooms to the north.
+
+INPUT_END
+
+

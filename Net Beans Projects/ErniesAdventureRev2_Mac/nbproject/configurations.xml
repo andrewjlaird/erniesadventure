@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="62">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <logicalFolder name="inc" displayName="inc" projectFiles="true">
+        <logicalFolder name="f1" displayName="Actions and Criteria" projectFiles="true">
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/Action.h</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/AddObjectToInventoryAction.h</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/AddToScoreAction.h</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/ChangeSceneAction.h</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/Criteria.h</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/DisplayTextAction.h</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/EndGameAction.h</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/Event.h</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/InSceneCriteria.h</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/MoveObjectAction.h</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/ObjectInAreaCriteria.h</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/ObjectInCurrentSceneCriteria.h</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/ObjectInInventoryCriteria.h</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/ObjectsAreNearCriteria.h</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/PlaceObjectInGameAction.h</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/RemoveObjectFromGameAction.h</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/RemoveObjectFromInventoryAction.h</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/SetVariableValueAction.h</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/StartNextStepAction.h</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/StopSpriteRunningAction.h</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/SubtractFromScoreAction.h</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/TextInputCriteria.h</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/TimedCriteria.h</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/VariableHasValueCriteria.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f2"
+                       displayName="Brains and Characters"
+                       projectFiles="true">
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/AvoidBrain.h</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/BasicCharacter.h</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/Brain.h</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/Character.h</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/FollowBrain.h</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/KeyboardBrain.h</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/MovingCharacter.h</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/PathBrain.h</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/PathCharacter.h</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/SearchBrain.h</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/WanderBrain.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f3" displayName="Core" projectFiles="true">
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/CommonSettings.h</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/DisplayDriver.h</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/DisplayManager.h</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/DisplaySettings.h</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/GlobalTimer.h</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/Inventory.h</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/LayeredObject.h</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/Scene.h</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/SceneManager.h</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/SceneSettings.h</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/Sprite.h</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/SpriteManager.h</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/SpriteSettings.h</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/VariableManager.h</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="src" displayName="src" projectFiles="true">
+        <logicalFolder name="f1" displayName="Actions and Criteria" projectFiles="true">
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/Action.cpp</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/AddObjectToInventoryAction.cpp</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/AddToScoreAction.cpp</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/ChangeSceneAction.cpp</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/Criteria.cpp</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/DisplayTextAction.cpp</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/EndGameAction.cpp</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/Event.cpp</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/InSceneCriteria.cpp</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/MoveObjectAction.cpp</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/ObjectInAreaCriteria.cpp</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/ObjectInCurrentSceneCriteria.cpp</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/ObjectInInventoryCriteria.cpp</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/ObjectsAreNearCriteria.cpp</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/PlaceObjectInGameAction.cpp</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/RemoveObjectFromGameAction.cpp</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/RemoveObjectFromInventoryAction.cpp</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/SetVariableValueAction.cpp</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/StartNextStepAction.cpp</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/StopSpriteRunningAction.cpp</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/SubtractFromScoreAction.cpp</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/TextInputCriteria.cpp</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/TimedCriteria.cpp</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/VariableHasValueCriteria.cpp</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f2"
+                       displayName="Brains and Characters"
+                       projectFiles="true">
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/AvoidBrain.cpp</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/BasicCharacter.cpp</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/Brain.cpp</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/Character.cpp</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/FollowBrain.cpp</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/KeyboardBrain.cpp</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/MovingCharacter.cpp</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/PathBrain.cpp</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/PathCharacter.cpp</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/SearchBrain.cpp</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/WanderBrain.cpp</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f3" displayName="Core" projectFiles="true">
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/DisplayDriver.cpp</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/DisplayManager.cpp</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/ErniesAdventureMain.cpp</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/Inventory.cpp</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/LayeredObject.cpp</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/Scene.cpp</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/SceneManager.cpp</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/Sprite.cpp</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/SpriteManager.cpp</itemPath>
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/VariableManager.cpp</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>../../Common/Ernies Adventure/ErniesAdventureCode/inc</Elem>
+    <Elem>../../Common/Ernies Adventure/ErniesAdventureCode/src</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <compilerSet>MinGW|MinGW</compilerSet>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <incDir>
+            <pElem>../../Common/Ernies Adventure/ErniesAdventureCode/inc</pElem>
+            <pElem>../../allegro-mingw-4.2.2/include</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <linkerAddLib>
+            <pElem>../../allegro-mingw-4.2.2/lib</pElem>
+          </linkerAddLib>
+          <linkerLibItems>
+            <linkerLibLibItem>alleg</linkerLibLibItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <compilerSet>Cygwin|Cygwin</compilerSet>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+    </conf>
+  </confs>
+</configurationDescriptor>

@@ -1,0 +1,146 @@
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME GateInDoor
+GUI_ID CHARACTER111709193255
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 449
+INITIAL_Y 194
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER PathCharacter
+GUI_ID CHARACTER041510220117
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME false
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 452
+INITIAL_Y 310
+PIXELS_PER_SECOND 40
+BRAIN_TYPE PathBrain
+PATH_FILE_NAME DadLeavesGarage.psq
+
+SCENE_CHARACTER_END
+
+
+BORDER_SCENES_START
+
+leftScene UnknownScene
+rightScene UnknownScene
+upScene UnknownScene
+downScene UnknownScene
+
+BORDER_SCENES_END
+
+
+MUSIC
+InTheHouse.mp3
+
+
+INPUT_START
+
+EVENT_ID EVENT032310221638
+INPUT_TEXT look garbage bin
+INPUT_TEXT look garbage can
+INPUT_TEXT look green can
+INPUT_TEXT look green bin
+ACTION DisplayTextAction The garbage can is green and contains cardboard to burn.  Ernie has no use for cardboard though.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032310221744
+INPUT_TEXT look table
+ACTION DisplayTextAction There is a wooden table on the far side of the garage.  It has nothing on it.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032310221844
+INPUT_TEXT look carpet
+INPUT_TEXT look rug
+ACTION DisplayTextAction A brown rug runs the length of the middle of the garage.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032310221914
+INPUT_TEXT look shelves
+INPUT_TEXT look shelf
+ACTION DisplayTextAction Several shelves run around the garage and hold various objects.  Most objects are too large for Ernie or are boring.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032310222002
+INPUT_TEXT look window
+ACTION DisplayTextAction Looking out the window, Ernie can see the large trees between the house and the barn.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032310222036
+INPUT_TEXT look door
+ACTION DisplayTextAction The family left the door is open into the house.  While this is usually not a good idea because it lets the air out of the house, it's a beautiful fall day and the air is off.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032310222130
+INPUT_TEXT look
+ACTION DisplayTextAction Ernie is in the garage of the Laird house.  There are several shelves and a wooden table in the garage.  There isn't much to do in here.~The family left the door is open into the house.  While this is usually not a good idea because it lets the air out of the house, it's a beautiful fall day and the air is off.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT041210210803
+INPUT_TEXT dig
+ACTION DisplayTextAction Ernie can't dig when he's inside.  The floor is too hard.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510193003
+INPUT_TEXT pee
+ACTION DisplayTextAction Ernie is naughty and pees inside.  Miraculously it doesn't cause a mess, and some flowers pop up.
+ACTION SpawnCharacterAction CHARACTER021810100900 true CHARACTER111709193403 3 2
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT041510220541
+CRITERIA VariableHasValueCriteria dadWalkedGarage 0
+CRITERIA VariableHasValueCriteria talkedToDad 1
+ACTION PlaceObjectInGameAction CHARACTER041510220117 -1 -1
+ACTION StartNextStepAction CHARACTER041510220117
+ACTION SetVariableValueAction dadWalkedGarage 1
+
+INPUT_END
+
+

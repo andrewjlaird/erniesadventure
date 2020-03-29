@@ -1,0 +1,4 @@
+SET_SPRITE Brochure true
+SET_LOCATION 340 625
+WAIT 3
+IN_GAME false

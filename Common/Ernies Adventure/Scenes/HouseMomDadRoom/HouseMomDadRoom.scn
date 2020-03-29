@@ -1,0 +1,142 @@
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME MomDadBed
+GUI_ID CHARACTER022210214644
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 128
+INITIAL_Y 231
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME MomDadHutch
+GUI_ID CHARACTER022210214720
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 315
+INITIAL_Y 156
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME CutOutWalls
+GUI_ID CHARACTER022210215133
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 37
+INITIAL_Y 229
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME AshleyWall
+GUI_ID CHARACTER022210215213
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 230
+INITIAL_Y 467
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+BORDER_SCENES_START
+
+leftScene UnknownScene
+rightScene UnknownScene
+upScene UnknownScene
+downScene HouseAshleyRoom
+
+BORDER_SCENES_END
+
+
+MUSIC
+InTheHouse.mp3
+
+
+INPUT_START
+
+EVENT_ID EVENT032510200558
+INPUT_TEXT look door
+ACTION DisplayTextAction There is a door to the bathroom in the hallway.  Ernie can't open it.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510200725
+INPUT_TEXT look bed
+ACTION DisplayTextAction Mom and Dad's bed look comfortable, but Ernie knows better than to jump on it (at least in the game).
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510200807
+INPUT_TEXT look window
+ACTION DisplayTextAction The window to the north looks out over the back yard and pasture.  The window to the west looks out over the several pine trees and a large birch tree.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510200853
+INPUT_TEXT look hutch
+INPUT_TEXT look dresser
+ACTION DisplayTextAction There is a large hutch in Mom and Dad's room.  Ernie can't get into it.
+
+INPUT_END
+
+
+
+INPUT_START
+
+EVENT_ID EVENT032510200854
+INPUT_TEXT look
+ACTION DisplayTextAction Ernie is in the Laird household.  He can see the hallway leading to Mom and Dad's bedroom.  The bathroom door is closed to the north.  The hallway wraps around to the south.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT041210210806
+INPUT_TEXT dig
+ACTION DisplayTextAction Ernie can't dig when he's inside.  The floor is too hard.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510193006
+INPUT_TEXT pee
+ACTION DisplayTextAction Ernie is naughty and pees inside.  Miraculously it doesn't cause a mess, and some flowers pop up.
+ACTION SpawnCharacterAction CHARACTER021810100900 true CHARACTER111709193403 3 2
+
+INPUT_END

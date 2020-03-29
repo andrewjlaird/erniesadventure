@@ -1,0 +1,116 @@
+SCENE_CHARACTER_START
+
+BASE_CHARACTER PathCharacter
+GUI_ID CHARACTER123009080719
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 200
+INITIAL_Y 42
+PIXELS_PER_SECOND 30
+BRAIN_TYPE PathBrain
+PATH_FILE_NAME Cloud1.psq
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER PathCharacter
+GUI_ID CHARACTER123009081937
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 500
+INITIAL_Y 259
+PIXELS_PER_SECOND 30
+BRAIN_TYPE PathBrain
+PATH_FILE_NAME Cloud2.psq
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER PathCharacter
+GUI_ID CHARACTER123109071932
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X -200
+INITIAL_Y 83
+PIXELS_PER_SECOND 1
+BRAIN_TYPE PathBrain
+PATH_FILE_NAME Cloud3.psq
+
+SCENE_CHARACTER_END
+
+
+BORDER_SCENES_START
+
+leftScene UnknownScene
+rightScene UnknownScene
+upScene UnknownScene
+downScene UnknownScene
+
+BORDER_SCENES_END
+
+
+MUSIC
+Flying.mp3
+
+
+INPUT_START
+
+EVENT_ID EVENT123109072537
+REPEATS
+CRITERIA ObjectInAreaCriteria CHARACTER122909140425 245 305 265 325
+CRITERIA VariableHasValueCriteria InSkyTextArea 0
+ACTION DisplayTextAction `BigBird`"You and your bird friend are heavy!" The big birds say.  "We are going to have to land and rest a bit.  This looks like an interesting place to land."
+ACTION SetVariableValueAction InSkyTextArea 1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT123109072538
+REPEATS
+CRITERIA ObjectInAreaCriteria NOT CHARACTER122909140425 245 305 265 325
+ACTION SetVariableValueAction InSkyTextArea 0
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510201535
+INPUT_TEXT look cloud
+INPUT_TEXT look clouds
+ACTION DisplayTextAction There are white puffy clouds floating past Ernie.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510201557
+INPUT_TEXT look birds
+INPUT_TEXT look bird
+ACTION DisplayTextAction The birds flap hard as they carry Ernie through the sky.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510201648
+INPUT_TEXT look
+ACTION DisplayTextAction Ernie is being carried through the sky by the two birds.  They are flapping away hard at work carrying Ernie past several white puffy clouds.
+
+INPUT_END
+
+

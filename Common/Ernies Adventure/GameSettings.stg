@@ -1,0 +1,624 @@
+StartingScene
+DoorYard
+
+
+INPUT_START
+
+EVENT_ID EVENT012210222003851
+INPUT_TEXT Look Ernie
+INPUT_TEXT Look Ern
+INPUT_TEXT Look Dog
+INPUT_TEXT Look Puppy
+ACTION DisplayTextAction Ernie is mostly white with darker ears.  He likes to go on adventures.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT042410075525
+INPUT_TEXT talk henry
+CRITERIA ObjectsAreNearCriteria CHARACTER111709193403 CHARACTER041110065909 400
+ACTION DisplayTextAction `Henry`"Hey Ernie," Henry says. "Thanks for helping me get out of that bush.  Now I can run around the house and have fun."
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT042410075700
+INPUT_TEXT talk henry
+CRITERIA ObjectsAreNearCriteria NOT CHARACTER111709193403 CHARACTER041110065909 400
+ACTION DisplayTextAction Ernie is not close enough to Henry.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT012210222003878
+INPUT_TEXT Talk Henry
+CRITERIA VariableHasValueCriteria gotHenry 1
+CRITERIA ObjectsAreNearCriteria CHARACTER111909215919 CHARACTER111709193403 100
+ACTION DisplayTextAction `Henry`Thanks for helping me get out of that bush!  I never would have guessed that a strawberry would make me swell up like that.  But then, several strange things have been going on around here.~`Henry`I overheard the people that live here saying that they can't find a turkey for tonight, and it's Thanksgiving!  What's Thanksgiving without a turkey?~`Henry`And I can't find my toy stawberry anywhere.  That's why I was chewing on a real strawberry.  Can you help me find my toy strawberry Ernie?
+ACTION SetVariableValueAction talkedToHenry 1
+ACTION AddToScoreAction 1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT012210222004354
+INPUT_TEXT Talk Henry
+CRITERIA VariableHasValueCriteria gotHenry 1
+CRITERIA ObjectsAreNearCriteria NOT CHARACTER111909215919 CHARACTER111709193403 100
+ACTION DisplayTextAction Ernie is not close enough to Henry to talk to him.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT012210222004731
+INPUT_TEXT give strawberry henry
+INPUT_TEXT give henry strawberry
+CRITERIA ObjectInInventoryCriteria Strawberry
+CRITERIA ObjectsAreNearCriteria CHARACTER111709193403 CHARACTER111909215919 100
+CRITERIA VariableHasValueCriteria gotHenry 1
+ACTION RemoveObjectFromInventoryAction Strawberry
+ACTION DisplayTextAction `Henry`Ernie hands the toy strawberry to Henry.  "Oh thanks a lot! I've been looking everywhere for this!"~`Henry`"I heard Jenna calling me but I don't know where the house is.  Can you take me to her?"
+ACTION RemoveObjectFromGameAction CHARACTER111909215919
+ACTION AddToScoreAction 1
+ACTION PlaceObjectInGameAction CHARACTER042510174518 0 0 CHARACTER111909215919
+ACTION ToggleFollowingAction CHARACTER042510174518
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT012210222005239
+INPUT_TEXT give strawberry to henry
+CRITERIA ObjectInInventoryCriteria Strawberry
+CRITERIA ObjectsAreNearCriteria NOT CHARACTER111709193403 CHARACTER111909215919 100
+CRITERIA VariableHasValueCriteria gotHenry 1
+ACTION DisplayTextAction You aren't close enough to Henry to give him the strawberry.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT012210222005467
+INPUT_TEXT give strawberry
+CRITERIA ObjectInInventoryCriteria Strawberry
+ACTION DisplayTextAction Who would you like to give the strawberry to?
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT012210222005499
+INPUT_TEXT to henry
+ACTION DisplayTextAction What would you like to do / give to Henry?
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT012210222004366
+INPUT_TEXT Talk bird
+INPUT_TEXT talk fried
+INPUT_TEXT talk friedrich
+CRITERIA ObjectInInventoryCriteria Friedrich
+ACTION DisplayTextAction `Friedrich`"You'd better not eat me Ernie!  I only like you cause you gave me green beans."
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT012210222005519
+INPUT_TEXT bark
+ACTION DisplayTextAction Ernie barks at no one in particular.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT122909105016
+INPUT_TEXT cheat fried
+ACTION AddObjectToInventoryAction Friedrich
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT122909110000
+INPUT_TEXT cheat net
+ACTION AddObjectToInventoryAction Net
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT122909110001
+INPUT_TEXT cheat strawberry
+ACTION AddObjectToInventoryAction Strawberry
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT122909110002
+INPUT_TEXT bark dad
+INPUT_TEXT talk dad
+INPUT_TEXT talk man
+CRITERIA ObjectsAreNearCriteria CHARACTER013110212113 CHARACTER111709193403 800
+CRITERIA VariableHasValueCriteria firstTalkToDad 0
+ACTION ToggleFollowingAction CHARACTER013110212113
+ACTION SetVariableValueAction firstTalkToDad 1
+ACTION DisplayTextAction `Dad`"Hey Ernie," Dad says, "I'm trying to get the cows rounded up and in this corral.  It can be pretty hard by myself."~`Dad`"You can help by getting behind the cows and chasing them into the corral.  The cows are afraid of us so we can herd them."~`Dad`"I'll follow you until you tell me to stop.  If the cows get away from us and it's too hard, you could go get more people to help."~`Dad`"Maybe Alex, or Stephen would be available to help.  We just need to get all three cows into the corral and then we can relax."~`Dad`"And one last thing, if you see any deer around the field be sure to scare them off!"
+ACTION SetVariableValueAction dadFollowing 1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT021110212353
+INPUT_TEXT bark dad
+INPUT_TEXT talk dad
+INPUT_TEXT talk man
+CRITERIA VariableHasValueCriteria firstTalkToDad 1
+CRITERIA VariableHasValueCriteria dadFollowing 0
+ACTION ToggleFollowingAction CHARACTER013110212113
+ACTION DisplayTextAction `Dad`"Hey Ernie!  I'll follow you until you tell me to stop.  Don't worry about the cows, they're afraid of us."
+ACTION SetVariableValueAction dadFollowing 1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT021110212354
+INPUT_TEXT bark dad
+INPUT_TEXT talk dad
+INPUT_TEXT stop dad
+INPUT_TEXT talk man
+CRITERIA VariableHasValueCriteria firstTalkToDad 1
+CRITERIA VariableHasValueCriteria dadFollowing 1
+ACTION ToggleFollowingAction CHARACTER013110212113
+ACTION DisplayTextAction `Dad`"Ok, I'll stand here while you herd the cows."
+ACTION SetVariableValueAction dadFollowing 0
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT122909110005
+INPUT_TEXT bark alex
+INPUT_TEXT talk alex
+CRITERIA ObjectsAreNearCriteria CHARACTER013110212148 CHARACTER111709193403 800
+CRITERIA VariableHasValueCriteria alexFollowing 0
+ACTION ToggleFollowingAction CHARACTER013110212148
+ACTION DisplayTextAction `Alex`"Hey Ernie," Alex said, "Where are you headed?  I'll follow you until you tell me to stop."
+ACTION SetVariableValueAction alexFollowing 1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT122909110016
+INPUT_TEXT bark alex
+INPUT_TEXT talk alex
+INPUT_TEXT stop alex
+CRITERIA ObjectsAreNearCriteria CHARACTER013110212148 CHARACTER111709193403 800
+CRITERIA VariableHasValueCriteria alexFollowing 1
+ACTION ToggleFollowingAction CHARACTER013110212148
+ACTION DisplayTextAction `Alex`"Ok, I'll stand here until you tell me where to go next"
+ACTION SetVariableValueAction alexFollowing 0
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT122909110017
+INPUT_TEXT bark stephen
+INPUT_TEXT talk stephen
+CRITERIA ObjectsAreNearCriteria CHARACTER013110212149 CHARACTER111709193403 800
+CRITERIA VariableHasValueCriteria stephenFollowing 0
+ACTION ToggleFollowingAction CHARACTER013110212149
+ACTION DisplayTextAction `Stephen`"Hey Ernie," Stephen said, "Where are you headed?  I'll follow you until you tell me to stop."
+ACTION SetVariableValueAction stephenFollowing 1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT122909110018
+INPUT_TEXT bark stephen
+INPUT_TEXT talk stephen
+INPUT_TEXT stop stephen
+CRITERIA ObjectsAreNearCriteria CHARACTER013110212149 CHARACTER111709193403 800
+CRITERIA VariableHasValueCriteria stephenFollowing 1
+ACTION ToggleFollowingAction CHARACTER013110212149
+ACTION DisplayTextAction `Stephen`"Ok, I'll stand here until you tell me where to go next"
+ACTION SetVariableValueAction stephenFollowing 0
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510192900
+INPUT_TEXT look dad
+INPUT_TEXT look man
+CRITERIA ObjectsAreNearCriteria CHARACTER013110212113 CHARACTER111709193403 800
+ACTION DisplayTextAction Dad is standing around aparently working to get the cows in the corral.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510192901
+INPUT_TEXT look alex
+CRITERIA ObjectsAreNearCriteria CHARACTER013110212148 CHARACTER111709193403 800
+ACTION DisplayTextAction Alex is standing around doing nothing in particular.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510192902
+INPUT_TEXT look stephen
+CRITERIA ObjectsAreNearCriteria CHARACTER013110212149 CHARACTER111709193403 800
+ACTION DisplayTextAction Stephen is standing around doing nothing in particular.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510192903
+INPUT_TEXT pee
+ACTION DisplayTextAction Ernie finds the nearest piece of grass and relieves himself
+ACTION SpawnCharacterAction CHARACTER021810100900 true CHARACTER111709193403 3 2
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT022710073702
+INPUT_TEXT eat friedrich
+INPUT_TEXT eat bird
+CRITERIA ObjectInInventoryCriteria Friedrich
+ACTION DisplayTextAction `Friedrich`Ernie tries to eat Friedrich, but the little bird gets away "I knew you hadn't changed, I'm going to find Ashley Nicole, I KNOW she likes me."
+ACTION RemoveObjectFromInventoryAction Friedrich
+ACTION SubtractFromScoreAction 1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032310200800
+INPUT_TEXT show grain
+INPUT_TEXT show grain cow
+INPUT_TEXT show grain 30
+INPUT_TEXT show 30 grain
+INPUT_TEXT show cow grain
+INPUT_TEXT dead with grain
+INPUT_TEXT dead cow with grain
+CRITERIA ObjectInInventoryCriteria Grain
+CRITERIA ObjectsAreNearCriteria CHARACTER012610211136 CHARACTER111709193403 800
+CRITERIA VariableHasValueCriteria showedGrain 0
+ACTION ToggleFollowingAction CHARACTER012610211136
+ACTION DisplayTextAction The cow, 30, follows you because she wants the grain.
+ACTION SetVariableValueAction showedGrain 1
+ACTION AddToScoreAction 1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032310200801
+INPUT_TEXT give grain
+INPUT_TEXT give cow grain
+INPUT_TEXT give 30 grain
+INPUT_TEXT give grain 30
+INPUT_TEXT feed grain
+INPUT_TEXT feed cow grain
+CRITERIA ObjectInInventoryCriteria Grain
+CRITERIA ObjectsAreNearCriteria CHARACTER012610211136 CHARACTER111709193403 800
+CRITERIA VariableHasValueCriteria showedGrain 0
+ACTION RemoveObjectFromInventoryAction Grain
+ACTION DisplayTextAction The cow, 30, eats the grain.
+ACTION SubtractFromScoreAction 1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510190300
+INPUT_TEXT look cow
+CRITERIA ObjectsAreNearCriteria CHARACTER012610211136 CHARACTER111709193403 800
+ACTION DisplayTextAction This cow is called 30.  It is very friendly and will now allow you to herd her.  You must find something to temp her into the corral with.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510190301
+INPUT_TEXT look cow
+CRITERIA ObjectsAreNearCriteria CHARACTER012610211136 CHARACTER111709193403 800
+ACTION DisplayTextAction This cow is called 30.  It is very friendly and will now allow you to herd her.  You must find something to temp her into the corral with.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510190302
+INPUT_TEXT look cow
+CRITERIA ObjectsAreNearCriteria CHARACTER012610211311 CHARACTER111709193403 800
+ACTION DisplayTextAction This is a Holstein cow.  You should herd it into the corral.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510190303
+INPUT_TEXT look cow
+CRITERIA ObjectsAreNearCriteria CHARACTER012610211324 CHARACTER111709193403 800
+ACTION DisplayTextAction This is a Holstein cow.  You should herd it into the corral.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510190304
+INPUT_TEXT talk cow
+INPUT_TEXT talk 30
+CRITERIA ObjectsAreNearCriteria CHARACTER012610211136 CHARACTER111709193403 800
+ACTION DisplayTextAction The cow, 30, just mentions something about wanting some grain to eat.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510190310
+INPUT_TEXT pet cow
+CRITERIA ObjectsAreNearCriteria CHARACTER012610211136 CHARACTER111709193403 800
+ACTION DisplayTextAction The cow, 30, nuzzles you with her nose.  She is very friendly.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510190305
+INPUT_TEXT talk cow
+CRITERIA ObjectsAreNearCriteria CHARACTER012610211311 CHARACTER111709193403 800
+ACTION DisplayTextAction The cow isn't very talkative.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510190306
+INPUT_TEXT talk cow
+CRITERIA ObjectsAreNearCriteria CHARACTER012610211324 CHARACTER111709193403 800
+ACTION DisplayTextAction The cow isn't very talkative.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510192904
+INPUT_TEXT dig
+ACTION DisplayTextAction Ernie digs a hole to discover what could lie beneath.
+ACTION RemoveObjectFromGameAction CHARACTER111709193403
+ACTION SpawnCharacterAction CHARACTER021810100901 true CHARACTER111709193403 -8 -10
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510192966
+INPUT_TEXT howl
+ACTION DisplayTextAction Ernie lets out a mornful howl.
+ACTION RemoveObjectFromGameAction CHARACTER111709193403
+ACTION SpawnCharacterAction CHARACTER021810100903 true CHARACTER111709193403 0 0
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032310200000
+INPUT_TEXT cheat grain
+ACTION AddObjectToInventoryAction Grain
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT033110222543
+INPUT_TEXT get key off magnet
+INPUT_TEXT pick key off magnet
+INPUT_TEXT pull key off magnet
+INPUT_TEXT remove key from magnet
+INPUT_TEXT take key off magnet
+INPUT_TEXT take key from magnet
+INPUT_TEXT get key from magnet
+CRITERIA ObjectInInventoryCriteria Magnet & Key
+ACTION DisplayTextAction Ernie pulls the key off the magnet and keeps them separate.
+ACTION AddObjectToInventoryAction Launch Key
+ACTION AddObjectToInventoryAction Magnet
+ACTION RemoveObjectFromInventoryAction Magnet & Key
+ACTION AddToScoreAction 1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT041610123346
+INPUT_TEXT eat leaves
+INPUT_TEXT eat leaf
+ACTION DisplayTextAction Ernie finds the nearest leaf and shreds it.  It gives him great satisfaction.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT050210225422
+INPUT_TEXT look brochure
+INPUT_TEXT read brochure
+CRITERIA ObjectInInventoryCriteria Brochure
+CRITERIA VariableHasValueCriteria lookedAtBrochure 0
+ACTION DisplayTextAction Ernie looks at the brochure.  It appears to be a poorly drawn advertisement for a lame adventure game 50 years in the future.
+ACTION SpawnCharacterAction CHARACTER021810100904 false CURRENT 330 625
+ACTION AddToScoreAction 1
+ACTION SetVariableValueAction lookedAtBrochure 1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT050210225423
+INPUT_TEXT look brochure
+INPUT_TEXT read brochure
+CRITERIA ObjectInInventoryCriteria Brochure
+CRITERIA VariableHasValueCriteria lookedAtBrochure 1
+ACTION DisplayTextAction Ernie looks at the brochure.  It appears to be a poorly drawn advertisement for a lame adventure game 50 years in the future.
+ACTION SpawnCharacterAction CHARACTER021810100904 false CURRENT 330 625
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT050210225478
+INPUT_TEXT read note
+INPUT_TEXT read letter
+CRITERIA ObjectInInventoryCriteria Note
+ACTION DisplayTextAction Ernie reads the note.  It invites whoever reads it to come to Thanksgiving at the Laird's.
+
+INPUT_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER CharacterSpawner
+SPAWN_CHARACTER BasicCharacter
+SPRITE_NAME ErnieFlowers
+GUI_ID CHARACTER021810100900
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN true
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 0
+INITIAL_Y 0
+PIXELS_PER_SECOND 60
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER CharacterSpawner
+SPAWN_CHARACTER PathCharacter
+GUI_ID CHARACTER021810100901
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN true
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 0
+INITIAL_Y 0
+PIXELS_PER_SECOND 1
+BRAIN_TYPE PathBrain
+PATH_FILE_NAME ErnieDig.psq
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER CharacterSpawner
+SPAWN_CHARACTER PathCharacter
+GUI_ID CHARACTER021810100902
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN true
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 0
+INITIAL_Y 0
+PIXELS_PER_SECOND 1
+BRAIN_TYPE PathBrain
+PATH_FILE_NAME ErnieDigBlackberry.psq
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER CharacterSpawner
+SPAWN_CHARACTER PathCharacter
+GUI_ID CHARACTER021810100903
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN true
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 0
+INITIAL_Y 0
+PIXELS_PER_SECOND 1
+BRAIN_TYPE PathBrain
+PATH_FILE_NAME ErnieHowl.psq
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER CharacterSpawner
+SPAWN_CHARACTER PathCharacter
+GUI_ID CHARACTER021810100904
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN true
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 0
+INITIAL_Y 0
+PIXELS_PER_SECOND 1
+BRAIN_TYPE PathBrain
+PATH_FILE_NAME Brochure.psq
+
+SCENE_CHARACTER_END

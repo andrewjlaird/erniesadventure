@@ -1,0 +1,687 @@
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME Trees
+GUI_ID CHARACTER122809162205
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 0
+INITIAL_Y 306
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME BigTree
+GUI_ID CHARACTER122909072813
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 196
+INITIAL_Y 24
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME TallGrass
+GUI_ID CHARACTER122909072836
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 596
+INITIAL_Y 403
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME TallGrass
+GUI_ID CHARACTER122909072850
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 581
+INITIAL_Y 417
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME TallGrass
+GUI_ID CHARACTER122909072852
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 447
+INITIAL_Y 391
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME TallGrass
+GUI_ID CHARACTER122909072855
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 13
+INITIAL_Y 283
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME TallGrass
+GUI_ID CHARACTER122909072858
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 24
+INITIAL_Y 295
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME Grass
+GUI_ID CHARACTER122909072908
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 249
+INITIAL_Y 297
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME Grass
+GUI_ID CHARACTER122909072910
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 275
+INITIAL_Y 291
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME Grass
+GUI_ID CHARACTER122909072911
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 331
+INITIAL_Y 298
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME Grass
+GUI_ID CHARACTER122909072912
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 192
+INITIAL_Y 287
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME Grass
+GUI_ID CHARACTER122909072914
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 226
+INITIAL_Y 313
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME Grass
+GUI_ID CHARACTER122909072915
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 475
+INITIAL_Y 239
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME Grass
+GUI_ID CHARACTER122909072916
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 480
+INITIAL_Y 138
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME Grass
+GUI_ID CHARACTER122909072917
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 242
+INITIAL_Y 135
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME Grass
+GUI_ID CHARACTER122909072919
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 105
+INITIAL_Y 129
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME Grass
+GUI_ID CHARACTER122909072920
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 51
+INITIAL_Y 185
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME Grass
+GUI_ID CHARACTER122909072921
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 119
+INITIAL_Y 297
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME Grass
+GUI_ID CHARACTER122909072922
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 105
+INITIAL_Y 349
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME Grass
+GUI_ID CHARACTER122909072924
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 498
+INITIAL_Y 336
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME Grass
+GUI_ID CHARACTER122909072926
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 325
+INITIAL_Y 81
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME Grass
+GUI_ID CHARACTER122909072932
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 196
+INITIAL_Y 424
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME Grass
+GUI_ID CHARACTER122909072933
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 228
+INITIAL_Y 359
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME BirdSitting
+GUI_ID CHARACTER122909093104
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 335
+INITIAL_Y 211
+PIXELS_PER_SECOND 20
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME BirdSitting
+GUI_ID CHARACTER122909093111
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 368
+INITIAL_Y 265
+PIXELS_PER_SECOND 17
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER PathCharacter
+GUI_ID CHARACTER122909094807
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME false
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 367
+INITIAL_Y 265
+PIXELS_PER_SECOND 30
+BRAIN_TYPE PathBrain
+PATH_FILE_NAME Bird1ToTree.psq
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER PathCharacter
+GUI_ID CHARACTER122909094854
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME false
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 400
+INITIAL_Y 318
+PIXELS_PER_SECOND 30
+BRAIN_TYPE PathBrain
+PATH_FILE_NAME Bird2ToTree.psq
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER PathCharacter
+GUI_ID CHARACTER122909140425
+INITIAL_MAIN_CHARACTER true
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME false
+CHARACTER_TIED_TO_SCENE false
+INITIAL_X 190
+INITIAL_Y 315
+PIXELS_PER_SECOND 36
+BRAIN_TYPE PathBrain
+PATH_FILE_NAME BirdsHomeToKQ.psq
+
+SCENE_CHARACTER_END
+
+
+BORDER_SCENES_START
+
+leftScene UnknownScene
+rightScene UnknownScene
+upScene NorthField1
+downScene UnknownScene
+
+BORDER_SCENES_END
+
+
+MUSIC
+Trees.wav
+
+
+INPUT_START
+
+EVENT_ID EVENT122909094522
+CRITERIA VariableHasValueCriteria haveShownFried 0
+CRITERIA ObjectInAreaCriteria CHARACTER111709193403 150 200 470 450
+ACTION DisplayTextAction `BigBird`The big birds say, "We don't like dogs, go away!"
+ACTION RemoveObjectFromGameAction CHARACTER122909093104
+ACTION PlaceObjectInGameAction CHARACTER122909094807 -1 -1
+ACTION StartNextStepAction CHARACTER122909094807
+ACTION RemoveObjectFromGameAction CHARACTER122909093111
+ACTION PlaceObjectInGameAction CHARACTER122909094854 -1 -1
+ACTION StartNextStepAction CHARACTER122909094854
+ACTION SetVariableValueAction birdsFlewAway 1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032010093400
+INPUT_TEXT talk birds
+CRITERIA VariableHasValueCriteria haveShownFried 0
+ACTION DisplayTextAction `BigBird`"We don't trust dogs," the big birds say. "They chase us.  We won't trust you unless we know you're nice to birds."
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032010093401
+INPUT_TEXT talk birds
+CRITERIA VariableHasValueCriteria haveShownFried 1
+ACTION DisplayTextAction `BigBird`"I guess we like you since you are nice to birds," say the big birds. "If you bring us a net we can take you and your bird friend to another place."
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT122909103839
+INPUT_TEXT give bird to birds
+INPUT_TEXT give birds bird
+INPUT_TEXT show bird to birds
+INPUT_TEXT show birds bird
+INPUT_TEXT show friedrich
+INPUT_TEXT give friedrich to birds
+INPUT_TEXT show fried to birds
+INPUT_TEXT give fried to birds
+INPUT_TEXT give friedrich to bird
+INPUT_TEXT show fried to bird
+INPUT_TEXT give fried to bird
+INPUT_TEXT give birds friedrich
+INPUT_TEXT show birds fried
+INPUT_TEXT give birds fried
+INPUT_TEXT give bird friedrich
+INPUT_TEXT show bird fried
+INPUT_TEXT give bird fried
+INPUT_TEXT show bird
+INPUT_TEXT give bird
+CRITERIA ObjectInInventoryCriteria Friedrich
+CRITERIA VariableHasValueCriteria birdsFlewAway 0
+ACTION DisplayTextAction `BigBird`"Oh so you've got a little bird friend do you?" The big birds say.  "Well perhaps we don't feel so bad about a little dog as long as he has a bird friend."~`BigBird`"Say, if you're interested we could take you and your little bird friend to this very interesting house.  It's a farm with pumpkins and turkeys and all sorts of fun things to do."~`BigBird`"We'll need a net of some sort to carry you in, though.  Bring us a net and we'll take you."
+ACTION SetVariableValueAction haveShownFried 1
+ACTION AddToScoreAction 1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT122909110613
+INPUT_TEXT give bird to birds
+INPUT_TEXT give birds bird
+INPUT_TEXT show bird to birds
+INPUT_TEXT show birds bird
+INPUT_TEXT show friedrich
+INPUT_TEXT give friedrich to birds
+INPUT_TEXT show fried to birds
+INPUT_TEXT give fried to birds
+INPUT_TEXT give friedrich to bird
+INPUT_TEXT show fried to bird
+INPUT_TEXT give fried to bird
+INPUT_TEXT give birds friedrich
+INPUT_TEXT show birds fried
+INPUT_TEXT give birds fried
+INPUT_TEXT give bird friedrich
+INPUT_TEXT show bird fried
+INPUT_TEXT give bird fried
+INPUT_TEXT show bird
+INPUT_TEXT give bird
+CRITERIA ObjectInInventoryCriteria Friedrich
+CRITERIA VariableHasValueCriteria birdsFlewAway 1
+ACTION DisplayTextAction `BigBird`"Oh, so you've got a little bird friend, do you?" The big birds say.  "Well, perhaps we don't feel so bad about a little dog as long as he has a bird friend."~`BigBird`"Say, if you're interested we could take you and your little bird friend to this very interesting house.  It's a farm with pumpkins and turkeys and all sorts of fun things to do."~`BigBird`"We'll need a net of some sort to carry you in, though.  Bring us a net and we'll take you."
+ACTION SetVariableValueAction haveShownFried 1
+ACTION StartNextStepAction CHARACTER122909094807
+ACTION StartNextStepAction CHARACTER122909094854
+ACTION AddToScoreAction 1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT122909141031
+INPUT_TEXT show net bird
+INPUT_TEXT give net bird
+INPUT_TEXT show net birds
+INPUT_TEXT give net birds
+INPUT_TEXT show bird net
+INPUT_TEXT give bird net
+INPUT_TEXT show birds net
+INPUT_TEXT give birds net
+CRITERIA VariableHasValueCriteria haveShownFried 1
+CRITERIA VariableHasValueCriteria firstTimeToAndersons 0
+CRITERIA ObjectInInventoryCriteria Net
+ACTION RemoveObjectFromGameAction CHARACTER122909093104
+ACTION RemoveObjectFromGameAction CHARACTER122909093111
+ACTION RemoveObjectFromGameAction CHARACTER122909094807
+ACTION RemoveObjectFromGameAction CHARACTER122909094854
+ACTION PlaceObjectInGameAction CHARACTER122909140425 -1 -1
+ACTION StartNextStepAction CHARACTER122909140425
+ACTION RemoveObjectFromGameAction CHARACTER111709193403
+ACTION DisplayTextAction Ernie gives the net to the big birds and climbs into it.  They pick up the ends of the net and lift him into the air.~The air rushes past him as they climb higher and higher.  Where could they be taking him?
+ACTION SetVariableValueAction firstTimeToAndersons 1
+ACTION AddToScoreAction 1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT122909141033
+INPUT_TEXT show net bird
+INPUT_TEXT give net bird
+INPUT_TEXT show net birds
+INPUT_TEXT give net birds
+INPUT_TEXT show bird net
+INPUT_TEXT give bird net
+INPUT_TEXT show birds net
+INPUT_TEXT give birds net
+CRITERIA VariableHasValueCriteria haveShownFried 1
+CRITERIA VariableHasValueCriteria firstTimeToAndersons 1
+CRITERIA ObjectInInventoryCriteria Net
+ACTION RemoveObjectFromGameAction CHARACTER122909093104
+ACTION RemoveObjectFromGameAction CHARACTER122909093111
+ACTION RemoveObjectFromGameAction CHARACTER122909094807
+ACTION RemoveObjectFromGameAction CHARACTER122909094854
+ACTION PlaceObjectInGameAction CHARACTER122909140425 -1 -1
+ACTION StartNextStepAction CHARACTER122909140425
+ACTION RemoveObjectFromGameAction CHARACTER111709193403
+ACTION DisplayTextAction Ernie gives the net to the big birds and climbs into it.  They pick up the ends of the net and lift him into the air.~The air rushes past him as they climb higher and higher.  Where could they be taking him?
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT123109095332
+REPEATS
+CRITERIA ObjectInAreaCriteria CHARACTER123109084830 103 305 123 325
+ACTION PlaceObjectInGameAction CHARACTER111709193403 113 315
+ACTION PlaceObjectInGameAction CHARACTER122909094807 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER122909094854 -1 -1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510201012
+INPUT_TEXT look trees
+INPUT_TEXT look tree
+ACTION DisplayTextAction There is a large tree sitting in the middle of the scene.  Several fall colored trees surround the scene.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510201050
+INPUT_TEXT look bird
+INPUT_TEXT look birds
+CRITERIA ObjectInCurrentSceneCriteria CHARACTER122909093104
+ACTION DisplayTextAction There are two big black birds sitting on the ground.  The birds don't look like they like dogs very much.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510201230
+INPUT_TEXT look bird
+INPUT_TEXT look birds
+CRITERIA VariableHasValueCriteria birdsFlewAway 1
+CRITERIA VariableHasValueCriteria haveShownFried 0
+ACTION DisplayTextAction The two big black birds have flown up into the tree because they feel Ernie is too close for comfort.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510201051
+INPUT_TEXT look bird
+INPUT_TEXT look birds
+CRITERIA ObjectInCurrentSceneCriteria CHARACTER020410195320
+CRITERIA VariableHasValueCriteria birdsFlewAway 1
+CRITERIA VariableHasValueCriteria haveShownFried 0
+ACTION DisplayTextAction There are two big black birds sitting on the ground.  The birds don't look like they like dogs very much.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510201315
+INPUT_TEXT look
+ACTION DisplayTextAction Ernie is in a scene with a large tree in it.  The scene is surrounded by other colorful trees.  There are two large black birds in the scene.  They don't look like they like dogs very much.
+
+INPUT_END
+
+

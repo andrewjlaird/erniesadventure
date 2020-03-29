@@ -1,0 +1,262 @@
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME Cupboard
+GUI_ID CHARACTER040310071220
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 250
+INITIAL_Y 356
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME Furnace
+GUI_ID CHARACTER040310071230
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 38
+INITIAL_Y 208
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME TheKidsCloset
+GUI_ID CHARACTER040310071315
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 549
+INITIAL_Y 208
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME TheKidsCouch
+GUI_ID CHARACTER040310071552
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 355
+INITIAL_Y 201
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME ScienceBoxClosed
+GUI_ID CHARACTER040310071255
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 85
+INITIAL_Y 282
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME ScienceBoxOpen
+GUI_ID CHARACTER040310071256
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME false
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 85
+INITIAL_Y 282
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME ScienceBoxOpenMagnet
+GUI_ID CHARACTER040310071257
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME false
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 85
+INITIAL_Y 282
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+BORDER_SCENES_START
+
+leftScene UnknownScene
+rightScene UnknownScene
+upScene UnknownScene
+downScene UnknownScene
+
+BORDER_SCENES_END
+
+
+MUSIC
+InTheHouse.mp3
+
+
+INPUT_START
+
+EVENT_ID EVENT040310072338
+INPUT_TEXT open box
+INPUT_TEXT open kit
+INPUT_TEXT open container
+INPUT_TEXT open science
+CRITERIA VariableHasValueCriteria gotMagnet 0
+CRITERIA VariableHasValueCriteria scienceBoxOpen 0
+ACTION DisplayTextAction Ernie opens the science kit box and finds several objects.  The only interesting one is a large magnet.
+ACTION RemoveObjectFromGameAction CHARACTER040310071255
+ACTION SetVariableValueAction scienceBoxOpen 1
+ACTION PlaceObjectInGameAction CHARACTER040310071257 -1 -1
+ACTION AddToScoreAction 1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT040310072339
+INPUT_TEXT open box
+INPUT_TEXT open kit
+INPUT_TEXT open container
+INPUT_TEXT open science
+CRITERIA VariableHasValueCriteria gotMagnet 1
+CRITERIA VariableHasValueCriteria scienceBoxOpen 0
+ACTION DisplayTextAction Ernie opens the science kit box and finds several objects.
+ACTION RemoveObjectFromGameAction CHARACTER040310071255
+ACTION SetVariableValueAction scienceBoxOpen 1
+ACTION PlaceObjectInGameAction CHARACTER040310071256 -1 -1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT040310073527
+INPUT_TEXT get magnet
+CRITERIA VariableHasValueCriteria scienceBoxOpen 1
+CRITERIA VariableHasValueCriteria gotMagnet 0
+ACTION DisplayTextAction Ernie takes the large magnet with him.
+ACTION SetVariableValueAction gotMagnet 1
+ACTION AddObjectToInventoryAction Magnet
+ACTION RemoveObjectFromGameAction CHARACTER040310071257
+ACTION PlaceObjectInGameAction CHARACTER040310071256 -1 -1
+ACTION AddToScoreAction 1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT040310073528
+INPUT_TEXT close box
+INPUT_TEXT close kit
+INPUT_TEXT close container
+INPUT_TEXT close science
+CRITERIA VariableHasValueCriteria scienceBoxOpen 1
+ACTION DisplayTextAction Ernie closes the science kit box.
+ACTION SetVariableValueAction scienceBoxOpen 0
+ACTION RemoveObjectFromGameAction CHARACTER040310071256
+ACTION RemoveObjectFromGameAction CHARACTER040310071257
+ACTION PlaceObjectInGameAction CHARACTER040310071255 -1 -1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT041210210807
+INPUT_TEXT dig
+ACTION DisplayTextAction Ernie can't dig when he's inside.  The floor is too hard.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510193007
+INPUT_TEXT pee
+ACTION DisplayTextAction Ernie is naughty and pees inside.  Miraculously it doesn't cause a mess, and some flowers pop up.
+ACTION SpawnCharacterAction CHARACTER021810100900 true CHARACTER111709193403 3 2
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT042710070018
+INPUT_TEXT look bed
+ACTION DisplayTextAction Alex's bed is in the corner of the room.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT042710070131
+INPUT_TEXT look closet
+ACTION DisplayTextAction Alex's closet sits in the corner of his room.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT042710070140
+INPUT_TEXT look desk
+ACTION DisplayTextAction Alex's desk sits in the corner of his room.  There is no computer on it.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT042710070148
+INPUT_TEXT look washer
+INPUT_TEXT look dryer
+INPUT_TEXT look furnace
+ACTION DisplayTextAction There is a set of washer and dryers in the corner and a large furnace heating the house.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT042710070202
+INPUT_TEXT look box
+INPUT_TEXT look kit
+INPUT_TEXT look science kit
+ACTION DisplayTextAction There is a box that says "science kit" on it next to the washer machine.
+
+INPUT_END
+
+

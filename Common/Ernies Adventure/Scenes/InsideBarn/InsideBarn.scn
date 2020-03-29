@@ -1,0 +1,530 @@
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME BarnTrashCan
+GUI_ID CHARACTER030610071133
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 257
+INITIAL_Y 351
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME BarnWall
+GUI_ID CHARACTER030610071351
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 401
+INITIAL_Y 188
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME OnGroundNet
+GUI_ID CHARACTER030610072928
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME false
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 308
+INITIAL_Y 384
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME OnTrashNet
+GUI_ID CHARACTER030610072934
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 254
+INITIAL_Y 348
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME CatFoodDish
+GUI_ID CHARACTER030610071141
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 167
+INITIAL_Y 375
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME CatFood
+GUI_ID CHARACTER030610071151
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME false
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 172
+INITIAL_Y 374
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME CatSitting
+GUI_ID CHARACTER030610122116
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 207
+INITIAL_Y 359
+PIXELS_PER_SECOND 10
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME GrainCan
+GUI_ID CHARACTER032310195538
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 123
+INITIAL_Y 313
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME Grain
+GUI_ID CHARACTER032310195550
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 138
+INITIAL_Y 346
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+BORDER_SCENES_START
+
+leftScene UnknownScene
+rightScene UnknownScene
+upScene UnknownScene
+downScene UnknownScene
+
+BORDER_SCENES_END
+
+
+MUSIC
+InTheHouse.mp3
+
+
+INPUT_START
+
+EVENT_ID EVENT030610074800
+CRITERIA ObjectsAreNearCriteria CHARACTER013110212148 CHARACTER030610071133 30
+CRITERIA VariableHasValueCriteria catsAreFed 0
+ACTION DisplayTextAction `Alex`"Wow the cats are out of food," Alex says. He throws the net on the ground, opens the trash can and feeds the cats.
+ACTION RemoveObjectFromGameAction CHARACTER030610072934
+ACTION PlaceObjectInGameAction CHARACTER030610072928 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER030610071151 -1 -1
+ACTION SetVariableValueAction catsAreFed 1
+ACTION AddToScoreAction 1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT030610074801
+CRITERIA ObjectsAreNearCriteria CHARACTER013110212113 CHARACTER030610071133 30
+CRITERIA VariableHasValueCriteria catsAreFed 0
+ACTION DisplayTextAction `Dad`"Wow the cats are out of food," Dad says. He throws the net on the ground, opens the trash can and feeds the cats.
+ACTION RemoveObjectFromGameAction CHARACTER030610072934
+ACTION PlaceObjectInGameAction CHARACTER030610072928 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER030610071151 -1 -1
+ACTION SetVariableValueAction catsAreFed 1
+ACTION AddToScoreAction 1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT030610074802
+CRITERIA ObjectsAreNearCriteria CHARACTER013110212149 CHARACTER030610071133 30
+CRITERIA VariableHasValueCriteria catsAreFed 0
+ACTION DisplayTextAction `Stephen`"Wow the cats are out of food," Stephen says. He throws the net on the ground, opens the trash can and feeds the cats.
+ACTION RemoveObjectFromGameAction CHARACTER030610072934
+ACTION PlaceObjectInGameAction CHARACTER030610072928 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER030610071151 -1 -1
+ACTION SetVariableValueAction catsAreFed 1
+ACTION AddToScoreAction 1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT022810201530
+INPUT_TEXT get net
+INPUT_TEXT pick up net
+CRITERIA ObjectInCurrentSceneCriteria CHARACTER030610072928
+ACTION RemoveObjectFromGameAction CHARACTER030610072928
+ACTION AddObjectToInventoryAction Net
+ACTION DisplayTextAction Ernie picks up the net.
+ACTION AddToScoreAction 1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT030610124945
+INPUT_TEXT get net
+INPUT_TEXT grab net
+CRITERIA ObjectInCurrentSceneCriteria CHARACTER030610072934
+ACTION DisplayTextAction Ernie tries to grab the net from the trash can, but can't manager it.  He needs someone taller to help.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT030610125125
+INPUT_TEXT open can
+INPUT_TEXT feed cats
+INPUT_TEXT help cats
+INPUT_TEXT feed cat
+INPUT_TEXT help cat
+CRITERIA ObjectInCurrentSceneCriteria CHARACTER030610072934
+ACTION DisplayTextAction There is a net on top of the trash can so even if Ernie was big enough to open it and feed the cats, he couldn't.  He needs someone taller to help.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT030610125126
+INPUT_TEXT open can
+INPUT_TEXT feed cats
+INPUT_TEXT help cats
+INPUT_TEXT feed cat
+INPUT_TEXT help cat
+CRITERIA ObjectInCurrentSceneCriteria CHARACTER030610072934
+CRITERIA ObjectInCurrentSceneCriteria NOT CHARACTER013110212148
+CRITERIA ObjectInCurrentSceneCriteria NOT CHARACTER013110212113
+CRITERIA ObjectInCurrentSceneCriteria NOT CHARACTER013110212149
+ACTION DisplayTextAction There is a net on top of the trash can so even if Ernie was big enough to open it and feed the cats, he couldn't.  He needs someone taller to help.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT030610125247
+INPUT_TEXT open can
+INPUT_TEXT feed cats
+INPUT_TEXT help cats
+INPUT_TEXT feed cat
+INPUT_TEXT help cat
+CRITERIA ObjectInCurrentSceneCriteria CHARACTER013110212148
+CRITERIA ObjectsAreNearCriteria NOT CHARACTER013110212148 CHARACTER030610071133 30
+ACTION DisplayTextAction Alex can help feed the cats, but he needs to be closer to the can to help.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT030610125248
+INPUT_TEXT open can
+INPUT_TEXT feed cats
+INPUT_TEXT help cats
+INPUT_TEXT feed cat
+INPUT_TEXT help cat
+CRITERIA ObjectInCurrentSceneCriteria CHARACTER013110212113
+CRITERIA ObjectsAreNearCriteria NOT CHARACTER013110212113 CHARACTER030610071133 30
+ACTION DisplayTextAction Dad can help feed the cats, but he needs to be closer to the can to help.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT030610125249
+INPUT_TEXT open can
+INPUT_TEXT feed cats
+INPUT_TEXT help cats
+INPUT_TEXT feed cat
+INPUT_TEXT help cat
+CRITERIA ObjectInCurrentSceneCriteria CHARACTER013110212149
+CRITERIA ObjectsAreNearCriteria NOT CHARACTER013110212149 CHARACTER030610071133 30
+ACTION DisplayTextAction Stephen can help feed the cats, but he needs to be closer to the can to help.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT030610125333
+INPUT_TEXT talk cat
+INPUT_TEXT bark cat
+CRITERIA ObjectInCurrentSceneCriteria NOT CHARACTER030610071151
+ACTION DisplayTextAction `Cat`"I've been sitting here waiting and waiting for someone to come and feed me," the cat says.  "The people from the house are busy with Thanksgiving, but I'm real hungry.  You seem like a nice dog, can you find someone to come and feed me."
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT030610125608
+INPUT_TEXT talk cat
+INPUT_TEXT bark cat
+CRITERIA ObjectInCurrentSceneCriteria CHARACTER030610071151
+ACTION DisplayTextAction `Cat`"Thanks for helping me get fed," the cat says.  "This food is great!"
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032310195656
+INPUT_TEXT get grain
+CRITERIA ObjectInCurrentSceneCriteria CHARACTER032310195550
+ACTION AddToScoreAction 1
+ACTION DisplayTextAction Ernie picks up the spilled grain from the floor.
+ACTION AddObjectToInventoryAction Grain
+ACTION RemoveObjectFromGameAction CHARACTER032310195550
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510191109
+INPUT_TEXT get pail
+INPUT_TEXT get bucket
+ACTION DisplayTextAction The grain bucket is much too large for Ernie to pick up.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510191141
+INPUT_TEXT get cat
+INPUT_TEXT get kitten
+INPUT_TEXT get kitteh
+ACTION DisplayTextAction The cat needs food, Ernie should focus on getting it some.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510191227
+INPUT_TEXT look door
+ACTION DisplayTextAction There are several stalls in the barn, each has a door that is locked.  The door out of the barn is to the south.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510191303
+INPUT_TEXT look wall
+ACTION DisplayTextAction The barn is separated into several stalls.  The walls of the barn are made of concrete.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510191347
+INPUT_TEXT look hay
+INPUT_TEXT look straw
+ACTION DisplayTextAction There is some hay in the back stall.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510191419
+INPUT_TEXT open door
+INPUT_TEXT open gate
+ACTION DisplayTextAction The stall doors and garage door are much too large to open.  The door out of the barn is open to the south.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510191501
+INPUT_TEXT look trash can
+INPUT_TEXT look garbage can
+INPUT_TEXT look can
+INPUT_TEXT look food can
+CRITERIA ObjectInCurrentSceneCriteria CHARACTER030610072934
+ACTION DisplayTextAction There is a large grey trash can in the middle of the barn.  Ernie smells cat food in it.  There is a net on top of the trash can.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510191928
+INPUT_TEXT look trash can
+INPUT_TEXT look garbage can
+INPUT_TEXT look can
+INPUT_TEXT look food can
+CRITERIA ObjectInCurrentSceneCriteria NOT CHARACTER030610072934
+ACTION DisplayTextAction There is a large grey trash can in the middle of the barn.  Ernie smells cat food in it.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510191610
+INPUT_TEXT look net
+CRITERIA ObjectInCurrentSceneCriteria CHARACTER030610072934
+ACTION DisplayTextAction There is a large net covering the trash can with the cat food in it.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510191732
+INPUT_TEXT look net
+CRITERIA ObjectInCurrentSceneCriteria NOT CHARACTER030610072934
+ACTION DisplayTextAction There is a large net on the ground.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510192013
+INPUT_TEXT look food
+CRITERIA ObjectInCurrentSceneCriteria CHARACTER030610071151
+ACTION DisplayTextAction There is a large pile of cat food in the dish now.  The cat is very happy that Ernie was able to help get the food.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510192128
+INPUT_TEXT look pail
+INPUT_TEXT look bucket
+ACTION DisplayTextAction There is a large pail of grain on the floor of the barn.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510192129
+INPUT_TEXT look grain
+ACTION DisplayTextAction There is a large bucket of grain in the corner of the barn.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510192014
+INPUT_TEXT look cat
+CRITERIA ObjectInCurrentSceneCriteria NOT CHARACTER030610071151
+ACTION DisplayTextAction The cat is sitting waiting for someone to come and feed it.  Ernie likes cats and this cat seems to tolerate Ernie.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510192015
+INPUT_TEXT look cat
+CRITERIA ObjectInCurrentSceneCriteria CHARACTER030610071151
+ACTION DisplayTextAction The cat seems quite pleased that it has food to eat now.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510192301
+INPUT_TEXT look
+ACTION DisplayTextAction Ernie is inside the barn.  There are several stalls around the barn.  A cat sits in the middle of the barn and a large trashcan with cat food in it sitting next to him.  A large bucket of grain is also sitting on the floor.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT040810213623
+INPUT_TEXT get grain
+CRITERIA ObjectInCurrentSceneCriteria NOT CHARACTER032310195550
+ACTION DisplayTextAction Ernie gets some more grain from the grain bucket.
+ACTION AddObjectToInventoryAction Grain
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT041210210808
+INPUT_TEXT dig
+ACTION DisplayTextAction Ernie can't dig when he's inside.  The floor is too hard.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510193008
+INPUT_TEXT pee
+ACTION DisplayTextAction Ernie is naughty and pees inside.  Miraculously it doesn't cause a mess, and some flowers pop up.
+ACTION SpawnCharacterAction CHARACTER021810100900 true CHARACTER111709193403 3 2
+
+INPUT_END

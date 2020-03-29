@@ -1,0 +1,630 @@
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME Grass
+GUI_ID CHARACTER111709193256
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 584
+INITIAL_Y 218
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME Grass
+GUI_ID CHARACTER111709193257
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 469
+INITIAL_Y 225
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME Grass
+GUI_ID CHARACTER111709193258
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 344
+INITIAL_Y 256
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME Grass
+GUI_ID CHARACTER111709193259
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 547
+INITIAL_Y 367
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME Grass
+GUI_ID CHARACTER111709193300
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 526
+INITIAL_Y 377
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME Grass
+GUI_ID CHARACTER111709193301
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 177
+INITIAL_Y 415
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME Grass
+GUI_ID CHARACTER111709193302
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 13
+INITIAL_Y 180
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME BigBlueSpruce
+GUI_ID CHARACTER112109113549
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 0
+INITIAL_Y 300
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME BigBlueSpruce
+GUI_ID CHARACTER111709193253
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 53
+INITIAL_Y 124
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME BigBlueSpruce
+GUI_ID CHARACTER111709193254
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 201
+INITIAL_Y 45
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME Bale
+GUI_ID CHARACTER040110201231
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME false
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 389
+INITIAL_Y 330
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME ScareCrow
+GUI_ID CHARACTER040110201245
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME false
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 364
+INITIAL_Y 282
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME CornStock
+GUI_ID CHARACTER040110201237
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME false
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 333
+INITIAL_Y 257
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME CornStockRight
+GUI_ID CHARACTER040110201627
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME false
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 408
+INITIAL_Y 255
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME LauraStuffingScareCrow
+GUI_ID CHARACTER040110202810
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME false
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 401
+INITIAL_Y 305
+PIXELS_PER_SECOND 8
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER PathCharacter
+GUI_ID CHARACTER022810193836
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME false
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 431
+INITIAL_Y 398
+PIXELS_PER_SECOND 60
+BRAIN_TYPE PathBrain
+PATH_FILE_NAME LauraToHouse.psq
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME AshleyStuffingScareCrow
+GUI_ID CHARACTER040110205007
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME false
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 364
+INITIAL_Y 305
+PIXELS_PER_SECOND 12
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER PathCharacter
+GUI_ID CHARACTER022810193837
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME false
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 375
+INITIAL_Y 398
+PIXELS_PER_SECOND 60
+BRAIN_TYPE PathBrain
+PATH_FILE_NAME AshleyToHouse.psq
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME PumpkinOnBale
+GUI_ID CHARACTER040110205418
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME false
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 440
+INITIAL_Y 360
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+BORDER_SCENES_START
+
+leftScene YonderCenter
+rightScene HorseShoeLantern
+upScene Barn
+downScene HorseShoeLowerLeft
+
+BORDER_SCENES_END
+
+
+MUSIC
+OnTheFarm.mp3
+
+
+INPUT_START
+
+EVENT_ID EVENT12170921075144
+INPUT_TEXT look trees
+INPUT_TEXT look tree
+ACTION DisplayTextAction There are three huge pine trees in the Horseshoe.  The barn is behind them.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT12170921075167
+INPUT_TEXT look
+ACTION DisplayTextAction Ernie is in the Horseshoe below the barn.  Three large pine trees run along the asphalt driveway.  In the far distance several lilac bushes line the hills.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT040110205930
+INPUT_TEXT talk laura
+INPUT_TEXT talk woman
+CRITERIA VariableHasValueCriteria talkedToGirls 0
+CRITERIA VariableHasValueCriteria pumpkinSequenceDone 0
+ACTION DisplayTextAction `Laura`"Hey Ernie," Laura says. "We're just putting together this fall display. It's too bad we don't have a pumpkin though..."
+ACTION SetVariableValueAction talkedToGirls 1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT040110205931
+INPUT_TEXT talk laura
+INPUT_TEXT talk woman
+CRITERIA VariableHasValueCriteria talkedToGirls 1
+ACTION DisplayTextAction `Laura`"I was looking for some additions to our display in the front yard," Laura says to Ashley, "when I looked up and saw a large gray cat prowling around.  He was scary."~`Ashley`"Oh that would be the Black Panther. At least that's what we used to call him.  He's a mean old tom cat."~`Ashley`"I remember we used to have several dangerous cats.  Dad had his friend Paul came and scare them away."~`Laura`"How did he scare them away?"~`Ashley`"He used a pipe.  At least, that's what Dad said.  I bet if we used a pipe on the Black Panther he'd be gone for sure."
+ACTION SetVariableValueAction talkedToGirls 2
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT0401102059311
+INPUT_TEXT talk laura
+INPUT_TEXT talk woman
+CRITERIA VariableHasValueCriteria talkedToGirls 2
+CRITERIA VariableHasValueCriteria pumpkinSequenceDone 0
+ACTION DisplayTextAction `Laura`"I sure wish we had a pumpkin to go with our display."
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT040110205932
+INPUT_TEXT talk ashley
+CRITERIA VariableHasValueCriteria talkedToGirls 0
+CRITERIA VariableHasValueCriteria pumpkinSequenceDone 0
+ACTION DisplayTextAction `Ashley`"Hey Ernie," Ashley says. "We're just putting together this fall display. It's too bad we don't have a pumpkin though..."
+ACTION SetVariableValueAction talkedToGirls 1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT040110205933
+INPUT_TEXT talk ashley
+CRITERIA VariableHasValueCriteria talkedToGirls 1
+ACTION DisplayTextAction `Ashley`"Were you able to find any additions for our display?" Ashley says to Laura~`Laura`"I was looking for some stuff in the front yard," Laura says, "when I looked up and saw a large gray cat prowling around.  He was scary."~`Ashley`"Oh that would be the Black Panther. At least that's what we used to call him.  He's a mean old tom cat."~`Ashley`"I remember we used to have several dangerous cats.  Dad had his friend Paul come and scare them away."~`Laura`"How did he scare them away?"~`Ashley`"He used a pipe.  At least, that's what Dad said.  I bet if we used a pipe on the Black Panther he'd be gone for sure."
+ACTION SetVariableValueAction talkedToGirls 2
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT0401102059313
+INPUT_TEXT talk ashley
+CRITERIA VariableHasValueCriteria talkedToGirls 2
+CRITERIA VariableHasValueCriteria pumpkinSequenceDone 0
+ACTION DisplayTextAction `Ashley`"I sure wish we had a pumpkin to go with our display."
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT040110220941
+INPUT_TEXT give pumpkin laura
+INPUT_TEXT give laura pumpkin
+INPUT_TEXT give woman pumpkin
+INPUT_TEXT give pumpkin laura
+CRITERIA ObjectInInventoryCriteria Small Pumpkin
+CRITERIA VariableHasValueCriteria launchSequenceDone 0
+ACTION DisplayTextAction `Laura`"Wow, what a beautiful pumpkin! Thanks Ernie, this will finish up our arrangement perfectly."
+ACTION PlaceObjectInGameAction CHARACTER040110205418 -1 -1
+ACTION SetVariableValueAction pumpkinSequenceDone 1
+ACTION RemoveObjectFromInventoryAction Small Pumpkin
+ACTION AddToScoreAction 1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT040110220942
+INPUT_TEXT give pumpkin ashley
+INPUT_TEXT give ashley pumpkin
+CRITERIA ObjectInInventoryCriteria Small Pumpkin
+CRITERIA VariableHasValueCriteria launchSequenceDone 0
+ACTION DisplayTextAction `Ashley`"Wow, what a beautiful pumpkin! Thanks Ernie, this will finish up our arrangement perfectly."
+ACTION PlaceObjectInGameAction CHARACTER040110205418 -1 -1
+ACTION SetVariableValueAction pumpkinSequenceDone 1
+ACTION RemoveObjectFromInventoryAction Small Pumpkin
+ACTION AddToScoreAction 1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT040110220943
+INPUT_TEXT give pumpkin laura
+INPUT_TEXT give laura pumpkin
+INPUT_TEXT give woman pumpkin
+INPUT_TEXT give pumpkin laura
+CRITERIA ObjectInInventoryCriteria Small Pumpkin
+CRITERIA VariableHasValueCriteria turkeySequenceDone 0
+ACTION DisplayTextAction `Laura`"Wow, what a beautiful pumpkin! Thanks Ernie, this will finish up our arrangement perfectly."
+ACTION PlaceObjectInGameAction CHARACTER040110205418 -1 -1
+ACTION SetVariableValueAction pumpkinSequenceDone 1
+ACTION RemoveObjectFromInventoryAction Small Pumpkin
+ACTION AddToScoreAction 1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT040110220944
+INPUT_TEXT give pumpkin ashley
+INPUT_TEXT give ashley pumpkin
+CRITERIA ObjectInInventoryCriteria Small Pumpkin
+CRITERIA VariableHasValueCriteria turkeySequenceDone 0
+ACTION DisplayTextAction `Ashley`"Wow, what a beautiful pumpkin! Thanks Ernie, this will finish up our arrangement perfectly."
+ACTION PlaceObjectInGameAction CHARACTER040110205418 -1 -1
+ACTION SetVariableValueAction pumpkinSequenceDone 1
+ACTION RemoveObjectFromInventoryAction Small Pumpkin
+ACTION AddToScoreAction 1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT040110220948
+INPUT_TEXT give pumpkin laura
+INPUT_TEXT give laura pumpkin
+INPUT_TEXT give woman pumpkin
+INPUT_TEXT give pumpkin laura
+CRITERIA ObjectInInventoryCriteria Small Pumpkin
+CRITERIA VariableHasValueCriteria blackBerrySequenceDone 0
+ACTION DisplayTextAction `Laura`"Wow, what a beautiful pumpkin! Thanks Ernie, this will finish up our arrangement perfectly."
+ACTION PlaceObjectInGameAction CHARACTER040110205418 -1 -1
+ACTION SetVariableValueAction pumpkinSequenceDone 1
+ACTION RemoveObjectFromInventoryAction Small Pumpkin
+ACTION AddToScoreAction 1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT040110220949
+INPUT_TEXT give pumpkin ashley
+INPUT_TEXT give ashley pumpkin
+CRITERIA ObjectInInventoryCriteria Small Pumpkin
+CRITERIA VariableHasValueCriteria blackBerrySequenceDone 0
+ACTION DisplayTextAction `Ashley`"Wow, what a beautiful pumpkin! Thanks Ernie, this will finish up our arrangement perfectly."
+ACTION PlaceObjectInGameAction CHARACTER040110205418 -1 -1
+ACTION SetVariableValueAction pumpkinSequenceDone 1
+ACTION RemoveObjectFromInventoryAction Small Pumpkin
+ACTION AddToScoreAction 1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT040110220958
+INPUT_TEXT talk laura
+INPUT_TEXT talk woman
+CRITERIA VariableHasValueCriteria pumpkinSequenceDone 1
+ACTION DisplayTextAction `Laura`"Thanks so much for getting us this beautiful pumpkin Ernie.  You're the best!"
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT040110220959
+INPUT_TEXT talk ashley
+CRITERIA VariableHasValueCriteria pumpkinSequenceDone 1
+ACTION DisplayTextAction `Ashley`"That's the best pumpkin I've even seen.  Thanks Ernie."
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT040110220945
+INPUT_TEXT give pumpkin laura
+INPUT_TEXT give laura pumpkin
+INPUT_TEXT give woman pumpkin
+INPUT_TEXT give pumpkin laura
+CRITERIA ObjectInInventoryCriteria Small Pumpkin
+CRITERIA VariableHasValueCriteria turkeySequenceDone 1
+CRITERIA VariableHasValueCriteria launchSequenceDone 1
+CRITERIA VariableHasValueCriteria blackBerrySequenceDone 1
+ACTION DisplayTextAction `Laura`"Wow, what a beautiful pumpkin! Thanks Ernie, this will finish up our arrangement perfectly."~Ernie hears the bell ring from the house and Mom anounce that it's time for dinner.  The girls head up to the house.
+ACTION PlaceObjectInGameAction CHARACTER040110205418 -1 -1
+ACTION SetVariableValueAction runEndingSequence 1
+ACTION RemoveObjectFromGameAction CHARACTER040110202810
+ACTION RemoveObjectFromGameAction CHARACTER040110205007
+ACTION RemoveObjectFromGameAction CHARACTER030210215300
+ACTION RemoveObjectFromGameAction CHARACTER022810190514
+ACTION RemoveObjectFromGameAction CHARACTER013110212148
+ACTION RemoveObjectFromGameAction CHARACTER013110212149
+ACTION RemoveObjectFromGameAction CHARACTER041110065909
+ACTION PlaceObjectInGameAction CHARACTER032810145450 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810154041 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810154051 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810154134 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810154302 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810145406 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810145424 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810145517 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810145436 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810145509 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810150318 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810153304 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER042710215917 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER022810193836 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER022810193837 -1 -1
+ACTION StartNextStepAction CHARACTER022810193837
+ACTION SetVariableValueAction pumpkinSequenceDone 1
+ACTION RemoveObjectFromInventoryAction Small Pumpkin
+ACTION AddToScoreAction 1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT040110220946
+INPUT_TEXT give pumpkin ashley
+INPUT_TEXT give ashley pumpkin
+CRITERIA ObjectInInventoryCriteria Small Pumpkin
+CRITERIA VariableHasValueCriteria turkeySequenceDone 1
+CRITERIA VariableHasValueCriteria launchSequenceDone 1
+CRITERIA VariableHasValueCriteria blackBerrySequenceDone 1
+ACTION DisplayTextAction `Ashley`"Wow, what a beautiful pumpkin! Thanks Ernie, this will finish up our arrangement perfectly."~Ernie hears the bell ring from the house and Mom anounce that it's time for dinner.  The girls head up to the house.
+ACTION PlaceObjectInGameAction CHARACTER040110205418 -1 -1
+ACTION SetVariableValueAction runEndingSequence 1
+ACTION RemoveObjectFromGameAction CHARACTER040110202810
+ACTION RemoveObjectFromGameAction CHARACTER040110205007
+ACTION RemoveObjectFromGameAction CHARACTER030210215300
+ACTION RemoveObjectFromGameAction CHARACTER022810190514
+ACTION RemoveObjectFromGameAction CHARACTER013110212148
+ACTION RemoveObjectFromGameAction CHARACTER013110212149
+ACTION RemoveObjectFromGameAction CHARACTER041110065909
+ACTION PlaceObjectInGameAction CHARACTER032810145450 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810154041 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810154051 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810154134 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810154302 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810145406 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810145424 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810145517 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810145436 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810145509 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810150318 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810153304 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER042710215917 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER022810193836 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER022810193837 -1 -1
+ACTION StartNextStepAction CHARACTER022810193837
+ACTION SetVariableValueAction pumpkinSequenceDone 1
+ACTION RemoveObjectFromInventoryAction Small Pumpkin
+ACTION AddToScoreAction 1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT040110222033
+INPUT_TEXT test
+ACTION PlaceObjectInGameAction CHARACTER022810193836 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER022810193837 -1 -1
+ACTION StartNextStepAction CHARACTER022810193837
+
+INPUT_END
+
+

@@ -1,0 +1,450 @@
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME RoomWall
+GUI_ID CHARACTER022310210905
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 253
+INITIAL_Y 1
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME AshleyBed
+GUI_ID CHARACTER022310221916
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 367
+INITIAL_Y 294
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME AshleyChest
+GUI_ID CHARACTER022310221930
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 270
+INITIAL_Y 345
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME AndrewBed
+GUI_ID CHARACTER022310221949
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 11
+INITIAL_Y 354
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME CageBack
+GUI_ID CHARACTER022510205205
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 495
+INITIAL_Y 347
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME CageFront
+GUI_ID CHARACTER022510205235
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 495
+INITIAL_Y 347
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER PathCharacter
+GUI_ID CHARACTER022510211222
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 515
+INITIAL_Y 443
+PIXELS_PER_SECOND 40
+BRAIN_TYPE PathBrain
+PATH_FILE_NAME FriedrichInCage.psq
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME CageGateClosed
+GUI_ID CHARACTER022710065223
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 535
+INITIAL_Y 407
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME CageGateOpen
+GUI_ID CHARACTER022710065238
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME false
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 534
+INITIAL_Y 430
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME FriedrichStand
+GUI_ID CHARACTER022710065415
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME false
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 514
+INITIAL_Y 363
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+BORDER_SCENES_START
+
+leftScene UnknownScene
+rightScene UnknownScene
+upScene HouseMomDadRoom
+downScene UnknownScene
+
+BORDER_SCENES_END
+
+
+MUSIC
+InTheHouse.mp3
+
+
+INPUT_START
+
+EVENT_ID EVENT022710071344
+INPUT_TEXT open gate
+INPUT_TEXT open cage
+CRITERIA ObjectInInventoryCriteria NOT Friedrich
+CRITERIA VariableHasValueCriteria cageOpen 0
+ACTION DisplayTextAction Ernie bites the gate with his teeth and manages to open it.
+ACTION RemoveObjectFromGameAction CHARACTER022510211222
+ACTION PlaceObjectInGameAction CHARACTER022710065415 -1 -1
+ACTION SetVariableValueAction cageOpen 1
+ACTION PlaceObjectInGameAction CHARACTER022710065238 -1 -1
+ACTION RemoveObjectFromGameAction CHARACTER022710065223
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT022710071345
+INPUT_TEXT open gate
+INPUT_TEXT open cage
+CRITERIA ObjectInInventoryCriteria Friedrich
+CRITERIA VariableHasValueCriteria cageOpen 0
+ACTION DisplayTextAction Ernie bites the gate with his teeth and manages to open it.
+ACTION SetVariableValueAction cageOpen 1
+ACTION PlaceObjectInGameAction CHARACTER022710065238 -1 -1
+ACTION RemoveObjectFromGameAction CHARACTER022710065223
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT022710072508
+INPUT_TEXT get bird
+INPUT_TEXT grab bird
+INPUT_TEXT take bird
+INPUT_TEXT get friedrich
+INPUT_TEXT grab friedrich
+INPUT_TEXT take friedrich
+CRITERIA ObjectInInventoryCriteria NOT Friedrich
+CRITERIA VariableHasValueCriteria givenGreenBeans 0
+ACTION DisplayTextAction `Friedrich`Friedrich says, "I'm not going anywhere with you.  You tried to eat me once.  I only like people and animals that love and feed me."
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT022710071346
+INPUT_TEXT close gate
+INPUT_TEXT close cage
+CRITERIA ObjectInInventoryCriteria NOT Friedrich
+CRITERIA VariableHasValueCriteria cageOpen 1
+ACTION DisplayTextAction Ernie shoves the gate closed.
+ACTION RemoveObjectFromGameAction CHARACTER022710065415
+ACTION PlaceObjectInGameAction CHARACTER022510211222 -1 -1
+ACTION SetVariableValueAction cageOpen 0
+ACTION PlaceObjectInGameAction CHARACTER022710065223 -1 -1
+ACTION RemoveObjectFromGameAction CHARACTER022710065238
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT022710071347
+INPUT_TEXT close gate
+INPUT_TEXT close cage
+CRITERIA ObjectInInventoryCriteria Friedrich
+CRITERIA VariableHasValueCriteria cageOpen 1
+ACTION DisplayTextAction Ernie shoves the gate closed.
+ACTION SetVariableValueAction cageOpen 0
+ACTION PlaceObjectInGameAction CHARACTER022710065223 -1 -1
+ACTION RemoveObjectFromGameAction CHARACTER022710065238
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT022710073000
+INPUT_TEXT give beans bird
+INPUT_TEXT give beans friedrich
+INPUT_TEXT give bird beans
+INPUT_TEXT give fried beans
+INPUT_TEXT give friedrich beans
+INPUT_TEXT feed bird beans
+INPUT_TEXT feed fried beans
+INPUT_TEXT feed friedrich beans
+CRITERIA ObjectInInventoryCriteria Green Beans
+CRITERIA ObjectInInventoryCriteria NOT Friedrich
+CRITERIA VariableHasValueCriteria cageOpen 1
+ACTION DisplayTextAction `Friedrich`"I do like green beans," says Friedrich.  "Well I guess I can eat these, and I guess you're not so bad if you'll feed me."
+ACTION RemoveObjectFromInventoryAction Green Beans
+ACTION SetVariableValueAction givenGreenBeans 1
+ACTION AddToScoreAction 1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT022710073224
+INPUT_TEXT give beans bird
+INPUT_TEXT give beans friedrich
+INPUT_TEXT give bird beans
+INPUT_TEXT give friedrich beans
+CRITERIA ObjectInInventoryCriteria Green Beans
+CRITERIA VariableHasValueCriteria cageOpen 0
+ACTION DisplayTextAction You can't give anything to Friedrich while his cage is closed.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT022710073320
+INPUT_TEXT get bird
+INPUT_TEXT grab bird
+INPUT_TEXT take bird
+INPUT_TEXT get friedrich
+INPUT_TEXT grab friedrich
+INPUT_TEXT take friedrich
+CRITERIA ObjectInInventoryCriteria NOT Friedrich
+CRITERIA VariableHasValueCriteria givenGreenBeans 1
+ACTION DisplayTextAction `Friedrich`"Well ok I can go with you since you fed me.  You better not try to eat me again though or you'll be in trouble!"
+ACTION AddObjectToInventoryAction Friedrich
+ACTION RemoveObjectFromGameAction CHARACTER022510211222
+ACTION RemoveObjectFromGameAction CHARACTER022710065415
+ACTION AddToScoreAction 1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT022710072509
+INPUT_TEXT talk bird
+INPUT_TEXT talk friedrich
+CRITERIA ObjectInInventoryCriteria NOT Friedrich
+CRITERIA VariableHasValueCriteria givenGreenBeans 0
+ACTION DisplayTextAction `Friedrich`Friedrich says "Hi Ernie. I don't like you.  You tried to eat me once.  I only like people and animals that love and feed me."
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT022710073001
+INPUT_TEXT talk bird
+INPUT_TEXT talk friedrich
+CRITERIA ObjectInInventoryCriteria NOT Friedrich
+CRITERIA VariableHasValueCriteria givenGreenBeans 1
+ACTION DisplayTextAction `Friedrich`"I guess you're not so bad if you'll feed me."
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510195842
+INPUT_TEXT look door
+ACTION DisplayTextAction The doors are all open to the bedrooms.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510195934
+INPUT_TEXT look bed
+ACTION DisplayTextAction There are beds in each bedroom.  The bed in the blue bedroom used to be Andrew's bed and the bed in the green bedroom used to be Ashley bed.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510200014
+INPUT_TEXT look window
+ACTION DisplayTextAction The window to the south looks out over the door yard and driveway.  The window to the west looks out over the scene between the house and barn.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510200049
+INPUT_TEXT look closet
+INPUT_TEXT open closet
+ACTION DisplayTextAction There are closed closets in each bedroom.  Ernie can't open them.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510200145
+INPUT_TEXT look chest
+INPUT_TEXT open chest
+ACTION DisplayTextAction There is a chest at the foot of the green room's bed.  Ernie can't open it.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510200216
+INPUT_TEXT look cage
+CRITERIA ObjectInInventoryCriteria NOT Friedrich
+ACTION DisplayTextAction There is a bird cage next to the bed.  Friedrich the bird is in the cage.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510200323
+INPUT_TEXT look cage
+CRITERIA ObjectInInventoryCriteria Friedrich
+ACTION DisplayTextAction There is a bird cage next to the bed.  The cage is empty.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510200349
+INPUT_TEXT look bird
+INPUT_TEXT look friedrich
+CRITERIA ObjectInCurrentSceneCriteria CHARACTER022510211222
+ACTION DisplayTextAction Friedrich is flapping around in the cage.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510200456
+INPUT_TEXT look bird
+INPUT_TEXT look friedrich
+CRITERIA ObjectInCurrentSceneCriteria CHARACTER022710065415
+ACTION DisplayTextAction Friedrich is standing nervously in the corner of the cage.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510200637
+INPUT_TEXT look
+ACTION DisplayTextAction Ernie is in Ashley and Andrew's bedrooms.  The blue bedroom is Andrew's old room and the green bedroom and Ashley's old room.  There is a bird cage next to Ashley's old bed.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT041210210800
+INPUT_TEXT dig
+ACTION DisplayTextAction Ernie can't dig when he's inside.  The floor is too hard.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510193000
+INPUT_TEXT pee
+ACTION DisplayTextAction Ernie is naughty and pees inside.  Miraculously it doesn't cause a mess, and some flowers pop up.
+ACTION SpawnCharacterAction CHARACTER021810100900 true CHARACTER111709193403 3 2
+
+INPUT_END

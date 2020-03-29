@@ -1,0 +1,422 @@
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME GarageWall
+GUI_ID CHARACTER122009222602
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 1
+INITIAL_Y 446
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME RedCouch
+GUI_ID CHARACTER122009222616
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 114
+INITIAL_Y 312
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME StairGate
+GUI_ID CHARACTER012210220829
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 548
+INITIAL_Y 282
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME StairsWall
+GUI_ID CHARACTER030410201050
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 596
+INITIAL_Y 123
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME Rocker
+GUI_ID CHARACTER040310084319
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 229
+INITIAL_Y 222
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME DadReadingPaper
+GUI_ID CHARACTER040310070408
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME false
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 231
+INITIAL_Y 223
+PIXELS_PER_SECOND 10
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER PathCharacter
+GUI_ID CHARACTER012210222150
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 404
+INITIAL_Y 380
+PIXELS_PER_SECOND 40
+BRAIN_TYPE PathBrain
+PATH_FILE_NAME DadFamilyRoom.psq
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER PathCharacter
+GUI_ID CHARACTER042410152939
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME false
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 268
+INITIAL_Y 308
+PIXELS_PER_SECOND 40
+BRAIN_TYPE PathBrain
+PATH_FILE_NAME DadChairUpstairs.psq
+
+SCENE_CHARACTER_END
+
+
+BORDER_SCENES_START
+
+leftScene UnknownScene
+rightScene UnknownScene
+upScene UnknownScene
+downScene UnknownScene
+
+BORDER_SCENES_END
+
+
+MUSIC
+InTheHouse.mp3
+
+
+INPUT_START
+
+EVENT_ID EVENT012210222639
+INPUT_TEXT talk dad
+INPUT_TEXT talk man
+INPUT_TEXT talk person
+CRITERIA VariableHasValueCriteria cowsIn 0
+ACTION DisplayTextAction `Dad`"I just had the carpet cleaned", Dad said, "so I put these gates up so Ernie wouldn't have an accident."~`Dad`"I'm heading outside to try to get the cows in the corral before supper."
+ACTION StartNextStepAction CHARACTER012210222150
+ACTION PlaceObjectInGameAction CHARACTER012210222150 -1 -1
+ACTION RemoveObjectFromGameAction CHARACTER122809150817
+ACTION PlaceObjectInGameAction CHARACTER122809150801 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER013110212148 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER013110212149 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER012610213038 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER021310225212 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER033010202429 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER033010205832 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032910215520 -1 -1
+ACTION SetVariableValueAction talkedToDad 1
+ACTION RemoveObjectFromGameAction CHARACTER030610073508
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032310222339
+INPUT_TEXT look gate
+CRITERIA ObjectInCurrentSceneCriteria CHARACTER012210220829
+ACTION DisplayTextAction There is a gate blocking the way up and down stairs.  Ernie will have to stay in the family room and garage for now.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032310222350
+INPUT_TEXT look man
+INPUT_TEXT look dad
+INPUT_TEXT look person
+CRITERIA ObjectInCurrentSceneCriteria CHARACTER012210222150
+ACTION DisplayTextAction Dad is standing in the family room.  He looks like he's about ready to head outside.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032310222351
+INPUT_TEXT look man
+INPUT_TEXT look dad
+INPUT_TEXT look person
+CRITERIA ObjectInCurrentSceneCriteria NOT CHARACTER012210222150
+CRITERIA VariableHasValueCriteria NOT cowsIn 3
+ACTION DisplayTextAction Dad has headed out to the field to get the cows in.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032310222352
+INPUT_TEXT look man
+INPUT_TEXT look dad
+INPUT_TEXT look person
+CRITERIA ObjectInCurrentSceneCriteria NOT CHARACTER012210222150
+CRITERIA VariableHasValueCriteria cowsIn 3
+ACTION DisplayTextAction Dad is no longer in the family room.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032310222434
+INPUT_TEXT look couch
+ACTION DisplayTextAction Ernie knows he's not supposed to jump on the couch...all the same it is rather tempting.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032310222442
+INPUT_TEXT look fireplace
+ACTION DisplayTextAction The fireplace is currently not lit and runs up to the chimney.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032310222452
+INPUT_TEXT look tv
+INPUT_TEXT look television
+ACTION DisplayTextAction The television is sitting on the hutch and is currently off.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032310222506
+INPUT_TEXT look door
+ACTION DisplayTextAction The door to the lower bathroom is closed.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032310222514
+INPUT_TEXT open door
+ACTION DisplayTextAction Ernie is much to small to go opening doors.  And the bathroom wouldn't be any use to enter anyway.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032310222520
+INPUT_TEXT move gate
+INPUT_TEXT open gate
+CRITERIA ObjectInCurrentSceneCriteria CHARACTER012210220829
+ACTION DisplayTextAction Ernie cannot move the gate, it is much too large for him to handle.  He will have to stay downstairs for now.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032310222526
+INPUT_TEXT look
+CRITERIA ObjectInCurrentSceneCriteria CHARACTER012210220829
+CRITERIA ObjectInCurrentSceneCriteria CHARACTER012210222150
+ACTION DisplayTextAction Ernie is sitting in the family room of the Laird household.  There is a couch and TV in the family room next to a fireplace.~Dad is standing in the room looking like he's ready to head outside again.~There is a gate blocking the way upstairs and downstairs.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032310223305
+INPUT_TEXT look
+CRITERIA ObjectInCurrentSceneCriteria NOT CHARACTER012210222150
+CRITERIA ObjectInCurrentSceneCriteria CHARACTER012210220829
+ACTION DisplayTextAction Ernie is sitting in the family room of the Laird household.  There is a couch and TV in the family room next to a fireplace.~There is a gate blocking the way upstairs and downstairs.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032310223304
+INPUT_TEXT look
+CRITERIA ObjectInCurrentSceneCriteria NOT CHARACTER012210222150
+CRITERIA ObjectInCurrentSceneCriteria NOT CHARACTER012210220829
+ACTION DisplayTextAction Ernie is sitting in the family room of the Laird household.  There is a couch and TV in the family room next to a fireplace.
+
+INPUT_END
+
+INPUT_START
+
+EVENT_ID EVENT040310074410
+INPUT_TEXT talk dad
+CRITERIA VariableHasValueCriteria cowsIn 3
+ACTION DisplayTextAction `DadSad`"Oh hey Ernie," Dad says.  "Thanks for helping me get the cows in the corral.  Say, you didn't see my Blackberry out in the field while we were working did you?"~`DadSad`"I know I had it with me when we finished the cows and I headed off to open the red gate."~`DadSad`"If you could find it that'd be great, I know the grass is pretty tall in some places; you'll probably have to dig around."
+
+INPUT_END
+
+INPUT_START
+
+EVENT_ID EVENT040310081232
+INPUT_TEXT give blackberry dad
+INPUT_TEXT give dad blackberry
+CRITERIA VariableHasValueCriteria cowsIn 3
+CRITERIA VariableHasValueCriteria launchSequenceDone 0
+CRITERIA ObjectInInventoryCriteria Blackberry
+ACTION DisplayTextAction `Dad`"Wow, my blackberry.  Thanks Ernie!"
+ACTION RemoveObjectFromInventoryAction Blackberry
+ACTION SetVariableValueAction blackBerrySequenceDone 1
+ACTION AddToScoreAction 1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT040310081233
+INPUT_TEXT give blackberry dad
+INPUT_TEXT give dad blackberry
+CRITERIA VariableHasValueCriteria cowsIn 3
+CRITERIA VariableHasValueCriteria turkeySequenceDone 0
+CRITERIA ObjectInInventoryCriteria Blackberry
+ACTION DisplayTextAction `Dad`"Wow, my blackberry.  Thanks Ernie!"
+ACTION RemoveObjectFromInventoryAction Blackberry
+ACTION SetVariableValueAction blackBerrySequenceDone 1
+ACTION AddToScoreAction 1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT040310081234
+INPUT_TEXT give blackberry dad
+INPUT_TEXT give dad blackberry
+CRITERIA VariableHasValueCriteria cowsIn 3
+CRITERIA VariableHasValueCriteria pumpkinSequenceDone 0
+CRITERIA ObjectInInventoryCriteria Blackberry
+ACTION DisplayTextAction `Dad`"Wow, my blackberry.  Thanks Ernie!"
+ACTION RemoveObjectFromInventoryAction Blackberry
+ACTION SetVariableValueAction blackBerrySequenceDone 1
+ACTION AddToScoreAction 1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT040310081235
+INPUT_TEXT give blackberry dad
+INPUT_TEXT give dad blackberry
+CRITERIA VariableHasValueCriteria cowsIn 3
+CRITERIA VariableHasValueCriteria turkeySequenceDone 1
+CRITERIA VariableHasValueCriteria launchSequenceDone 1
+CRITERIA VariableHasValueCriteria pumpkinSequenceDone 1
+CRITERIA ObjectInInventoryCriteria Blackberry
+ACTION DisplayTextAction `Dad`"Wow, my blackberry.  Thanks Ernie!"~Ernie hears the bell ring for dinner and people coming in upstairs.
+ACTION SetVariableValueAction runEndingSequence 1
+ACTION RemoveObjectFromInventoryAction Blackberry
+ACTION RemoveObjectFromGameAction CHARACTER040310070408
+ACTION RemoveObjectFromGameAction CHARACTER030210215300
+ACTION RemoveObjectFromGameAction CHARACTER022810190514
+ACTION RemoveObjectFromGameAction CHARACTER013110212148
+ACTION RemoveObjectFromGameAction CHARACTER013110212149
+ACTION RemoveObjectFromGameAction CHARACTER041110065909
+ACTION PlaceObjectInGameAction CHARACTER032810145450 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810154041 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810154051 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810154134 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810154302 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810145406 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810145424 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810145517 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810145436 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810145509 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810150318 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810153304 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER042710215917 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER042410152939 -1 -1
+ACTION StartNextStepAction CHARACTER042410152939
+ACTION SetVariableValueAction blackBerrySequenceDone 1
+ACTION AddToScoreAction 1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT041210210802
+INPUT_TEXT dig
+ACTION DisplayTextAction Ernie can't dig when he's inside.  The floor is too hard.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510193002
+INPUT_TEXT pee
+ACTION DisplayTextAction Ernie is naughty and pees inside.  Miraculously it doesn't cause a mess, and some flowers pop up.
+ACTION SpawnCharacterAction CHARACTER021810100900 true CHARACTER111709193403 3 2
+
+INPUT_END
+
+

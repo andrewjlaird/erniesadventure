@@ -1,0 +1,323 @@
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME BlueFlag
+GUI_ID CHARACTER121509221043
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 461
+INITIAL_Y 21
+PIXELS_PER_SECOND 10
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME YellowFlag
+GUI_ID CHARACTER121509221052
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 522
+INITIAL_Y 19
+PIXELS_PER_SECOND 10
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME PinkFlag
+GUI_ID CHARACTER121509221100
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 582
+INITIAL_Y 21
+PIXELS_PER_SECOND 10
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME KQ1-Left-Tree
+GUI_ID CHARACTER121509222120
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 20
+INITIAL_Y 0
+PIXELS_PER_SECOND 10
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME Castle-Left
+GUI_ID CHARACTER121509223442
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 262
+INITIAL_Y 0
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME KQDoors
+GUI_ID CHARACTER123109073235
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 404
+INITIAL_Y 152
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER MovingCharacter
+RIGHT_SPRITE_NAME KQ1AlligatorRight
+DOWN_SPRITE_NAME KQ1AlligatorRight
+LEFT_SPRITE_NAME KQ1AlligatorLeft
+UP_SPRITE_NAME KQ1AlligatorLeft
+STOP_SPRITE_NAME KQ1AlligatorLeft
+GUI_ID CHARACTER123009080257
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE false
+INITIAL_X 227
+INITIAL_Y 406
+PIXELS_PER_SECOND 30
+BRAIN_TYPE WanderBrain
+WANDER_RATE 50
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER MovingCharacter
+RIGHT_SPRITE_NAME KQ1AlligatorRight
+DOWN_SPRITE_NAME KQ1AlligatorRight
+LEFT_SPRITE_NAME KQ1AlligatorLeft
+UP_SPRITE_NAME KQ1AlligatorLeft
+STOP_SPRITE_NAME KQ1AlligatorLeft
+GUI_ID CHARACTER123009080302
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE false
+INITIAL_X 452
+INITIAL_Y 432
+PIXELS_PER_SECOND 30
+BRAIN_TYPE WanderBrain
+WANDER_RATE 50
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER PathCharacter
+GUI_ID CHARACTER123009084140
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE false
+INITIAL_X 18
+INITIAL_Y 332
+PIXELS_PER_SECOND 30
+BRAIN_TYPE PathBrain
+PATH_FILE_NAME KQMan.psq
+
+SCENE_CHARACTER_END
+
+
+BORDER_SCENES_START
+
+leftScene UnknownScene
+rightScene KQ1-Castle-Right
+upScene UnknownScene
+downScene UnknownScene
+
+BORDER_SCENES_END
+
+
+MUSIC
+Flying.mp3
+
+
+INPUT_START
+
+EVENT_ID EVENT123109073811
+INPUT_TEXT talk man
+INPUT_TEXT talk graham
+INPUT_TEXT talk person
+CRITERIA ObjectsAreNearCriteria CHARACTER111709193403 CHARACTER123009084140 50
+ACTION DisplayTextAction `Graham`Sir Graham greets you and, after chatting for a while about the weather and both of your many adventures, he mentions he has just finished a quest and has several extra items left over from it.~`Graham`"I don't need my dagger, this fiddle, or my four leaf clover anymore.  You're welcome to pick one of them to take with you on your adventure."~`Graham`"Choose wisely my little friend. I can only give you one of them."
+ACTION AddToScoreAction 1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT123109073812
+INPUT_TEXT talk man
+INPUT_TEXT talk graham
+INPUT_TEXT talk person
+CRITERIA ObjectsAreNearCriteria NOT CHARACTER111709193403 CHARACTER123009084140 50
+ACTION DisplayTextAction Ernie is not close enough to talk to Sir Graham.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT123009084826
+INPUT_TEXT get dagger
+INPUT_TEXT choose dagger
+CRITERIA ObjectsAreNearCriteria CHARACTER111709193403 CHARACTER123009084140 50
+CRITERIA VariableHasValueCriteria grahamGaveObject 0
+ACTION DisplayTextAction Sir Graham gives you the sharp dagger and turns to enter the castle.
+ACTION StartNextStepAction CHARACTER123009084140
+ACTION RemoveObjectFromGameAction CHARACTER123109073235
+ACTION AddObjectToInventoryAction Dagger
+ACTION SetVariableValueAction grahamGaveObject 1
+ACTION AddToScoreAction 1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT123009084827
+INPUT_TEXT get clover
+INPUT_TEXT get four leaf clover
+INPUT_TEXT choose clover
+INPUT_TEXT choose four leaf clover
+CRITERIA ObjectsAreNearCriteria CHARACTER111709193403 CHARACTER123009084140 50
+CRITERIA VariableHasValueCriteria grahamGaveObject 0
+ACTION DisplayTextAction Sir Graham gives you the green four leaf clover and turns to enter the castle.
+ACTION StartNextStepAction CHARACTER123009084140
+ACTION RemoveObjectFromGameAction CHARACTER123109073235
+ACTION AddObjectToInventoryAction Clover
+ACTION SetVariableValueAction grahamGaveObject 1
+ACTION AddToScoreAction 1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT123009084828
+INPUT_TEXT get fiddle
+INPUT_TEXT choose fiddle
+CRITERIA ObjectsAreNearCriteria CHARACTER111709193403 CHARACTER123009084140 50
+CRITERIA VariableHasValueCriteria birdsFlewAway 0
+ACTION DisplayTextAction Sir Graham gives you the old fiddle and turns to enter the castle.
+ACTION StartNextStepAction CHARACTER123009084140
+ACTION RemoveObjectFromGameAction CHARACTER123109073235
+ACTION AddObjectToInventoryAction Fiddle
+ACTION SetVariableValueAction grahamGaveObject 1
+ACTION AddToScoreAction 1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT123109073452
+CRITERIA ObjectInAreaCriteria CHARACTER123009084140 455 260 475 280
+ACTION PlaceObjectInGameAction CHARACTER123109073235 -1 -1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510201855
+INPUT_TEXT look man
+CRITERIA VariableHasValueCriteria grahamGaveObject 0
+ACTION DisplayTextAction Sir Graham has returned from his journey.  He is a nice man and looks eager to talk to Ernie.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510201854
+INPUT_TEXT look castle
+ACTION DisplayTextAction There is a large grey castle.  The great door to the castle opens to the north.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510201925
+INPUT_TEXT look alligator
+INPUT_TEXT look alligators
+ACTION DisplayTextAction There are several alligators in the moat around the castle.  They don't look like they are very friendly.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510201955
+INPUT_TEXT look bridge
+ACTION DisplayTextAction The bridge over the moat is made of wood and looks strong.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510202032
+INPUT_TEXT look tree
+ACTION DisplayTextAction There is a large green tree casting some nice shade next to the castle.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510202132
+INPUT_TEXT open gate
+INPUT_TEXT open door
+ACTION DisplayTextAction Ernie is much too large to open the door to the castle.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT041210210809
+INPUT_TEXT dig
+CRITERIA ObjectInAreaCriteria CHARACTER111709193403 124 316 640 387
+ACTION DisplayTextAction Ernie can't dig when he's on the bridge.  The wood is too hard.
+
+INPUT_END

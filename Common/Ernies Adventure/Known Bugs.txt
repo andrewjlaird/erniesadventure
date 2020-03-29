@@ -1,0 +1,154 @@
+Known Bugs
+WORK AROUND IMPLEMENTED - When cows walk from north east pastures together to the west
+they can fall through the fence and end up in the south pasters.
+This may be because when they change scenes together they are
+on top of each other, and can go over borders.
+
+FIXED - Path objects don't run at start character yet
+
+FIXED - Boundary square doesn't draw on the right place
+
+FIXED - Avoid brain gets erased when edited
+
+Avoid characters get erased when edited
+
+FIXED - When follow characters are placed in game in another scene their sprites get statically placed
+on the screen even though it was in another scene.
+
+FIXED - On some scenes when sticky keys are on, ernie stops right
+after changing scenes.
+
+FIXED - Can't get fiddle from graham
+
+FIXED - Disable moving while animations are in progress
+
+FIXED - When an avoid character gets up against an angled edge, it will
+jump back and forth very fast between one direction and another
+possibly implement delay so it's not so fast.
+
+FIXED - When a cow goes back up to the north pasture after being in the south pasture - if it's being pushed against the west gate, it can get "out"
+
+FIXED - Stuck on pumpkin when ernie gives it to laura - double check all items that pop on screen
+
+FIXED - North into pasture up against east most side of gate opening - get stuck once in pasture.
+
+FIXED - Stuck on red tree in bettweenHouseAndBarn - and basketball hoop
+
+FIXED - Don't allow throw at cat before cat comes on screen.
+
+FIXED - Stuck text - more testing required
+
+FIXED - Show bird to birds
+
+FIXED - Alt / Alt Enter / Alt Esc issues - rework input
+
+Stuck when coming into living room from family room in fast mode
+
+Alt or Control followed by ESC does not register - no work around found yet in Allegro
+Bark at deer - clouds appear
+
+
+LAST STUFF
+DONE - Head comes out of porch
+DONE - If fly back with birds - move wayne's truck
+DONE - White post in S fence next to gate
+DONE - 2 Black Panther
+DONE - 1 Go to andersons and back and back to andersons on birds (multiple times)
+DONE - Add STEP to path characters so we can loop through all commands until next step
+DONE - Add rules for peeing / digging
+DONE - Make follow characters tied to scene
+DONE - Update score
+DONE - 2 Opening Sequence
+DONE - 0.5 Pipe
+DONE - 0.5 Mustache for Wayne walking
+DONE - 0.5 Henry In House
+DONE - Dig blackberry - remove black berry when gotten - develop one object going on scren where another object is
+DONE - 0.5 Give Grain
+DONE - 2 Magnet Sequence
+DONE - 2 Girls Out Front Sequence
+DONE - 3 Ernie Dig
+DONE - 2 Blackberry Sequence
+DONE - 0.5 Blackberry
+DONE - 1 Anderson Field Scene
+DONE - 1 Office Scene
+DONE - 1 The Kid's Room Scene
+DONE - 2 Lauch Sequence
+DONE - 2 Key Sequence
+DONE - 1 Hole Sequence
+DONE - 0.5 Magnet 
+DONE - 2 Joey - Andrew - Rocket Sequence
+DONE - 1 Anderson Shop Scene
+DONE - 2 Wayne Sequence
+DONE - 0.5 Turkey
+DONE - 2 Wayne and Jodie Arrive Sequence
+DONE - 4 Ending Sequence
+DONE - 1 Barn Scene
+DONE - 2 Feed Cats Sequence - Net
+DONE - 0.5 Net
+DONE - Living Room Scene
+DONE - MAY NEED REWORK - Kitchen Scene
+DONE - 2 Food Sequence
+DONE - 2 Note Sequence
+DONE - 0.5 Note
+DONE - 0.5 Key
+DONE - Ashley Room Scene
+DONE - Mom + Dad Room Scene
+DONE - 2 Fried Sequence
+DONE - Ernie Pee
+DONE - 1 Anderson Garden Scene
+DONE - 1 Anderson House Scene
+DONE - 2 Pumpkin Sequence
+DONE - 2 Jodie Sequence
+DONE - 0.5 Pumpkin
+
+---------- 
+ 
+--NICE TO HAVES - 20 Hours--
+DONE - 2 Rework Avoid Again
+DONE - 2 Check alex following everywhere
+DONE - 1 Wayne and Jodie start at truck to house
+DONE - 2 Deer Run
+DONE - 1 Dad leaves garage
+DONE - 2 Mom and Jenna walk to living room
+DONE - 2 Laura & Ashley walk to front door
+DONE - 2 Laura & Ashley leave hay bales
+DONE - 2 Dad leaves scene to east after cows done
+DONE - Ernie Howl
+DONE - Change barn bushes color
+DONE - Eat leaves
+DONE - Science Box layering issue
+DONE - 16 Time Of Day Shading
+
+PENDING - Talk to Henry (in house)
+PENDING - No digging on back porch
+DONE - Chairs on back porch
+DONE - Ashley and Laura come in to horseshoe too soon
+
+DONE - Sky Everywhere
+DONE - Dad Walks from Chair
+DONE - Credits
+
+DONE - If Alex / Stephen are following - cat doesn't hurt ernie.
+DONE - Wayne Mostache Right with Turkey
+DONE - 2 Change moods of character faces
+DONE - 3 Henry leaves scene
+DONE - Jesse Sequence
+DONE -  Something for Mailbox
+
+Layering issues in ashley's room
+Layering issues with red tree
+
+1 Willcox's go upstairs
+2 Cat eats
+3 Friedrich riding
+
+2 Cows walk into corral
+Move 1st cow closer
+Following characters leave scene when bell rings
+3 Rework note getting
+2 Piano Sequence
+Ernie sneeze
+Back door / front doors open
+
+4 Rework Shading
+Bathrooms - Henry in tub

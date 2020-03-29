@@ -1,0 +1,758 @@
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME DiningTable
+GUI_ID CHARACTER022210202217
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 337
+INITIAL_Y 255
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME MomWriting
+GUI_ID CHARACTER022710184446
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 380
+INITIAL_Y 215
+PIXELS_PER_SECOND 10
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME AshleyCutting
+GUI_ID CHARACTER022710221155
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 336
+INITIAL_Y 246
+PIXELS_PER_SECOND 10
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME MomCutting
+GUI_ID CHARACTER030210215300
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME false
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 336
+INITIAL_Y 246
+PIXELS_PER_SECOND 10
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME JennaRolling
+GUI_ID CHARACTER022810190514
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 410
+INITIAL_Y 222
+PIXELS_PER_SECOND 20
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER PathCharacter
+GUI_ID CHARACTER022810193825
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME false
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 375
+INITIAL_Y 300
+PIXELS_PER_SECOND 60
+BRAIN_TYPE PathBrain
+PATH_FILE_NAME GreenBeansFalling.psq
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME Note
+GUI_ID CHARACTER022810204856
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME false
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 224
+INITIAL_Y 275
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME Books
+GUI_ID CHARACTER022810205401
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 225
+INITIAL_Y 275
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER PathCharacter
+GUI_ID CHARACTER022810211022
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME false
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 390
+INITIAL_Y 310
+PIXELS_PER_SECOND 45
+BRAIN_TYPE PathBrain
+PATH_FILE_NAME MomCarryNote.psq
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME LauraMixing
+GUI_ID CHARACTER022810215050
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 472
+INITIAL_Y 241
+PIXELS_PER_SECOND 15
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER PathCharacter
+GUI_ID CHARACTER030210205619
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME false
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 340
+INITIAL_Y 336
+PIXELS_PER_SECOND 45
+BRAIN_TYPE PathBrain
+PATH_FILE_NAME AshleyDownKitchen.psq
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER PathCharacter
+GUI_ID CHARACTER030210205639
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME false
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 500
+INITIAL_Y 336
+PIXELS_PER_SECOND 45
+BRAIN_TYPE PathBrain
+PATH_FILE_NAME LauraDownKitchen.psq
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER PathCharacter
+GUI_ID CHARACTER030210205640
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME false
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 350
+INITIAL_Y 340
+PIXELS_PER_SECOND 45
+BRAIN_TYPE PathBrain
+PATH_FILE_NAME MomWalkLivingRoom.psq
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER PathCharacter
+GUI_ID CHARACTER030210205641
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME false
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 430
+INITIAL_Y 312
+PIXELS_PER_SECOND 45
+BRAIN_TYPE PathBrain
+PATH_FILE_NAME JennaWalkLivingRoom.psq
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME SweetPotatoBowl
+GUI_ID CHARACTER030210213600
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME false
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 475
+INITIAL_Y 264
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME BeansBowl
+GUI_ID CHARACTER030210213629
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME false
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 362
+INITIAL_Y 277
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+BORDER_SCENES_START
+
+leftScene UnknownScene
+rightScene UnknownScene
+upScene UnknownScene
+downScene HouseLivingRoom
+
+BORDER_SCENES_END
+
+
+MUSIC
+InTheHouse.mp3
+
+
+INPUT_START
+
+EVENT_ID EVENT022810201528
+INPUT_TEXT get green beans
+INPUT_TEXT get beans
+CRITERIA ObjectInCurrentSceneCriteria CHARACTER022810193825
+ACTION RemoveObjectFromGameAction CHARACTER022810193825
+ACTION AddObjectToInventoryAction Green Beans
+ACTION DisplayTextAction Ernie picks up the green beans from the ground.
+ACTION AddToScoreAction 1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT022810201529
+INPUT_TEXT get note
+CRITERIA ObjectInCurrentSceneCriteria CHARACTER022810204856
+ACTION RemoveObjectFromGameAction CHARACTER022810204856
+ACTION AddObjectToInventoryAction Note
+ACTION DisplayTextAction Ernie carefully picks up the note.
+ACTION AddToScoreAction 1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT030410190600
+CRITERIA ObjectInAreaCriteria CHARACTER022810211022 351 335 357 340
+ACTION RemoveObjectFromGameAction CHARACTER030210213629
+ACTION PlaceObjectInGameAction CHARACTER030210215300 -1 -1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT030410190601
+CRITERIA ObjectInAreaCriteria CHARACTER022810211022 250 308 252 312
+ACTION PlaceObjectInGameAction CHARACTER022810204856 -1 -1
+ACTION DisplayTextAction Mom places the note on the books by the door and returns to the table to chop some more green beans.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT022810194056
+INPUT_TEXT talk women
+INPUT_TEXT bark women
+INPUT_TEXT talk ashley
+INPUT_TEXT bark ashley
+CRITERIA ObjectInCurrentSceneCriteria CHARACTER022710221155
+ACTION RemoveObjectFromGameAction CHARACTER022710184446
+ACTION PlaceObjectInGameAction CHARACTER022810211022 -1 -1
+ACTION StartNextStepAction CHARACTER022810211022
+ACTION RemoveObjectFromGameAction CHARACTER022710221155
+ACTION PlaceObjectInGameAction CHARACTER030210205619 -1 -1
+ACTION StartNextStepAction CHARACTER030210205619
+ACTION RemoveObjectFromGameAction CHARACTER022810215050
+ACTION PlaceObjectInGameAction CHARACTER030210205639 -1 -1
+ACTION StartNextStepAction CHARACTER030210205639
+ACTION PlaceObjectInGameAction CHARACTER030210213600 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER030210213629 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER022810193825 -1 -1
+ACTION StartNextStepAction CHARACTER022810193825
+ACTION PlaceObjectInGameAction CHARACTER040110201231 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER040110201245 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER040110201237 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER040110201627 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER040110202810 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER040110205007 -1 -1
+ACTION SetVariableValueAction talkedGirlsKitchen 1
+ACTION DisplayTextAction `Ashley`"Oh, hi Ernie," said Ashley. "Well Laura, are you ready to head outside?"~`Laura`"Yup I'm just finishing up.  We'll be outside."~`Jenna`"Ok," Jenna says.  "I'll finish up my apple pie and then put it in the oven."~`Mom`"I'll put this note aside and finish up the green been casserole," Mom says.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510195200
+INPUT_TEXT talk mom
+INPUT_TEXT bark mom
+CRITERIA ObjectInCurrentSceneCriteria CHARACTER022710184446
+ACTION RemoveObjectFromGameAction CHARACTER022710184446
+ACTION PlaceObjectInGameAction CHARACTER022810211022 -1 -1
+ACTION StartNextStepAction CHARACTER022810211022
+ACTION RemoveObjectFromGameAction CHARACTER022710221155
+ACTION PlaceObjectInGameAction CHARACTER030210205619 -1 -1
+ACTION StartNextStepAction CHARACTER030210205619
+ACTION RemoveObjectFromGameAction CHARACTER022810215050
+ACTION PlaceObjectInGameAction CHARACTER030210205639 -1 -1
+ACTION StartNextStepAction CHARACTER030210205639
+ACTION PlaceObjectInGameAction CHARACTER030210213600 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER030210213629 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER022810193825 -1 -1
+ACTION StartNextStepAction CHARACTER022810193825
+ACTION PlaceObjectInGameAction CHARACTER040110201231 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER040110201245 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER040110201237 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER040110201627 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER040110202810 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER040110205007 -1 -1
+ACTION SetVariableValueAction talkedGirlsKitchen 1
+ACTION DisplayTextAction `Mom`"Oh, hi Ernie," said Mom.~`Ashley`"Well Laura, are you ready to head outside?" Ashley said.~`Laura`"Yup I'm just finishing up.  We'll be outside." As Ashley walks away from the table she brushes some green beans onto the ground.~`Jenna`"Ok," Jenna says.  "I'll finish up my apple pie and then put it in the oven."~`Mom`"I'll put this note aside and finish up the green been casserole," Mom says.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510195201
+INPUT_TEXT talk jenna
+INPUT_TEXT bark jenna
+CRITERIA ObjectInCurrentSceneCriteria CHARACTER022710221155
+ACTION RemoveObjectFromGameAction CHARACTER022710184446
+ACTION PlaceObjectInGameAction CHARACTER022810211022 -1 -1
+ACTION StartNextStepAction CHARACTER022810211022
+ACTION RemoveObjectFromGameAction CHARACTER022710221155
+ACTION PlaceObjectInGameAction CHARACTER030210205619 -1 -1
+ACTION StartNextStepAction CHARACTER030210205619
+ACTION RemoveObjectFromGameAction CHARACTER022810215050
+ACTION PlaceObjectInGameAction CHARACTER030210205639 -1 -1
+ACTION StartNextStepAction CHARACTER030210205639
+ACTION PlaceObjectInGameAction CHARACTER030210213600 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER030210213629 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER022810193825 -1 -1
+ACTION StartNextStepAction CHARACTER022810193825
+ACTION PlaceObjectInGameAction CHARACTER040110201231 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER040110201245 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER040110201237 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER040110201627 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER040110202810 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER040110205007 -1 -1
+ACTION SetVariableValueAction talkedGirlsKitchen 1
+ACTION DisplayTextAction `Jenna`"Oh, hi Ernie," said Jenna.~`Ashley`"Well Laura, are you ready to head outside?" Ashley said.~`Laura`"Yup I'm just finishing up.  We'll be outside." As Ashley walks away from the table she brushes some green beans onto the ground.~`Jenna`"Ok," Jenna says.  "I'll finish up my apple pie and then put it in the oven."~`Mom`"I'll put this note aside and finish up the green been casserole," Mom says.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510195202
+INPUT_TEXT talk laura
+INPUT_TEXT bark laura
+CRITERIA ObjectInCurrentSceneCriteria CHARACTER022810215050
+ACTION RemoveObjectFromGameAction CHARACTER022710184446
+ACTION PlaceObjectInGameAction CHARACTER022810211022 -1 -1
+ACTION StartNextStepAction CHARACTER022810211022
+ACTION RemoveObjectFromGameAction CHARACTER022710221155
+ACTION PlaceObjectInGameAction CHARACTER030210205619 -1 -1
+ACTION StartNextStepAction CHARACTER030210205619
+ACTION RemoveObjectFromGameAction CHARACTER022810215050
+ACTION PlaceObjectInGameAction CHARACTER030210205639 -1 -1
+ACTION StartNextStepAction CHARACTER030210205639
+ACTION PlaceObjectInGameAction CHARACTER030210213600 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER030210213629 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER022810193825 -1 -1
+ACTION StartNextStepAction CHARACTER022810193825
+ACTION PlaceObjectInGameAction CHARACTER040110201231 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER040110201245 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER040110201237 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER040110201627 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER040110202810 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER040110205007 -1 -1
+ACTION SetVariableValueAction talkedGirlsKitchen 1
+ACTION DisplayTextAction `Laura`"Oh, hi Ernie," said Laura. "Well Ashley, are you ready to head outside?"~`Ashley`"Yup I'm just finishing up.  We'll be outside." As Ashley walks away from the table she brushes some green beans onto the ground.~`Jenna`"Ok," Jenna says.  "I'll finish up my apple pie and then put it in the oven."~`Mom`"I'll put this note aside and finish up the green been casserole," Mom says.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT030410191557
+CRITERIA VariableHasValueCriteria inKitchenFirstTime 0
+CRITERIA ObjectInAreaCriteria CHARACTER111709193403 100 0 600 380
+ACTION SetVariableValueAction inKitchenFirstTime 1
+ACTION DisplayTextAction `Ashley`"These green beans are going to taste real good in the casserole" Ashley says.  "How are the sweet potatoes coming, Laura?"~`Laura`"Almost done," Laura responds.  "When we finish up do you want to go outside and set up a harvest display?"~`Ashley`"Sure.  What are you writing Mom?"~`MomSad`"I've been trying to think of someone that would like to come to Thanksgiving with us" Mom said. "I just enjoy sharing the event with friends so much."~`MomSad`"But I can't think of anyone.  I wrote this note in the hopes that I would think of someone while I wrote it, but I just don't know.  And without a turkey, Thanksgiving just won't be the same anyway."
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510193836
+INPUT_TEXT look table
+ACTION DisplayTextAction The kitchen table has several dishes of food on them being prepared for Thanksgiving.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510193945
+INPUT_TEXT look books
+INPUT_TEXT look book
+ACTION DisplayTextAction There is a stack of books on the floor by the door.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510194038
+INPUT_TEXT look oven
+INPUT_TEXT look sink
+INPUT_TEXT look cabinets
+INPUT_TEXT look cabinet
+INPUT_TEXT look dishwasher
+INPUT_TEXT look dish washer
+ACTION DisplayTextAction Ernie is in the kitchen and is surrounded by many kitchen appliances.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510194138
+INPUT_TEXT look door
+ACTION DisplayTextAction There is a door to the back porch out of the kitchen.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510194201
+INPUT_TEXT look window
+ACTION DisplayTextAction The window to the north shows the back porch and beyond it, the back yard and pasture.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510194245
+INPUT_TEXT look women
+INPUT_TEXT look woman
+ACTION DisplayTextAction The ladies are working on the Thanksgiving meal.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510195617
+INPUT_TEXT look mom
+CRITERIA ObjectInCurrentSceneCriteria CHARACTER030210215300
+ACTION DisplayTextAction Mom is working to finish the green beans.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510195733
+INPUT_TEXT look jenna
+ACTION DisplayTextAction Jenna is working to finish her pie.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510195618
+INPUT_TEXT look mom
+CRITERIA ObjectInCurrentSceneCriteria CHARACTER022710184446
+ACTION DisplayTextAction Mom is writing a letter inviting someone to come to Thanksgiving.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510195619
+INPUT_TEXT look laura
+CRITERIA ObjectInCurrentSceneCriteria CHARACTER022810215050
+ACTION DisplayTextAction Laura is working on the sweet potatoes.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510195620
+INPUT_TEXT look ashley
+CRITERIA ObjectInCurrentSceneCriteria CHARACTER022710221155
+ACTION DisplayTextAction Ashley is cutting green beans.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510194326
+INPUT_TEXT look beans
+CRITERIA ObjectInCurrentSceneCriteria CHARACTER022810193825
+ACTION DisplayTextAction There are several green beans lying on the floor.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510194604
+INPUT_TEXT look floor
+CRITERIA ObjectInCurrentSceneCriteria CHARACTER022810193825
+ACTION DisplayTextAction There are several green beans on the floor.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510194823
+INPUT_TEXT look note
+CRITERIA ObjectInCurrentSceneCriteria CHARACTER022810204856
+ACTION DisplayTextAction Mom's note inviting someone to her Thanksgiving meal is laying on the stack of books.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510194504
+INPUT_TEXT look
+ACTION DisplayTextAction Ernie is in the kitchen.  There is a table with several dishes for Thanksgiving on it and the ladies are working on the meal.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510195616
+INPUT_TEXT talk mom
+INPUT_TEXT bark mom
+CRITERIA ObjectInCurrentSceneCriteria CHARACTER030210215300
+ACTION DisplayTextAction `Mom`"Hi Ernie, the girls are outside if you are looking for them.  I've got to get these green beans finished up."
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510195732
+INPUT_TEXT talk jenna
+INPUT_TEXT bark jenna
+CRITERIA ObjectInCurrentSceneCriteria NOT CHARACTER022710221155
+ACTION DisplayTextAction `Jenna`"Hi Ernie.  Henry is around here somewhere.  Go play with him, I've got to finish this pie."
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032810154525
+INPUT_TEXT give turkey jenna
+INPUT_TEXT give jenna turkey
+CRITERIA ObjectInInventoryCriteria Turkey
+ACTION DisplayTextAction Mom needs the turkey, not Jenna.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032810154519
+INPUT_TEXT give turkey mom
+INPUT_TEXT give mom turkey
+CRITERIA ObjectInInventoryCriteria Turkey
+CRITERIA VariableHasValueCriteria launchSequenceDone 1
+CRITERIA VariableHasValueCriteria pumpkinSequenceDone 1
+CRITERIA VariableHasValueCriteria blackBerrySequenceDone 1
+ACTION DisplayTextAction `Mom`Mom is overjoyed at the site of a nicely cooked turkey. "Now we can have turkey for Thanksgiving after all!"~Mom rings the bell for dinner and Ernie hears people shuffling into the living room.
+ACTION SetVariableValueAction turkeySequenceDone 1
+ACTION SetVariableValueAction runEndingSequence 1
+ACTION RemoveObjectFromGameAction CHARACTER030210215300
+ACTION RemoveObjectFromGameAction CHARACTER022810190514
+ACTION RemoveObjectFromGameAction CHARACTER013110212148
+ACTION RemoveObjectFromGameAction CHARACTER013110212149
+ACTION RemoveObjectFromGameAction CHARACTER041110065909
+ACTION PlaceObjectInGameAction CHARACTER032810145450 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810154041 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810154051 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810154134 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810154302 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810145406 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810145424 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810145517 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810145436 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810145509 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810150318 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810153304 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER042710215917 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER030210205640 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER030210205641 -1 -1
+ACTION StartNextStepAction CHARACTER030210205641
+ACTION RemoveObjectFromInventoryAction Turkey
+ACTION AddToScoreAction 1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT0328101545217
+INPUT_TEXT test
+ACTION RemoveObjectFromGameAction CHARACTER030210215300
+ACTION RemoveObjectFromGameAction CHARACTER022810190514
+ACTION PlaceObjectInGameAction CHARACTER030210205640 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER030210205641 -1 -1
+ACTION StartNextStepAction CHARACTER030210205641
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032810154520
+INPUT_TEXT give turkey mom
+INPUT_TEXT give mom turkey
+CRITERIA ObjectInInventoryCriteria Turkey
+CRITERIA VariableHasValueCriteria launchSequenceDone 0
+ACTION DisplayTextAction `Mom`Mom is overjoyed at the site of a nicely cooked turkey. "Now we can have turkey for Thanksgiving after all!"
+ACTION SetVariableValueAction turkeySequenceDone 1
+ACTION RemoveObjectFromInventoryAction Turkey
+ACTION AddToScoreAction 1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032810154521
+INPUT_TEXT give turkey mom
+INPUT_TEXT give mom turkey
+CRITERIA ObjectInInventoryCriteria Turkey
+CRITERIA VariableHasValueCriteria pumpkinSequenceDone 0
+ACTION DisplayTextAction `Mom`Mom is overjoyed at the site of a nicely cooked turkey. "Now we can have turkey for Thanksgiving after all!"
+ACTION SetVariableValueAction turkeySequenceDone 1
+ACTION RemoveObjectFromInventoryAction Turkey
+ACTION AddToScoreAction 1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032810154522
+INPUT_TEXT give turkey mom
+INPUT_TEXT give mom turkey
+CRITERIA ObjectInInventoryCriteria Turkey
+CRITERIA VariableHasValueCriteria blackBerrySequenceDone 0
+ACTION DisplayTextAction `Mom`Mom is overjoyed at the site of a nicely cooked turkey. "Now we can have turkey for Thanksgiving after all!"
+ACTION SetVariableValueAction turkeySequenceDone 1
+ACTION RemoveObjectFromInventoryAction Turkey
+ACTION AddToScoreAction 1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT041210210804
+INPUT_TEXT dig
+ACTION DisplayTextAction Ernie can't dig when he's inside.  The floor is too hard.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510193004
+INPUT_TEXT pee
+ACTION DisplayTextAction Ernie is naughty and pees inside.  Miraculously it doesn't cause a mess, and some flowers pop up.
+ACTION SpawnCharacterAction CHARACTER021810100900 true CHARACTER111709193403 3 2
+
+INPUT_END
+
+

@@ -1,0 +1,16 @@
+SET_SPRITE StormClouds true
+IGNORE_BORDERS 
+PPS 2
+MOVE_TO_RELATIVE -26 0
+SET_SPRITE StormCloudsLightning true
+WAIT 0.05
+SET_SPRITE StormClouds true
+WAIT 0.05
+SET_SPRITE StormCloudsLightning true
+WAIT 0.3
+SET_SPRITE StormClouds true
+WAIT 0.05
+SET_SPRITE StormCloudsLightning true
+WAIT 0.05
+SET_SPRITE StormClouds true
+MOVE_TO_RELATIVE -100 0

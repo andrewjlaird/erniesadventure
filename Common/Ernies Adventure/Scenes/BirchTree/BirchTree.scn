@@ -1,0 +1,754 @@
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME Grass
+GUI_ID CHARACTER111709193216
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 90
+INITIAL_Y 339
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME Grass
+GUI_ID CHARACTER111709193218
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 124
+INITIAL_Y 453
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME Grass
+GUI_ID CHARACTER111709193219
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 546
+INITIAL_Y 299
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME Grass
+GUI_ID CHARACTER111709193220
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 565
+INITIAL_Y 429
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME Grass
+GUI_ID CHARACTER111709193221
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 547
+INITIAL_Y 419
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME Grass
+GUI_ID CHARACTER111709193222
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 535
+INITIAL_Y 441
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME BlueSpruce
+GUI_ID CHARACTER111709193213
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 27
+INITIAL_Y 284
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME BlueSpruce
+GUI_ID CHARACTER111709193214
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 154
+INITIAL_Y 226
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME Grass
+GUI_ID CHARACTER111709193217
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 270
+INITIAL_Y 388
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME LaunchPad
+GUI_ID CHARACTER012610213038
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME false
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 486
+INITIAL_Y 268
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME AndrewKneel
+GUI_ID CHARACTER021310225212
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME false
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 443
+INITIAL_Y 329
+PIXELS_PER_SECOND 30
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME LaunchLine
+GUI_ID CHARACTER033010202429
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME false
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 392
+INITIAL_Y 332
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME BirchTree
+GUI_ID CHARACTER111709193215
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME true
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 229
+INITIAL_Y 128
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME Laptop
+GUI_ID CHARACTER033010205832
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME false
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 380
+INITIAL_Y 409
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME JoeyStand
+GUI_ID CHARACTER033010210641
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME false
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 483
+INITIAL_Y 308
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER PathCharacter
+GUI_ID CHARACTER033010203524
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME false
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 460
+INITIAL_Y 390
+PIXELS_PER_SECOND 45
+BRAIN_TYPE PathBrain
+PATH_FILE_NAME AndrewToLaunchButton.psq
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME JoeyTall
+GUI_ID CHARACTER033010211903
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME false
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 482
+INITIAL_Y 285
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME JoeyShort
+GUI_ID CHARACTER033010211912
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME false
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 482
+INITIAL_Y 343
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER PathCharacter
+GUI_ID CHARACTER033010210956
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME false
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 526
+INITIAL_Y 331
+PIXELS_PER_SECOND 200
+BRAIN_TYPE PathBrain
+PATH_FILE_NAME RocketLaunch.psq
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER PathCharacter
+GUI_ID CHARACTER040110185420
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME false
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 371
+INITIAL_Y 418
+PIXELS_PER_SECOND 45
+BRAIN_TYPE PathBrain
+PATH_FILE_NAME AndrewOffScreen.psq
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER PathCharacter
+GUI_ID CHARACTER040110185538
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME false
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 508
+INITIAL_Y 403
+PIXELS_PER_SECOND 45
+BRAIN_TYPE PathBrain
+PATH_FILE_NAME JoeyOffScreen.psq
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER MovingCharacter
+RIGHT_SPRITE_NAME AlexRight
+DOWN_SPRITE_NAME AlexDown
+LEFT_SPRITE_NAME AlexLeft
+UP_SPRITE_NAME AlexUp
+STOP_SPRITE_NAME AlexStand
+GUI_ID CHARACTER013110212148
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME false
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 227
+INITIAL_Y 370
+PIXELS_PER_SECOND 50
+BRAIN_TYPE FollowBrain
+CHARACTER_TO_FOLLOW CHARACTER111709193403
+DISTANCE 30
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER MovingCharacter
+RIGHT_SPRITE_NAME StephenRight
+DOWN_SPRITE_NAME StephenDown
+LEFT_SPRITE_NAME StephenLeft
+UP_SPRITE_NAME StephenUp
+STOP_SPRITE_NAME StephenStand
+GUI_ID CHARACTER013110212149
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME false
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 271
+INITIAL_Y 320
+PIXELS_PER_SECOND 52
+BRAIN_TYPE FollowBrain
+CHARACTER_TO_FOLLOW CHARACTER111709193403
+DISTANCE 30
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME AndrewSit
+GUI_ID CHARACTER042510212352
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME false
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 349
+INITIAL_Y 348
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME AndrewWatchRocket
+GUI_ID CHARACTER042510212405
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME false
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 349
+INITIAL_Y 325
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME JoeyWatchRocket
+GUI_ID CHARACTER042510212412
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME false
+CHARACTER_TIED_TO_SCENE true
+INITIAL_X 498
+INITIAL_Y 310
+PIXELS_PER_SECOND 1
+
+SCENE_CHARACTER_END
+
+
+SCENE_CHARACTER_START
+
+BASE_CHARACTER BasicCharacter
+SPRITE_NAME JoeyKneel
+GUI_ID CHARACTER032910215520
+INITIAL_MAIN_CHARACTER false
+INITIAL_ON_SCREEN false
+INITIAL_IN_GAME false
+CHARACTER_TIED_TO_SCENE false
+INITIAL_X 482
+INITIAL_Y 345
+PIXELS_PER_SECOND 16
+
+SCENE_CHARACTER_END
+
+
+BORDER_SCENES_START
+
+leftScene BehindBarn
+rightScene BehindHouse
+upScene UnknownScene
+downScene BetweenBarnAndHouse
+
+BORDER_SCENES_END
+
+
+MUSIC
+OnTheFarm.mp3
+
+
+INPUT_START
+
+EVENT_ID EVENT121709210652693
+INPUT_TEXT look trees
+ACTION DisplayTextAction There are pine trees and a large birch tree next to the white fence.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT121709210652968
+INPUT_TEXT look birch tree
+ACTION DisplayTextAction The birch tree is tall and has light green leaves.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT12170921065319
+INPUT_TEXT look fence
+ACTION DisplayTextAction The fence is white and runs east and west.  It looks hard to get through.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510192402
+INPUT_TEXT look launch pad
+INPUT_TEXT look launch stand
+INPUT_TEXT look pad
+CRITERIA ObjectInCurrentSceneCriteria CHARACTER012610213038
+ACTION DisplayTextAction There is a launch pad next to Andrew and Joey.  It is used to launch model rockets.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032510192537
+INPUT_TEXT look Andrew
+INPUT_TEXT look Joey
+INPUT_TEXT look man
+INPUT_TEXT look men
+CRITERIA ObjectInCurrentSceneCriteria CHARACTER021310225212
+ACTION DisplayTextAction Andrew and Joey are working to launch a model rocket.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT12170921065360
+INPUT_TEXT look
+ACTION DisplayTextAction Ernie is on top of a hill.  A white fence blocks access to the field to the north.  Fields and rolling hills are visible to the far north.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT12170921065361
+INPUT_TEXT talk joey
+CRITERIA ObjectInCurrentSceneCriteria CHARACTER032910215520
+ACTION DisplayTextAction `Joey`"Hey Ernie," Joey says, "we're just working on getting this rocket ready to launch.~`Andrew`"Ok, looks like we're ready," Andrew says. "Put the rocket on the pad and let's launch it."
+ACTION StartNextStepAction CHARACTER033010203524
+ACTION PlaceObjectInGameAction CHARACTER033010203524 -1 -1
+ACTION RemoveObjectFromGameAction CHARACTER021310225212
+ACTION PlaceObjectInGameAction CHARACTER033010210641 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER033010210956 -1 -1
+ACTION RemoveObjectFromGameAction CHARACTER032910215520
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT12170921065362
+INPUT_TEXT talk andrew
+INPUT_TEXT talk boy
+INPUT_TEXT talk man
+CRITERIA ObjectInCurrentSceneCriteria CHARACTER021310225212
+ACTION DisplayTextAction `Andrew`"Hey Ernie," Andrew says, "we're just working on getting this rocket ready to launch.~`Andrew`"Ok, looks like we're ready. Joey, why don't you put the rocket on the pad and let's launch it."
+ACTION StartNextStepAction CHARACTER033010203524
+ACTION PlaceObjectInGameAction CHARACTER033010203524 -1 -1
+ACTION RemoveObjectFromGameAction CHARACTER021310225212
+ACTION PlaceObjectInGameAction CHARACTER033010210641 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER033010210956 -1 -1
+ACTION RemoveObjectFromGameAction CHARACTER032910215520
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT033010212205
+CRITERIA ObjectInAreaCriteria CHARACTER033010203524 365 420 395 430
+CRITERIA VariableHasValueCriteria movedToButton 0
+ACTION SetVariableValueAction movedToButton 1
+ACTION DisplayTextAction `AndrewThinking`"Where's the launch key?  We can't launch without the launch key!"~`Joey`"Did we ever have it with us?" Joey asks.~`AndrewThinking`"Hmm, actually, I think I must have forgotten to write the key into the game."~`JoeyMad`"...what?!?"~`Andrew`"This is all inside Ernie's Adventure.  You're in the game, I'm in the game, this is all in the game."~`Joey`"Really? So...I'm not real then?"~`Andrew`"You're real in the game.  You can do some neat stuff if you're in a game though.  Check this out."
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT033010214840
+CRITERIA ObjectInAreaCriteria CHARACTER033010211903 200 200 640 480
+CRITERIA VariableHasValueCriteria movedToButton 1
+ACTION SetVariableValueAction movedToButton 2
+ACTION DisplayTextAction `Joey`"Whoa, I'm tall!"~`Andrew`"Cool huh?  And check this out."
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT033010214841
+CRITERIA ObjectInAreaCriteria CHARACTER033010211912 200 200 640 480
+CRITERIA VariableHasValueCriteria movedToButton 2
+ACTION SetVariableValueAction movedToButton 3
+ACTION DisplayTextAction `JoeyMad`"Hmm, make me normal again."~`Andrew`"Ok hold on..."
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT0330102148411
+CRITERIA ObjectInAreaCriteria CHARACTER033010210641 200 200 640 480
+CRITERIA VariableHasValueCriteria movedToButton 3
+ACTION SetVariableValueAction movedToButton 4
+ACTION DisplayTextAction `Andrew`"Anyway, I think I just forgot to add the key to the game."~`Andrew`"Whoa! The laptop just ran out of battery. Well I think I got it added somewhere in the front yard."~`JoeyMad`"...in the front yard?"~`AndrewThinking`"Yeah, I think so."~`JoeyMad`"So wait, we're in your game right?"~`AndrewThinking`"Yup."~`JoeyMad`"And you get to program where everything is, right?"~`Andrew`"Uh huh."~`Joey`"Sooo...why didn't you put the key right next to us?"~`AndrewThinking`"...hmm...good point.  Too bad the laptop is out of battery."~`Joey`"I guess we'll just have to figure out where the key ended up."~`Andrew`"How about this, Ernie, can you go see if you can find the key?"
+ACTION PlaceObjectInGameAction CHARACTER033110211811 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER042510212352 -1 -1
+ACTION RemoveObjectFromGameAction CHARACTER033010203524
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT033110222702
+INPUT_TEXT give key andrew
+INPUT_TEXT give key joey
+INPUT_TEXT give andrew key
+INPUT_TEXT give joey key
+CRITERIA ObjectInInventoryCriteria Launch Key
+ACTION DisplayTextAction Ernie gives the key to Andrew.~`Andrew`"Thanks Ernie, now we can launch our rocket.  All clear, 5, 4, 3..."
+ACTION RemoveObjectFromInventoryAction Launch Key
+ACTION StartNextStepAction CHARACTER033010210956
+ACTION RemoveObjectFromGameAction CHARACTER042510212352
+ACTION RemoveObjectFromGameAction CHARACTER033010210641
+ACTION PlaceObjectInGameAction CHARACTER040110185420 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER040110185538 -1 -1
+ACTION AddToScoreAction 1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT040110190319
+CRITERIA ObjectInAreaCriteria CHARACTER033010210956 630 0 640 480
+ACTION DisplayTextAction `Andrew`"Very nice!"
+ACTION StartNextStepAction CHARACTER040110185420
+ACTION StartNextStepAction CHARACTER040110185538
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT040110190659
+CRITERIA ObjectInAreaCriteria CHARACTER040110185420 610 0 640 480
+CRITERIA VariableHasValueCriteria turkeySequenceDone 1
+CRITERIA VariableHasValueCriteria pumpkinSequenceDone 1
+CRITERIA VariableHasValueCriteria blackBerrySequenceDone 1
+ACTION DisplayTextAction Ernie hears the bell ring from the house and Mom shouts that it's dinner time.~`Andrew`"We will have to get the rocket after dinner," Andrew says.~`Joey`"It was a perfect flight! We know right where it landed, so that should be fine."
+ACTION SetVariableValueAction launchSequenceDone 1
+ACTION SetVariableValueAction runEndingSequence 1
+ACTION RemoveObjectFromGameAction CHARACTER030210215300
+ACTION RemoveObjectFromGameAction CHARACTER022810190514
+ACTION RemoveObjectFromGameAction CHARACTER013110212148
+ACTION RemoveObjectFromGameAction CHARACTER013110212149
+ACTION RemoveObjectFromGameAction CHARACTER041110065909
+ACTION PlaceObjectInGameAction CHARACTER032810145450 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810154041 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810154051 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810154134 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810154302 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810145406 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810145424 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810145517 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810145436 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810145509 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810150318 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER032810153304 -1 -1
+ACTION PlaceObjectInGameAction CHARACTER042710215917 -1 -1
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT040110190660
+CRITERIA ObjectInAreaCriteria CHARACTER040110185420 610 0 640 480
+CRITERIA VariableHasValueCriteria turkeySequenceDone 0
+ACTION SetVariableValueAction launchSequenceDone 1
+ACTION DisplayTextAction `Joey`That was a perfect flight.  I saw right where it landed so it should be easy find."~`Andrew`"Let's go get it!"
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT040110190661
+CRITERIA ObjectInAreaCriteria CHARACTER040110185420 610 0 640 480
+CRITERIA VariableHasValueCriteria pumpkinSequenceDone 0
+ACTION SetVariableValueAction launchSequenceDone 1
+ACTION DisplayTextAction `Joey`That was a perfect flight. I saw right where it landed so it should be find.~`Andrew`"Let's go get it!"
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT040110190662
+CRITERIA ObjectInAreaCriteria CHARACTER040110185420 610 0 640 480
+CRITERIA VariableHasValueCriteria blackBerrySequenceDone 0
+ACTION SetVariableValueAction launchSequenceDone 1
+ACTION DisplayTextAction `Joey`That was a perfect flight. I saw right where it landed so it should be find.~`Andrew`"Let's go get it!"
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT040810215257
+INPUT_TEXT talk joey
+CRITERIA ObjectInCurrentSceneCriteria CHARACTER033010210641
+ACTION DisplayTextAction `Joey`"Hey Ernie," Joey says, "can you help us find the launch key?"
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT040810215343
+INPUT_TEXT talk andrew
+INPUT_TEXT talk boy
+INPUT_TEXT talk man
+CRITERIA ObjectInCurrentSceneCriteria CHARACTER033010210641
+ACTION DisplayTextAction `Andrew`"Hey Ernie," Andrew says, "can you help us find the launch key?"
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT040810215506
+INPUT_TEXT give magnet andrew
+INPUT_TEXT give andrew magnet
+INPUT_TEXT give joey magnet
+INPUT_TEXT give magnet joey
+INPUT_TEXT give andrew key
+INPUT_TEXT give key andrew
+INPUT_TEXT give joey key
+INPUT_TEXT give key joey
+CRITERIA ObjectInInventoryCriteria Magnet & Key
+ACTION DisplayTextAction Andrew needs the launch key without the magnet.  See if you can separate them.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT040810215555
+INPUT_TEXT give magnet andrew
+INPUT_TEXT give andrew magnet
+INPUT_TEXT give joey magnet
+INPUT_TEXT give magnet joey
+CRITERIA ObjectInInventoryCriteria Magnet
+ACTION DisplayTextAction Andrew needs the launch key, not the magnet.
+
+INPUT_END
+
+
