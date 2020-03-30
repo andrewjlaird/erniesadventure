@@ -10,6 +10,27 @@
             <header-extensions>h</header-extensions>
             <sourceEncoding>UTF-8</sourceEncoding>
             <make-dep-projects/>
+            <sourceRootList>
+                <sourceRootElem>../../Common/Ernies Adventure/ErniesAdventureCode/inc</sourceRootElem>
+                <sourceRootElem>../../Common/Ernies Adventure/SceneWriter2Code/inc</sourceRootElem>
+                <sourceRootElem>../../Common/Ernies Adventure/ErniesAdventureCode/src</sourceRootElem>
+                <sourceRootElem>../../Common/Ernies Adventure/SceneWriter2Code/src</sourceRootElem>
+                <sourceRootElem>C:/Users/Lairds/Desktop/Ernies Adventure/ErniesAdventureCode/inc</sourceRootElem>
+                <sourceRootElem>C:/Users/Lairds/Desktop/Ernies Adventure/ErniesAdventureCode/src</sourceRootElem>
+            </sourceRootList>
+            <confList>
+                <confElem>
+                    <name>Debug</name>
+                    <type>1</type>
+                </confElem>
+                <confElem>
+                    <name>Release</name>
+                    <type>1</type>
+                </confElem>
+            </confList>
+            <formatting>
+                <project-formatting-style>false</project-formatting-style>
+            </formatting>
         </data>
     </configuration>
 </project>

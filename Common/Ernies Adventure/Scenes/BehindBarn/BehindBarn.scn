@@ -158,7 +158,6 @@ PIXELS_PER_SECOND 1
 SCENE_CHARACTER_END
 
 
-
 BORDER_SCENES_START
 
 leftScene YonderFenceLine
@@ -167,10 +166,6 @@ upScene SouthFieldUpperGate
 downScene Barn
 
 BORDER_SCENES_END
-
-
-MUSIC
-OnTheFarm.mp3
 
 
 INPUT_START
@@ -212,3 +207,4 @@ ACTION RemoveObjectFromGameAction CHARACTER030210205662
 ACTION RemoveObjectFromGameAction CHARACTER030210205663
 
 INPUT_END
+

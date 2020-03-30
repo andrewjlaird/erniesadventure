@@ -356,7 +356,7 @@ INPUT_TEXT talk girl
 INPUT_TEXT talk jenna
 CRITERIA VariableHasValueCriteria talkedToJenna 0
 ACTION SetVariableValueAction talkedToJenna 1
-ACTION DisplayTextAction `JennaSad`"Hey Ernie," Jenna says sounding rather down.  "We just got here at Mom and Dad's house and I took Henry, our dog, out to go to the bathroom and now I can't find him anywhere."~`JennaSad`"He's usually real good about going and then coming right back.  I'm afraid something might have happened to him."~`JennaSad`"Can you please help find him!"
+ACTION DisplayTextAction `JennaSad`"Hey Ernie," Jenna says, sounding rather down.  "We just got here at Mom and Dad's house and I took Henry, our dog, out to go to the bathroom and now I can't find him anywhere."~`JennaSad`"He's usually real good about going and then coming right back.  I'm afraid something might have happened to him."~`JennaSad`"Can you please help find him?"
 
 INPUT_END
 

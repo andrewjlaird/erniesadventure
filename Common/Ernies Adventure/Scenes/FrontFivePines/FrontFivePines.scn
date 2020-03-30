@@ -323,7 +323,30 @@ INPUT_START
 
 EVENT_ID EVENT1217092107402
 INPUT_TEXT look
+CRITERIA ObjectInCurrentSceneCriteria NOT CHARACTER033110211811
 ACTION DisplayTextAction Ernie is in the front yard.  There are five pine trees next to the fence and road.  The road blocks the way to the south and the fence blocks the way to the east.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032920224300
+INPUT_TEXT look
+CRITERIA ObjectInCurrentSceneCriteria CHARACTER033110211811
+ACTION DisplayTextAction Ernie is in the front yard.  There are five pine trees next to the fence and road.  The road blocks the way to the south and the fence blocks the way to the east.  There is a black hole in the ground.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032920234900
+INPUT_TEXT use magnet
+INPUT_TEXT get key magnet
+CRITERIA ObjectInInventoryCriteria Magnet
+CRITERIA ObjectsAreNearCriteria CHARACTER111709193403 CHARACTER033110211811 50
+ACTION DisplayTextAction How should Ernie use the magnet?  Should he place it somewhere?
 
 INPUT_END
 
@@ -336,6 +359,10 @@ INPUT_TEXT put magnet ground
 INPUT_TEXT put magnet down
 INPUT_TEXT lay magnet down
 INPUT_TEXT lay magnet on ground
+INPUT_TEXT lay magnet ground get magnet
+INPUT_TEXT put magnet ground get magnet
+INPUT_TEXT put magnet down get magnet
+INPUT_TEXT lay magnet down get magnet
 CRITERIA ObjectInInventoryCriteria Magnet
 CRITERIA ObjectsAreNearCriteria CHARACTER111709193403 CHARACTER033110211811 50
 ACTION DisplayTextAction Ernie places the magnet on the ground.~As he puts the magnet down, the small metal launch key zooms out of the hole and attaches to the magnet.

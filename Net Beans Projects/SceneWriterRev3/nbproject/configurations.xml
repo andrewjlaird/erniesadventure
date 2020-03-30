@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configurationDescriptor version="62">
-  <logicalFolder name="root" displayName="root" projectFiles="true">
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
@@ -50,6 +50,7 @@
           <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/WanderBrain.h</itemPath>
         </logicalFolder>
         <logicalFolder name="f2" displayName="Core" projectFiles="true">
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/AudioManager.h</itemPath>
           <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/CharacterSpawner.h</itemPath>
           <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/CommonSettings.h</itemPath>
           <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/inc/DisplayDriver.h</itemPath>
@@ -126,6 +127,7 @@
           <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/WanderBrain.cpp</itemPath>
         </logicalFolder>
         <logicalFolder name="f1" displayName="Core" projectFiles="true">
+          <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/AudioManager.cpp</itemPath>
           <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/CharacterSpawner.cpp</itemPath>
           <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/DisplayDriver.cpp</itemPath>
           <itemPath>../../Common/Ernies Adventure/ErniesAdventureCode/src/DisplayManager.cpp</itemPath>
@@ -164,9 +166,9 @@
   <confs>
     <conf name="Debug" type="1">
       <toolsSet>
-        <developmentServer>localhost</developmentServer>
         <compilerSet>MinGW|MinGW</compilerSet>
-        <platform>3</platform>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
       <compileType>
         <ccTool>
@@ -185,12 +187,577 @@
           </linkerLibItems>
         </linkerTool>
       </compileType>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/Action.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/AddObjectToInventoryAction.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/AddToScoreAction.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/AudioManager.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/AvoidBrain.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/BasicCharacter.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/Brain.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/ChangeSceneAction.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/Character.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/CharacterSpawner.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/ChaseBrain.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/CommonSettings.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/Criteria.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/DisplayDriver.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/DisplayManager.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/DisplaySettings.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/DisplayTextAction.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/EndGameAction.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/Event.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/FollowBrain.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/GlobalTimer.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/InSceneCriteria.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/Inventory.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/KeyboardBrain.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/LayeredObject.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/MoveObjectAction.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/MovingCharacter.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/ObjectInAreaCriteria.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/ObjectInCurrentSceneCriteria.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/ObjectInInventoryCriteria.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/ObjectsAreNearCriteria.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/PathBrain.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/PathCharacter.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/PlaceObjectInGameAction.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/RemoveObjectFromGameAction.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/RemoveObjectFromInventoryAction.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/Scene.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/SceneManager.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/SceneSettings.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/SearchBrain.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/SetVariableValueAction.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/SpawnCharacterAction.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/Sprite.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/SpriteManager.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/SpriteSettings.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/StartNextStepAction.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/StopSpriteRunningAction.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/SubtractFromScoreAction.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/TextInputCriteria.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/TimedCriteria.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/ToggleFollowingAction.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/VariableHasValueCriteria.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/VariableManager.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/WanderBrain.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/Action.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/AddObjectToInventoryAction.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/AddToScoreAction.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/AudioManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/AvoidBrain.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/BasicCharacter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/Brain.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/ChangeSceneAction.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/Character.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/CharacterSpawner.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/ChaseBrain.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/Criteria.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/DisplayDriver.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/DisplayManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/DisplayTextAction.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/EndGameAction.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/Event.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/FollowBrain.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/InSceneCriteria.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/Inventory.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/KeyboardBrain.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/LayeredObject.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/MoveObjectAction.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/MovingCharacter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/ObjectInAreaCriteria.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/ObjectInCurrentSceneCriteria.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/ObjectInInventoryCriteria.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/ObjectsAreNearCriteria.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/PathBrain.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/PathCharacter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/PlaceObjectInGameAction.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/RemoveObjectFromGameAction.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/RemoveObjectFromInventoryAction.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/Scene.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/SceneManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/SearchBrain.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/SetVariableValueAction.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/SpawnCharacterAction.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/Sprite.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/SpriteManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/StartNextStepAction.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/StopSpriteRunningAction.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/SubtractFromScoreAction.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/TextInputCriteria.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/TimedCriteria.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/ToggleFollowingAction.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/VariableHasValueCriteria.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/VariableManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/WanderBrain.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/SceneWriter2Code/inc/BaseWindow.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/SceneWriter2Code/inc/ColorWindow.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/SceneWriter2Code/inc/Common.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/SceneWriter2Code/inc/SceneWindow.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/SceneWriter2Code/inc/SpriteWindow.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/SceneWriter2Code/src/BaseWindow.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/SceneWriter2Code/src/ColorWindow.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/SceneWriter2Code/src/SceneWindow.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/SceneWriter2Code/src/SceneWriter2Main.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/SceneWriter2Code/src/SpriteWindow.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
     </conf>
     <conf name="Release" type="1">
       <toolsSet>
-        <developmentServer>localhost</developmentServer>
         <compilerSet>Cygwin|Cygwin</compilerSet>
-        <platform>3</platform>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
       <compileType>
         <cTool>
@@ -202,11 +769,572 @@
         <fortranCompilerTool>
           <developmentMode>5</developmentMode>
         </fortranCompilerTool>
-        <linkerTool>
-          <linkerLibItems>
-          </linkerLibItems>
-        </linkerTool>
       </compileType>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/Action.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/AddObjectToInventoryAction.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/AddToScoreAction.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/AudioManager.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/AvoidBrain.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/BasicCharacter.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/Brain.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/ChangeSceneAction.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/Character.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/CharacterSpawner.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/ChaseBrain.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/CommonSettings.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/Criteria.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/DisplayDriver.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/DisplayManager.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/DisplaySettings.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/DisplayTextAction.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/EndGameAction.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/Event.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/FollowBrain.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/GlobalTimer.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/InSceneCriteria.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/Inventory.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/KeyboardBrain.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/LayeredObject.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/MoveObjectAction.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/MovingCharacter.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/ObjectInAreaCriteria.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/ObjectInCurrentSceneCriteria.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/ObjectInInventoryCriteria.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/ObjectsAreNearCriteria.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/PathBrain.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/PathCharacter.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/PlaceObjectInGameAction.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/RemoveObjectFromGameAction.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/RemoveObjectFromInventoryAction.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/Scene.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/SceneManager.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/SceneSettings.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/SearchBrain.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/SetVariableValueAction.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/SpawnCharacterAction.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/Sprite.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/SpriteManager.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/SpriteSettings.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/StartNextStepAction.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/StopSpriteRunningAction.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/SubtractFromScoreAction.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/TextInputCriteria.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/TimedCriteria.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/ToggleFollowingAction.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/VariableHasValueCriteria.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/VariableManager.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/WanderBrain.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/Action.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/AddObjectToInventoryAction.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/AddToScoreAction.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/AudioManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/AvoidBrain.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/BasicCharacter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/Brain.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/ChangeSceneAction.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/Character.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/CharacterSpawner.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/ChaseBrain.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/Criteria.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/DisplayDriver.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/DisplayManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/DisplayTextAction.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/EndGameAction.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/Event.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/FollowBrain.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/InSceneCriteria.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/Inventory.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/KeyboardBrain.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/LayeredObject.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/MoveObjectAction.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/MovingCharacter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/ObjectInAreaCriteria.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/ObjectInCurrentSceneCriteria.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/ObjectInInventoryCriteria.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/ObjectsAreNearCriteria.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/PathBrain.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/PathCharacter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/PlaceObjectInGameAction.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/RemoveObjectFromGameAction.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/RemoveObjectFromInventoryAction.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/Scene.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/SceneManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/SearchBrain.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/SetVariableValueAction.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/SpawnCharacterAction.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/Sprite.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/SpriteManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/StartNextStepAction.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/StopSpriteRunningAction.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/SubtractFromScoreAction.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/TextInputCriteria.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/TimedCriteria.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/ToggleFollowingAction.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/VariableHasValueCriteria.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/VariableManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/ErniesAdventureCode/src/WanderBrain.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/SceneWriter2Code/inc/BaseWindow.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/SceneWriter2Code/inc/ColorWindow.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/SceneWriter2Code/inc/Common.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/SceneWriter2Code/inc/SceneWindow.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/SceneWriter2Code/inc/SpriteWindow.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/SceneWriter2Code/src/BaseWindow.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/SceneWriter2Code/src/ColorWindow.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/SceneWriter2Code/src/SceneWindow.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/SceneWriter2Code/src/SceneWriter2Main.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../Common/Ernies Adventure/SceneWriter2Code/src/SpriteWindow.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
     </conf>
   </confs>
 </configurationDescriptor>

@@ -520,8 +520,8 @@ void DisplayManager::mergeToBitmap(BITMAP* mergedBitmap,
 
                Square objOffset = objects[i]->getOffsetBoundarySquare();
 
-               short myX = objOffset.lowerRight.x;
-               short myY = (objOffset.upperLeft.y - objOffset.lowerRight.y) / 2 + objOffset.upperLeft.y;
+               short myX = (objOffset.lowerRight.x - objOffset.upperLeft.x) / 2 + objOffset.upperLeft.x;
+               short myY = objOffset.lowerRight.y;
 
                int deltaX = mainX - int(myX);
                int deltaY = mainY - int(myY);
@@ -542,7 +542,10 @@ void DisplayManager::mergeToBitmap(BITMAP* mergedBitmap,
                BITMAP* textBitmap = create_bitmap(100, 10);
                clear_to_color(textBitmap, makecol(255,0,255));
                textprintf_ex(textBitmap, font, 0, 0, makecol(255, 255, 255), -1, "%s", name.c_str());
-               draw_trans_sprite(mergedBitmap, textBitmap, xOffset + objects[i]->getX(), yOffset + objects[i]->getY() - 7);
+               
+               int textStartX = myX - int(name.length() / 2.0 * 9.0);
+               
+               draw_trans_sprite(mergedBitmap, textBitmap, textStartX, yOffset + objects[i]->getY() - 7);
                destroy_bitmap(textBitmap);
             }
          }
@@ -1238,6 +1241,13 @@ void DisplayManager::handleUserInput(double dt)
             {
                saveFileWindowActive = true;
                fileNames = getdir("Saved Games/",".svg");
+            }
+            else if(scanCode == KEY_N)
+            {
+               if (selectedResult == 0)
+               {
+                  loadFile("Start.psg");
+               }
             }
          }
          // (U) Alt

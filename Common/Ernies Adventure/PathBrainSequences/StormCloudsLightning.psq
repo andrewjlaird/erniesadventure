@@ -1,3 +1,4 @@
+WAIT 0.05
 SET_SPRITE StormClouds true
 IGNORE_BORDERS 
 PPS 2

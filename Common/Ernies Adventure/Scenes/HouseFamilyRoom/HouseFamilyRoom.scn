@@ -149,7 +149,7 @@ INPUT_TEXT talk dad
 INPUT_TEXT talk man
 INPUT_TEXT talk person
 CRITERIA VariableHasValueCriteria cowsIn 0
-ACTION DisplayTextAction `Dad`"I just had the carpet cleaned", Dad said, "so I put these gates up so Ernie wouldn't have an accident."~`Dad`"I'm heading outside to try to get the cows in the corral before supper."
+ACTION DisplayTextAction `Dad`"I just had the carpet cleaned", Dad said, "so I put these gates up so Ernie wouldn't have an accident."~`Dad`"I'm heading outside to try to get the cows in the corral before supper.  I hope they don't cause trouble."
 ACTION StartNextStepAction CHARACTER012210222150
 ACTION PlaceObjectInGameAction CHARACTER012210222150 -1 -1
 ACTION RemoveObjectFromGameAction CHARACTER122809150817

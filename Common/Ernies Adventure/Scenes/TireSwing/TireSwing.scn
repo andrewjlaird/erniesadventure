@@ -518,7 +518,7 @@ INPUT_TEXT look red object
 INPUT_TEXT look red ball
 INPUT_TEXT look red
 CRITERIA VariableHasValueCriteria gotStrawberry 0
-ACTION DisplayTextAction Ernie can't figure out what the red thing is.  It's burried in the grass.
+ACTION DisplayTextAction Ernie can't figure out what the red thing is.  It's red, dotted with seed looking things and has a green stem.  It's buried in the grass.
 
 INPUT_END
 
@@ -560,7 +560,7 @@ INPUT_TEXT get red object
 INPUT_TEXT get red
 INPUT_TEXT get ball
 CRITERIA VariableHasValueCriteria gotStrawberry 0
-ACTION DisplayTextAction Ernie can't get the red object, he doesn't know what it is.
+ACTION DisplayTextAction Be more specific, what is the red thing?
 
 INPUT_END
 

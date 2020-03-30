@@ -1,7 +1,9 @@
-AndersonsShop AndersonsBelowShop NorthField1 NullScene NullScene SouthField6 YonderFenceLine YonderNorth YonderCenter YonderSouth KQ1-Castle-Left 
-AndersonsHouse AndersonsGarden NorthField2 NullScene NullScene SouthFieldUpperGate BehindBarn Barn HorseShoeBigPines HorseShoeLowerLeft KQ1-Castle-Right 
-NullScene Road1 NorthField3 NullScene NullScene SouthFieldWaterPump BirchTree BetweenBarnAndHouse HorseShoeLantern HorseShoeBushes 
-NullScene NullScene NullScene NullScene NullScene NullScene BehindHouse DoorYard PineTreesAlongDriveway MailBox 
-NullScene InsideBarn NorthField5 NorthField10 NullScene NullScene BehindTreeFarm TireSwing BelowTireSwing FrontFivePines 
-NullScene KQ1-Castle-Right Sky1 BirdTrees HouseMomDadRoom HouseAshleyRoom HouseFamilyRoom HouseGarage HouseKitchen HouseLivingRoom HouseBasement HouseTheKidsRoom 
-NullScene NullScene Sky2 NullScene NullScene NullScene NullScene 
+BehindBarn 
+YonderFenceLine BehindBarn SouthField9 
+NullScene NullScene AndersonsShop AndersonsBelowShop NorthField1 NullScene NullScene SouthField6 YonderFenceLine YonderNorth YonderCenter YonderSouth KQ1-Castle-Left 
+NullScene NullScene AndersonsHouse AndersonsGarden NorthField2 NullScene NullScene SouthFieldUpperGate BehindBarn Barn HorseShoeBigPines HorseShoeLowerLeft KQ1-Castle-Right 
+NullScene NullScene NullScene Road1 NorthField3 NullScene NullScene SouthFieldWaterPump BirchTree BetweenBarnAndHouse HorseShoeLantern HorseShoeBushes 
+NullScene NullScene NullScene NullScene NullScene NullScene NullScene NullScene BehindHouse DoorYard PineTreesAlongDriveway MailBox 
+NullScene NullScene NullScene InsideBarn NorthField5 NorthField10 NullScene NullScene BehindTreeFarm TireSwing BelowTireSwing FrontFivePines 
+NullScene NullScene NullScene KQ1-Castle-Right Sky1 BirdTrees HouseMomDadRoom HouseAshleyRoom HouseFamilyRoom HouseGarage HouseKitchen HouseLivingRoom HouseBasement HouseTheKidsRoom 
+NullScene NullScene NullScene NullScene Sky2 NullScene NullScene NullScene NullScene 

@@ -369,6 +369,8 @@ INPUT_START
 
 EVENT_ID EVENT031410114335
 INPUT_TEXT cut vine
+INPUT_TEXT cut vine dagger
+INPUT_TEXT use dagger cut vine
 CRITERIA ObjectsAreNearCriteria CHARACTER111709193403 CHARACTER031410113931 50
 CRITERIA VariableHasValueCriteria vineCut 0
 CRITERIA ObjectInInventoryCriteria Dagger

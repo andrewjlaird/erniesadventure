@@ -119,6 +119,7 @@ class SceneManager
       DisplayManager& getDisplayManager();
       SpriteManager& getSpriteManager();
       VariableManager& getVariableManager();
+      AudioManager& getAudioManager();
       
    private:
       std::string startingScene;

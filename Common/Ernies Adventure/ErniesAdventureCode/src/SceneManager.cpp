@@ -1428,6 +1428,11 @@ VariableManager& SceneManager::getVariableManager()
    return variableManager;
 }
 
+AudioManager& SceneManager::getAudioManager()
+{
+    return audioManager;
+}
+
 ////////////////////////////////////////////////////////////////////////////////
 
 void SceneManager::addScene(Scene* scene)

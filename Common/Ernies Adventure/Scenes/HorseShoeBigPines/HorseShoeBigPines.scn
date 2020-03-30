@@ -537,7 +537,9 @@ EVENT_ID EVENT040110220945
 INPUT_TEXT give pumpkin laura
 INPUT_TEXT give laura pumpkin
 INPUT_TEXT give woman pumpkin
-INPUT_TEXT give pumpkin laura
+INPUT_TEXT give girl pumpkin
+INPUT_TEXT give girls pumpkin
+INPUT_TEXT give pumpkin
 CRITERIA ObjectInInventoryCriteria Small Pumpkin
 CRITERIA VariableHasValueCriteria turkeySequenceDone 1
 CRITERIA VariableHasValueCriteria launchSequenceDone 1

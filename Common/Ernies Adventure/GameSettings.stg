@@ -320,7 +320,9 @@ EVENT_ID EVENT032310200800
 INPUT_TEXT show grain
 INPUT_TEXT show grain cow
 INPUT_TEXT show grain 30
+INPUT_TEXT show grain thirty
 INPUT_TEXT show 30 grain
+INPUT_TEXT show thirty grain
 INPUT_TEXT show cow grain
 INPUT_TEXT dead with grain
 INPUT_TEXT dead cow with grain
@@ -341,7 +343,9 @@ EVENT_ID EVENT032310200801
 INPUT_TEXT give grain
 INPUT_TEXT give cow grain
 INPUT_TEXT give 30 grain
+INPUT_TEXT give thirty grain
 INPUT_TEXT give grain 30
+INPUT_TEXT give grain thirty
 INPUT_TEXT feed grain
 INPUT_TEXT feed cow grain
 CRITERIA ObjectInInventoryCriteria Grain
@@ -399,6 +403,7 @@ INPUT_START
 EVENT_ID EVENT032510190304
 INPUT_TEXT talk cow
 INPUT_TEXT talk 30
+INPUT_TEXT talk thirty
 CRITERIA ObjectsAreNearCriteria CHARACTER012610211136 CHARACTER111709193403 800
 ACTION DisplayTextAction The cow, 30, just mentions something about wanting some grain to eat.
 

@@ -271,6 +271,10 @@ INPUT_START
 
 EVENT_ID EVENT121709211254610
 INPUT_TEXT get henry
+INPUT_TEXT pull henry
+INPUT_TEXT pull henry out
+INPUT_TEXT tug henry
+INPUT_TEXT tug henry out
 CRITERIA VariableHasValueCriteria talkedToBush 1
 CRITERIA VariableHasValueCriteria gotHenry 0
 ACTION DisplayTextAction Ernie grabs Henry by the feet and pulls with all his strength.  Finally, something gives and Henry comes rolling out of the bush.  He was really stuck!
@@ -284,6 +288,17 @@ INPUT_END
 
 INPUT_START
 
+EVENT_ID EVENT032920201100001
+INPUT_TEXT help henry
+CRITERIA VariableHasValueCriteria talkedToBush 1
+CRITERIA VariableHasValueCriteria gotHenry 0
+ACTION DisplayTextAction How do you want to help Henry?
+
+INPUT_END
+
+
+INPUT_START
+
 EVENT_ID EVENT121709211254857
 INPUT_TEXT look lilac
 INPUT_TEXT look lilac bush
@@ -291,7 +306,7 @@ INPUT_TEXT look bush
 INPUT_TEXT look bushes
 INPUT_TEXT look lilac bushes
 CRITERIA VariableHasValueCriteria gotHenry 0
-ACTION DisplayTextAction The lilac bushes are very pretty and smell nice.  One of them is shaking violently, as if it's alive.  There is a small squeaking coming from inside of it.
+ACTION DisplayTextAction The lilac bushes are very pretty and smell nice.  There is a small squeaking coming from inside of it.  It is shaking and seems alive, as if it could talk.
 
 INPUT_END
 
@@ -315,7 +330,7 @@ INPUT_START
 EVENT_ID EVENT121709211254972
 INPUT_TEXT look
 CRITERIA VariableHasValueCriteria gotHenry 0
-ACTION DisplayTextAction This area is known as Yonder.  The white fence runs along the field to the north.  Several lilac bushes line the fence.  One of them is shaking, almost as if it's alive.
+ACTION DisplayTextAction This area is known as Yonder.  The white fence runs along the field to the north.  Several lilac bushes line the fence.  One of them seems alive, almost as if it could talk.
 
 INPUT_END
 
@@ -334,8 +349,20 @@ INPUT_START
 
 EVENT_ID EVENT12170921125580
 INPUT_TEXT get bush
+CRITERIA VariableHasValueCriteria talkedToBush 0
 CRITERIA VariableHasValueCriteria gotHenry 0
-ACTION DisplayTextAction You can't get the bush.  Try getting what's inside the bush.
+ACTION DisplayTextAction You can't get the bush.  But it seems alive, almost like it could talk.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032920200800001
+INPUT_TEXT get bush
+CRITERIA VariableHasValueCriteria talkedToBush 1
+CRITERIA VariableHasValueCriteria gotHenry 0
+ACTION DisplayTextAction You can't get the bush.  Try getting who's inside the bush.
 
 INPUT_END
 

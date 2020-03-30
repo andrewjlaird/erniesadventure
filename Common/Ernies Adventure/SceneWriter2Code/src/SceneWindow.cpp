@@ -2561,7 +2561,7 @@ void SceneWindow::checkKeyboard()
                      save_bmp(std::string(sceneManager.sceneFolder + "/" + newSceneName + "/" + newSceneName + ".bmp").c_str(), bmp, pal);
                      destroy_bitmap(bmp);
                      
-                     Scene* newScene = new Scene(sceneManager, sceneManager.getSpriteManager(), sceneManager.getDisplayManager(), sceneManager.getVariableManager(), newSceneName, sceneManager.getNextSceneId());
+                     Scene* newScene = new Scene(sceneManager, sceneManager.getSpriteManager(), sceneManager.getDisplayManager(), sceneManager.getVariableManager(), sceneManager.getAudioManager(), newSceneName, sceneManager.getNextSceneId());
                      
                      if (newScene->loadScene())
                      {
@@ -3656,7 +3656,7 @@ void SceneWindow::loadSceneGrid()
                }
                else
                {
-                  std::cerr << "Pushed back unknown scene" << std::endl;
+                  std::cerr << "Pushed back unknown scene: " << sceneEnumString << std::endl;
                   
                   newColumn.push_back(NULL);
                }
@@ -3770,7 +3770,7 @@ bool SceneWindow::addSceneToGrid(int x, int y)
          
       if (newSceneId != 0)
       {
-         Scene* newScene = new Scene(sceneManager, sceneManager.getSpriteManager(), sceneManager.getDisplayManager(), sceneManager.getVariableManager(), sceneManager.sceneIdToSceneName(newSceneId), newSceneId);
+         Scene* newScene = new Scene(sceneManager, sceneManager.getSpriteManager(), sceneManager.getDisplayManager(), sceneManager.getVariableManager(), sceneManager.getAudioManager(), sceneManager.sceneIdToSceneName(newSceneId), newSceneId);
          
          if (newScene->loadScene())
          {

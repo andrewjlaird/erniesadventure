@@ -339,7 +339,7 @@ INPUT_START
 
 EVENT_ID EVENT032510192905
 INPUT_TEXT dig
-CRITERIA ObjectsAreNearCriteria CHARACTER111709193403 CHARACTER041210221158 50
+CRITERIA ObjectsAreNearCriteria CHARACTER111709193403 CHARACTER041210221157 50
 CRITERIA VariableHasValueCriteria foundBlackberry 0
 CRITERIA VariableHasValueCriteria cowsIn 3
 ACTION DisplayTextAction Ernie digs a hole to discover what could lie beneath.

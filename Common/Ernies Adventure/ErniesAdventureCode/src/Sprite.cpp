@@ -48,6 +48,9 @@ bool Sprite::loadSprite()
    std::string line;
    std::string spriteFilePath = spriteFolder + "/" + spriteFileName;
    std::ifstream myfile(spriteFilePath.c_str());
+   
+   printf("spriteFilePath %s\n", spriteFilePath.c_str());
+   
    if (myfile.is_open())
    {
       // sprite name and pps
@@ -63,6 +66,7 @@ bool Sprite::loadSprite()
          
          if (!ss.fail())
          {
+            printf("pixelsPerSecond %f\n", pixelsPerSecond);
             frameRateChange = pixelsPerSecond;
          }
          else
@@ -76,6 +80,7 @@ bool Sprite::loadSprite()
          
             if (!ss.fail())
             {
+               printf("name %s\n", name.c_str());
                onScreenName = name;
             }
             
@@ -84,12 +89,15 @@ bool Sprite::loadSprite()
             
             if (!myfile.fail())
             {
+               ss.str("");
+               ss.clear();
                ss << line;
                double pixelsPerSecond;
                ss >> pixelsPerSecond;
 
                if (!ss.fail())
                {
+                  printf("pixelsPerSecond %f\n", pixelsPerSecond);
                   frameRateChange = pixelsPerSecond;
                }
             }

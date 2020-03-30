@@ -221,7 +221,7 @@ EVENT_ID EVENT030610124945
 INPUT_TEXT get net
 INPUT_TEXT grab net
 CRITERIA ObjectInCurrentSceneCriteria CHARACTER030610072934
-ACTION DisplayTextAction Ernie tries to grab the net from the trash can, but can't manager it.  He needs someone taller to help.
+ACTION DisplayTextAction Ernie tries to grab the net from the trash can, but can't manage it.  He needs someone taller to help.
 
 INPUT_END
 
@@ -308,7 +308,7 @@ EVENT_ID EVENT030610125333
 INPUT_TEXT talk cat
 INPUT_TEXT bark cat
 CRITERIA ObjectInCurrentSceneCriteria NOT CHARACTER030610071151
-ACTION DisplayTextAction `Cat`"I've been sitting here waiting and waiting for someone to come and feed me," the cat says.  "The people from the house are busy with Thanksgiving, but I'm real hungry.  You seem like a nice dog, can you find someone to come and feed me."
+ACTION DisplayTextAction `Cat`"I've been sitting here waiting and waiting for someone to come and feed me," the cat says.  "The people from the house are busy with Thanksgiving, but I'm real hungry.  You seem like a nice dog, can you find someone to come and feed me?"
 
 INPUT_END
 
@@ -413,11 +413,13 @@ INPUT_START
 
 EVENT_ID EVENT032510191928
 INPUT_TEXT look trash can
+INPUT_TEXT look trashcan
+INPUT_TEXT look can
 INPUT_TEXT look garbage can
 INPUT_TEXT look can
 INPUT_TEXT look food can
 CRITERIA ObjectInCurrentSceneCriteria NOT CHARACTER030610072934
-ACTION DisplayTextAction There is a large grey trash can in the middle of the barn.  Ernie smells cat food in it.
+ACTION DisplayTextAction There is a large grey trashcan in the middle of the barn.  Ernie smells cat food in it.
 
 INPUT_END
 
@@ -467,6 +469,28 @@ INPUT_START
 EVENT_ID EVENT032510192129
 INPUT_TEXT look grain
 ACTION DisplayTextAction There is a large bucket of grain in the corner of the barn.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032920202900
+INPUT_TEXT look floor
+INPUT_TEXT look ground
+CRITERIA ObjectInCurrentSceneCriteria CHARACTER032310195550
+ACTION DisplayTextAction There is a cat, a food bowl, the cat food bin, a grain bucket and a small pile of grain on the floor.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT032920203200
+INPUT_TEXT look floor
+INPUT_TEXT look ground
+CRITERIA ObjectInCurrentSceneCriteria NOT CHARACTER032310195550
+ACTION DisplayTextAction There is a cat, a food bowl, the cat food bin and a grain bucket on the floor.
 
 INPUT_END
 

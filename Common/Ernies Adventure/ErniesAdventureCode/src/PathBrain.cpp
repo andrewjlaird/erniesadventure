@@ -283,6 +283,7 @@ bool PathBrain::startCommand(std::pair<PathCommand, std::vector<std::string> > p
          // (U) Look up sprite's id and set new sprite to in game
          if (pathPair.second.size() > 1)
          {
+            printf("Loading sprite: %s %s", pathPair.second[0].c_str(), pathPair.second[1].c_str());
             loadSprite(pathPair.second[0], StringToBool(pathPair.second[1]));
          }
       
@@ -901,18 +902,18 @@ std::string PathBrain::getSaveString()
 ////////////////////////////////////////////////////////////////////////////////
 
 void PathBrain::updatePathBrain(PathCommand inCurrentActiveCommand,
-                              int inStepNumber,
-                              int inCommandInStep,
-                              bool inWaitForNextStep,
-                              std::string inActiveSpriteName,
-                              double inTimeInWait,
-                              double inTotalTimeToWaitFor,
-                              double inMoveXYRatio,
-                              Point inMoveToLocation,
-                              double inTimeInMove,
-                              double inTimeOnMoveSoFar,
-                              bool inIgnoreBorders,
-                              Point inStartPoint)
+                                int inStepNumber,
+                                int inCommandInStep,
+                                bool inWaitForNextStep,
+                                std::string inActiveSpriteName,
+                                double inTimeInWait,
+                                double inTotalTimeToWaitFor,
+                                double inMoveXYRatio,
+                                Point inMoveToLocation,
+                                double inTimeInMove,
+                                double inTimeOnMoveSoFar,
+                                bool inIgnoreBorders,
+                                Point inStartPoint)
 {
    currentActiveCommand = inCurrentActiveCommand;
    activeSpriteName = inActiveSpriteName;
@@ -943,6 +944,7 @@ void PathBrain::updatePathBrain(PathCommand inCurrentActiveCommand,
    }
    else
    {
+      printf("updatePathBrain %s\n", activeSpriteName.c_str());
       // (U) Load up sprite
       loadSprite(activeSpriteName, true);
    }
