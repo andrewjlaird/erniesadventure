@@ -1,3 +1,19 @@
 *.log
 *almp3.dll
 build/
+Dev C++ Projects/
+almp3
+Net Beans Projects/AircraftSimulator/
+Net Beans Projects/CarTalkMath/
+Net Beans Projects/CarTalkMathJava/
+Net Beans Projects/Combinations/
+Net Beans Projects/Corridor News Converter/
+Net Beans Projects/DandSAdmin/
+Net Beans Projects/DreamsAndSchemes/
+Net Beans Projects/DreamsAndSchemesPhp/
+Net Beans Projects/RemoveStrings/
+Net Beans Projects/SceneInputEditor/
+Net Beans Projects/TimeKeeper/
+Net Beans Projects/TimeKeeper3/
+Net Beans Projects/WhereIsGrandpa/
+Net Beans Projects/WundergroundUploader/
