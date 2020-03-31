@@ -91,9 +91,7 @@ DisplayManager::DisplayManager(DisplayDriver& inDisplayDriver,
    optionsMenu.push_back("Toggle Full Screen .... Alt - Enter");
    optionsMenu.push_back("Toggle Sticky Keys");
    
-#ifdef BUILD_AUDIO
    optionsMenu.push_back("Toggle Music .......... F11");
-#endif
 
    menus.push_back(optionsMenu);
 
@@ -139,7 +137,7 @@ void DisplayManager::run()
       // (U) Give the CPU some rest
       if (!debugRestOff)
       {
-         rest(50);
+         rest(16);
       }
       
       audioManager.pollMusic();

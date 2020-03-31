@@ -8,9 +8,9 @@
 #include <dirent.h>
 
 #include <allegro.h>
-#ifdef _WIN32
-#include <winalleg.h>
-#endif
+//#ifdef _WIN32
+//#include <winalleg.h>
+//#endif
 #include <vector>
 
 static const double version = 1.0;

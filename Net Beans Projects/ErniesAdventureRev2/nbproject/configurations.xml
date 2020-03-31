@@ -707,7 +707,7 @@
           <developmentMode>5</developmentMode>
           <incDir>
             <pElem>../../Common/Ernies Adventure/ErniesAdventureCode/inc</pElem>
-            <pElem>../../allegro-mingw-4.2.2/include</pElem>
+            <pElem>../../allegro-4.4.2-mingw-3.4.5/include</pElem>
           </incDir>
         </ccTool>
         <fortranCompilerTool>
@@ -715,10 +715,11 @@
         </fortranCompilerTool>
         <linkerTool>
           <linkerAddLib>
-            <pElem>../../allegro-mingw-4.2.2/lib</pElem>
+            <pElem>../../allegro-4.4.2-mingw-3.4.5/bin</pElem>
           </linkerAddLib>
+          <linkerCopySharedLibs>true</linkerCopySharedLibs>
           <linkerLibItems>
-            <linkerLibLibItem>alleg</linkerLibLibItem>
+            <linkerLibLibItem>allegro-4.4.2-monolith-mt</linkerLibLibItem>
           </linkerLibItems>
         </linkerTool>
       </compileType>

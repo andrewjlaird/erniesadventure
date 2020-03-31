@@ -101,7 +101,7 @@ FFLAGS=
 ASFLAGS=
 
 # Link Libraries and Options
-LDLIBSOPTIONS=-L../../allegro-mingw-4.2.2/lib -lalleg
+LDLIBSOPTIONS=-L../../allegro-4.4.2-mingw-3.4.5/bin -lallegro-4.4.2-monolith-mt
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
@@ -114,252 +114,252 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/erniesadventurerev2.exe: ${OBJECTFILE
 ${OBJECTDIR}/_ext/4d9236b7/Action.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/Action.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/Action.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/Action.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/Action.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/Action.cpp
 
 ${OBJECTDIR}/_ext/4d9236b7/AddObjectToInventoryAction.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/AddObjectToInventoryAction.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/AddObjectToInventoryAction.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/AddObjectToInventoryAction.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/AddObjectToInventoryAction.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/AddObjectToInventoryAction.cpp
 
 ${OBJECTDIR}/_ext/4d9236b7/AddToScoreAction.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/AddToScoreAction.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/AddToScoreAction.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/AddToScoreAction.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/AddToScoreAction.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/AddToScoreAction.cpp
 
 ${OBJECTDIR}/_ext/4d9236b7/AudioManager.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/AudioManager.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/AudioManager.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/AudioManager.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/AudioManager.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/AudioManager.cpp
 
 ${OBJECTDIR}/_ext/4d9236b7/AvoidBrain.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/AvoidBrain.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/AvoidBrain.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/AvoidBrain.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/AvoidBrain.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/AvoidBrain.cpp
 
 ${OBJECTDIR}/_ext/4d9236b7/BasicCharacter.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/BasicCharacter.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/BasicCharacter.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/BasicCharacter.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/BasicCharacter.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/BasicCharacter.cpp
 
 ${OBJECTDIR}/_ext/4d9236b7/Brain.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/Brain.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/Brain.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/Brain.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/Brain.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/Brain.cpp
 
 ${OBJECTDIR}/_ext/4d9236b7/ChangeSceneAction.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/ChangeSceneAction.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/ChangeSceneAction.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/ChangeSceneAction.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/ChangeSceneAction.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/ChangeSceneAction.cpp
 
 ${OBJECTDIR}/_ext/4d9236b7/Character.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/Character.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/Character.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/Character.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/Character.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/Character.cpp
 
 ${OBJECTDIR}/_ext/4d9236b7/CharacterSpawner.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/CharacterSpawner.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/CharacterSpawner.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/CharacterSpawner.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/CharacterSpawner.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/CharacterSpawner.cpp
 
 ${OBJECTDIR}/_ext/4d9236b7/ChaseBrain.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/ChaseBrain.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/ChaseBrain.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/ChaseBrain.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/ChaseBrain.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/ChaseBrain.cpp
 
 ${OBJECTDIR}/_ext/4d9236b7/Criteria.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/Criteria.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/Criteria.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/Criteria.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/Criteria.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/Criteria.cpp
 
 ${OBJECTDIR}/_ext/4d9236b7/DisplayDriver.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/DisplayDriver.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/DisplayDriver.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/DisplayDriver.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/DisplayDriver.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/DisplayDriver.cpp
 
 ${OBJECTDIR}/_ext/4d9236b7/DisplayManager.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/DisplayManager.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/DisplayManager.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/DisplayManager.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/DisplayManager.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/DisplayManager.cpp
 
 ${OBJECTDIR}/_ext/4d9236b7/DisplayTextAction.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/DisplayTextAction.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/DisplayTextAction.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/DisplayTextAction.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/DisplayTextAction.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/DisplayTextAction.cpp
 
 ${OBJECTDIR}/_ext/4d9236b7/EndGameAction.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/EndGameAction.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/EndGameAction.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/EndGameAction.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/EndGameAction.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/EndGameAction.cpp
 
 ${OBJECTDIR}/_ext/4d9236b7/ErniesAdventureMain.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/ErniesAdventureMain.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/ErniesAdventureMain.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/ErniesAdventureMain.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/ErniesAdventureMain.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/ErniesAdventureMain.cpp
 
 ${OBJECTDIR}/_ext/4d9236b7/Event.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/Event.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/Event.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/Event.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/Event.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/Event.cpp
 
 ${OBJECTDIR}/_ext/4d9236b7/FollowBrain.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/FollowBrain.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/FollowBrain.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/FollowBrain.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/FollowBrain.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/FollowBrain.cpp
 
 ${OBJECTDIR}/_ext/4d9236b7/InSceneCriteria.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/InSceneCriteria.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/InSceneCriteria.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/InSceneCriteria.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/InSceneCriteria.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/InSceneCriteria.cpp
 
 ${OBJECTDIR}/_ext/4d9236b7/Inventory.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/Inventory.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/Inventory.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/Inventory.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/Inventory.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/Inventory.cpp
 
 ${OBJECTDIR}/_ext/4d9236b7/KeyboardBrain.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/KeyboardBrain.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/KeyboardBrain.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/KeyboardBrain.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/KeyboardBrain.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/KeyboardBrain.cpp
 
 ${OBJECTDIR}/_ext/4d9236b7/LayeredObject.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/LayeredObject.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/LayeredObject.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/LayeredObject.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/LayeredObject.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/LayeredObject.cpp
 
 ${OBJECTDIR}/_ext/4d9236b7/MoveObjectAction.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/MoveObjectAction.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/MoveObjectAction.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/MoveObjectAction.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/MoveObjectAction.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/MoveObjectAction.cpp
 
 ${OBJECTDIR}/_ext/4d9236b7/MovingCharacter.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/MovingCharacter.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/MovingCharacter.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/MovingCharacter.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/MovingCharacter.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/MovingCharacter.cpp
 
 ${OBJECTDIR}/_ext/4d9236b7/ObjectInAreaCriteria.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/ObjectInAreaCriteria.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/ObjectInAreaCriteria.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/ObjectInAreaCriteria.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/ObjectInAreaCriteria.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/ObjectInAreaCriteria.cpp
 
 ${OBJECTDIR}/_ext/4d9236b7/ObjectInCurrentSceneCriteria.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/ObjectInCurrentSceneCriteria.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/ObjectInCurrentSceneCriteria.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/ObjectInCurrentSceneCriteria.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/ObjectInCurrentSceneCriteria.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/ObjectInCurrentSceneCriteria.cpp
 
 ${OBJECTDIR}/_ext/4d9236b7/ObjectInInventoryCriteria.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/ObjectInInventoryCriteria.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/ObjectInInventoryCriteria.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/ObjectInInventoryCriteria.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/ObjectInInventoryCriteria.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/ObjectInInventoryCriteria.cpp
 
 ${OBJECTDIR}/_ext/4d9236b7/ObjectsAreNearCriteria.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/ObjectsAreNearCriteria.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/ObjectsAreNearCriteria.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/ObjectsAreNearCriteria.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/ObjectsAreNearCriteria.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/ObjectsAreNearCriteria.cpp
 
 ${OBJECTDIR}/_ext/4d9236b7/PathBrain.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/PathBrain.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/PathBrain.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/PathBrain.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/PathBrain.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/PathBrain.cpp
 
 ${OBJECTDIR}/_ext/4d9236b7/PathCharacter.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/PathCharacter.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/PathCharacter.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/PathCharacter.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/PathCharacter.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/PathCharacter.cpp
 
 ${OBJECTDIR}/_ext/4d9236b7/PlaceObjectInGameAction.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/PlaceObjectInGameAction.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/PlaceObjectInGameAction.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/PlaceObjectInGameAction.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/PlaceObjectInGameAction.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/PlaceObjectInGameAction.cpp
 
 ${OBJECTDIR}/_ext/4d9236b7/RemoveObjectFromGameAction.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/RemoveObjectFromGameAction.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/RemoveObjectFromGameAction.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/RemoveObjectFromGameAction.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/RemoveObjectFromGameAction.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/RemoveObjectFromGameAction.cpp
 
 ${OBJECTDIR}/_ext/4d9236b7/RemoveObjectFromInventoryAction.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/RemoveObjectFromInventoryAction.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/RemoveObjectFromInventoryAction.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/RemoveObjectFromInventoryAction.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/RemoveObjectFromInventoryAction.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/RemoveObjectFromInventoryAction.cpp
 
 ${OBJECTDIR}/_ext/4d9236b7/Scene.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/Scene.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/Scene.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/Scene.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/Scene.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/Scene.cpp
 
 ${OBJECTDIR}/_ext/4d9236b7/SceneManager.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/SceneManager.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/SceneManager.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/SceneManager.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/SceneManager.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/SceneManager.cpp
 
 ${OBJECTDIR}/_ext/4d9236b7/SearchBrain.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/SearchBrain.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/SearchBrain.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/SearchBrain.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/SearchBrain.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/SearchBrain.cpp
 
 ${OBJECTDIR}/_ext/4d9236b7/SetVariableValueAction.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/SetVariableValueAction.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/SetVariableValueAction.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/SetVariableValueAction.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/SetVariableValueAction.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/SetVariableValueAction.cpp
 
 ${OBJECTDIR}/_ext/4d9236b7/SpawnCharacterAction.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/SpawnCharacterAction.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/SpawnCharacterAction.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/SpawnCharacterAction.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/SpawnCharacterAction.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/SpawnCharacterAction.cpp
 
 ${OBJECTDIR}/_ext/4d9236b7/Sprite.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/Sprite.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/Sprite.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/Sprite.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/Sprite.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/Sprite.cpp
 
 ${OBJECTDIR}/_ext/4d9236b7/SpriteManager.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/SpriteManager.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/SpriteManager.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/SpriteManager.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/SpriteManager.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/SpriteManager.cpp
 
 ${OBJECTDIR}/_ext/4d9236b7/StartNextStepAction.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/StartNextStepAction.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/StartNextStepAction.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/StartNextStepAction.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/StartNextStepAction.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/StartNextStepAction.cpp
 
 ${OBJECTDIR}/_ext/4d9236b7/StopSpriteRunningAction.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/StopSpriteRunningAction.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/StopSpriteRunningAction.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/StopSpriteRunningAction.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/StopSpriteRunningAction.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/StopSpriteRunningAction.cpp
 
 ${OBJECTDIR}/_ext/4d9236b7/SubtractFromScoreAction.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/SubtractFromScoreAction.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/SubtractFromScoreAction.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/SubtractFromScoreAction.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/SubtractFromScoreAction.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/SubtractFromScoreAction.cpp
 
 ${OBJECTDIR}/_ext/4d9236b7/TextInputCriteria.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/TextInputCriteria.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/TextInputCriteria.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/TextInputCriteria.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/TextInputCriteria.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/TextInputCriteria.cpp
 
 ${OBJECTDIR}/_ext/4d9236b7/TimedCriteria.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/TimedCriteria.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/TimedCriteria.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/TimedCriteria.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/TimedCriteria.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/TimedCriteria.cpp
 
 ${OBJECTDIR}/_ext/4d9236b7/ToggleFollowingAction.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/ToggleFollowingAction.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/ToggleFollowingAction.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/ToggleFollowingAction.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/ToggleFollowingAction.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/ToggleFollowingAction.cpp
 
 ${OBJECTDIR}/_ext/4d9236b7/VariableHasValueCriteria.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/VariableHasValueCriteria.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/VariableHasValueCriteria.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/VariableHasValueCriteria.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/VariableHasValueCriteria.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/VariableHasValueCriteria.cpp
 
 ${OBJECTDIR}/_ext/4d9236b7/VariableManager.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/VariableManager.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/VariableManager.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/VariableManager.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/VariableManager.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/VariableManager.cpp
 
 ${OBJECTDIR}/_ext/4d9236b7/WanderBrain.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/WanderBrain.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-mingw-4.2.2/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/WanderBrain.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/WanderBrain.cpp
+	$(COMPILE.cc) -O2 -I../../Common/Ernies\ Adventure/ErniesAdventureCode/inc -I../../allegro-4.4.2-mingw-3.4.5/include -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/4d9236b7/WanderBrain.o ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/WanderBrain.cpp
 
 # Subprojects
 .build-subprojects:

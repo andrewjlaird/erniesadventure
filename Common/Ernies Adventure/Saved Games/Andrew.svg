@@ -8,10 +8,10 @@ UI_DISABLED
 false
 
 ELAPSED_TIME
-318.259
+999.32
 
 CURRENT_SCENE
-NorthField1
+NorthField2
 
 EVENTS
 EVENT041010070908 false
@@ -299,7 +299,7 @@ EVENT030610125248 false
 EVENT030610125249 false
 EVENT030610125333 false
 EVENT030610125608 false
-EVENT032310195656 false
+EVENT032310195656 true
 EVENT032510191109 false
 EVENT032510191141 false
 EVENT032510191227 false
@@ -314,6 +314,8 @@ EVENT032510192013 false
 EVENT032510192128 false
 EVENT032510192129 false
 EVENT032920202900 false
+EVENT033020104000 false
+EVENT033020103600 false
 EVENT032920203200 false
 EVENT032510192014 false
 EVENT032510192015 false
@@ -365,7 +367,7 @@ EVENT032410211233 false
 EVENT032410211253 false
 EVENT032410211356 false
 EVENT032410211810 false
-EVENT032410211811 false
+EVENT032410211811 true
 EVENT040810212913 false
 EVENT032510185631 false
 EVENT032510185746 false
@@ -383,9 +385,9 @@ EVENT032410211725 false
 EVENT020610082033 false
 EVENT020610082034 false
 EVENT020610082035 false
-EVENT020610082036 false
-EVENT020610082037 false
-EVENT020610082038 false
+EVENT020610082036 true
+EVENT020610082037 true
+EVENT020610082038 true
 EVENT032510185512 false
 EVENT032510185543 false
 EVENT032410211855 false
@@ -450,22 +452,22 @@ EVENT121709211326156 false
 EVENT121709211326318 false
 
 INTERNAL_VARIABLES
-6
+13
 ChaseBrain-CHARACTER111909215920 0
 ChaseBrain-CHARACTER111909215921 0
 InBirdShowArea 0
 InBirdTextArea 0
 InSkyTextArea 0
 alexFollowing 0
-barkedDeer 0
+barkedDeer 1
 birdsFlewAway 0
 blackBerrySequenceDone 0
 cageOpen 0
 catsAreFed 0
-cowsIn 0
+cowsIn 3
 dadFollowing 0
 dadWalkedGarage 1
-firstTalkToDad 0
+firstTalkToDad 1
 firstTimeToAndersons 0
 foundBlackberry 0
 girlsWalkToDoor 0
@@ -485,7 +487,7 @@ nearSouthRoad 0
 pumpkinSequenceDone 0
 runEndingSequence 0
 scienceBoxOpen 0
-showedGrain 0
+showedGrain 1
 stephenFollowing 0
 strawberryComplete 1
 talkedGirlsKitchen 0
@@ -506,7 +508,7 @@ Clover false
 Dagger false
 Fiddle false
 Friedrich false
-Grain false
+Grain true
 Green Beans false
 Launch Key false
 Magnet false
@@ -544,7 +546,7 @@ BirchTree CHARACTER013110212149 false 271 320 true 52 false 0 0  Follow false
 BirdTrees CHARACTER122909094807 false 330 222 false 60 false 0 0  Path 5 0 3 false BirdFlying 0 0 0 307 126 1.64528 0 true 367 265
 BirdTrees CHARACTER122909094854 false 369 267 false 30 false 0 0  Path 3 0 1 false BirdSitting 0 350 0 -1 -1 0 0 false 400 318
 BirdTrees CHARACTER122909140425 false 85 159 false 50 false 0 0  Path 5 0 4 false BirdsCaryingErnie 0 0 0 82 81 1.56115 0 true 190 315
-NorthField1 CHARACTER111709193403 true 226 405 true 60 true 0 0 
+NorthField2 CHARACTER111709193403 true 409 331 true 60 true 0 0 
 DoorYard CHARACTER121009194426 false 167 87 false 40 false 0 0  Path 0 2 0 true GarageDoor 0 0 0 167 87 2.1 2.132 true 167 171
 DoorYard CHARACTER120509193954 false 282 81 true 40 false 0 0  Path 3 1 1 false YellowLeaf 12086 17994.9 0 327 337 0.180278 0.2 true 282 81
 DoorYard CHARACTER120509194007 false 398 84 true 40 false 0 0  Path 5 1 2 false YellowLeaf 0 0 0 398 103 0.8 0.334 true 398 71
@@ -583,19 +585,19 @@ KQ1-Castle-Right CHARACTER123009080234 false 408 416 true 30 false 0 0
 KQ1-Castle-Right CHARACTER123109081602 false 332 96 false 50 false 0 0  Path 5 0 4 false BirdsCaryingErnie 0 0 0 333 50 0.920217 0 true 437 252
 MailBox CHARACTER022510211299 false 40 25 false 0 false 0 0  Path 3 0 2 false Brochure 0 3000 0 -1 -1 0 0 false 0 0
 MailBox CHARACTER111909215921 false 379 215 true 75 false 0 0 
-NorthField1 CHARACTER012210194924 false 6 67 false 140 true 0 0  Path 5 0 3 false DeerJumping 0 0 3 -24 57 0.225877 0 true 41 153
-NorthField10 CHARACTER012610211311 false 213 175 true 50 false 0 0 
-NorthField10 CHARACTER030210205663 false 0 422 false 45 false 0 0  Path 0 0 0 true UnknownSpriteName 0 0 0 -1 -1 0 0 false -1 -1
-NorthField2 CHARACTER013110212113 false 489 229 true 55 false 0 0  Follow false
-NorthField2 CHARACTER030210205651 false -28 -94 false 40 false 0 0  Path 0 1 0 true DadRight 0 0 0 -1 -1 0 0 true 0 0
-NorthField2 CHARACTER030210205652 false -28 -94 false 40 false 0 0  Path 0 1 0 true DadRight 0 0 0 -1 -1 0 0 true 0 0
-NorthField2 CHARACTER030210205653 false -28 -94 false 40 false 0 0  Path 0 1 0 true DadRight 0 0 0 -1 -1 0 0 true 0 0
-NorthField3 CHARACTER012610211324 false 364 184 false 50 false 0 0 
+NorthField1 CHARACTER012210194924 false -74 72 false 140 false 0 0  Path 0 1 0 true DeerJumping 0 0 -1 -74 72 0.257539 0.268 true 41 153
+NorthField2 CHARACTER012610211311 false 94 360 false 50 true 0 0 
+NorthField10 CHARACTER030210205663 false 0 422 true 45 false 0 0  Path 0 0 0 false UnknownSpriteName 0 0 0 -1 -1 0 0 false -1 -1
+NorthField2 CHARACTER013110212113 false 403 250 false 55 true 0 0  Follow false
+NorthField2 CHARACTER030210205651 false -28 -94 false 40 true 0 0  Path 0 1 0 true DadRight 0 0 0 -1 -1 0 0 true 0 0
+NorthField2 CHARACTER030210205652 false -28 -94 false 40 true 0 0  Path 0 1 0 true DadRight 0 0 0 -1 -1 0 0 true 0 0
+NorthField2 CHARACTER030210205653 false 632 406 false 40 true 0 0  Path 0 2 0 true DadRight 0 0 1.46795 632 406 6.92717 6.939 true 403 250
+NorthField2 CHARACTER012610211324 false 94 360 false 50 true 0 0 
 PineTreesAlongDriveway CHARACTER041110071413 false 371 71 false 45 false 0 0  Path 0 2 0 true JennaUp 0 0 0 371 71 1.49485 1.533 true 385 138
 PineTreesAlongDriveway CHARACTER042510205319 false 348 120 false 45 false 0 0  Path 0 1 0 true HenryUp 0 0 0 348 120 1.49485 1.533 true 376 217
 Road1 CHARACTER032010070800 false 0 0 true 15 false 0 0  Path 5 0 3 false HillSide 0 0 1 -600 0 40 0 true 0 0
-Road1 CHARACTER032010070804 false 500 1 false 2 false 0 0  Path 5 0 3 false StormClouds 0 0 1 474 1 13 0 true 500 1
-Road1 CHARACTER032010070802 false 760 2 false 15 false 0 0  Path 5 0 3 false Deer 0 0 1 560 2 13.3333 0 true 760 2
+Road1 CHARACTER032010070804 false 500 1 true 2 false 0 0  Path 5 0 3 false StormClouds 0 0 1 474 1 13 0 true 500 1
+Road1 CHARACTER032010070802 false 760 2 true 15 false 0 0  Path 5 0 3 false Deer 0 0 1 560 2 13.3333 0 true 760 2
 Road1 CHARACTER032010070803 false 0 3 true 60 false 0 0  Path 5 0 3 false TreeLine 0 0 1 -1500 3 25 0 true 0 3
 Road1 CHARACTER032010114300 false 0 180 true 101 false 0 0  Path 5 0 3 false BackBushes 0 0 1 -3500 180 34.6535 0 true 0 180
 Road1 CHARACTER031910232344 false 0 349 true 139 false 0 0  Path 5 0 3 false RoadLines 0 0 1 -4000 349 28.777 0 true 0 349
@@ -606,8 +608,8 @@ Sky1 CHARACTER123109071931 false 475 83 true 15 false 0 0  Path 5 0 3 false Clou
 Sky2 CHARACTER123009080719 false 200 42 true 20 false 0 0  Path 5 0 3 false Cloud1 0 0 1 1000 42 40 0 true 200 42
 Sky2 CHARACTER123009081937 false 500 259 true 25 false 0 0  Path 5 0 3 false Cloud2 0 0 1 970 259 18.8 0 true 500 259
 Sky2 CHARACTER123109071932 false -200 83 true 15 false 0 0  Path 5 0 3 false Cloud3 0 0 1 800 83 66.6667 0 true -200 83
-SouthField6 CHARACTER012610211136 false 116 266 false 40 false 0 0  Follow false
-SouthFieldWaterPump CHARACTER030210205662 false 0 227 false 45 false 0 0  Path 0 0 0 true UnknownSpriteName 0 0 0 -1 -1 0 0 false -1 -1
+NorthField2 CHARACTER012610211136 false 94 327 false 40 true 0 0  Follow true
+SouthFieldWaterPump CHARACTER030210205662 false 0 227 true 45 false 0 0  Path 0 0 0 false UnknownSpriteName 0 0 0 -1 -1 0 0 false -1 -1
 TireSwing CHARACTER120509192651 false 218 162 true 50 false 0 0  Path 3 1 1 false OrangeLeaf 3429 14331.9 0 212 251 0.134164 0.201 true 218 162
 TireSwing CHARACTER120509192659 false 263 165 true 50 false 0 0  Path 3 1 1 false OrangeLeaf 2562 10758.3 0 257 254 0.134164 0.2 true 263 165
 TireSwing CHARACTER120509192712 false 313 161 true 40 false 0 0  Path 3 1 1 false OrangeLeaf 130 14397.5 0 308 286 0.226385 0.266 true 313 161
@@ -656,10 +658,10 @@ AndersonsHouse CHARACTER031410113858 false 100 359 true 1 false 0 0
 AndersonsHouse CHARACTER031410113900 false 6 451 true 1 false 0 0 
 AndersonsHouse CHARACTER031410113901 false 3 259 true 1 false 0 0 
 AndersonsHouse CHARACTER031810221801 false 138 328 true 1 false 0 0 
-AndersonsHouse CHARACTER031810221812 false 239 294 true 15 false 1 179.667 
+AndersonsHouse CHARACTER031810221812 false 239 294 true 15 false 2 404 
 AndersonsHouse CHARACTER032610232850 false 139 353 false 1 false 0 0 
 AndersonsHouse CHARACTER042710214544 false 323 97 false 1 false 0 0 
-AndersonsHouse CHARACTER042910221222 false 294 336 true 10 false 0 487 
+AndersonsHouse CHARACTER042910221222 false 294 336 true 10 false 0 608 
 AndersonsHouse CHARACTER030610141043 false 0 13 true 1 false 0 0 
 AndersonsShop CHARACTER0327100824541 false 0 144 true 1 false 0 0 
 AndersonsShop CHARACTER032710082505 false 178 356 true 1 false 0 0 
@@ -746,7 +748,7 @@ BirchTree CHARACTER111709193213 false 27 284 true 1 false 0 0
 BirchTree CHARACTER111709193214 false 154 226 true 1 false 0 0 
 BirchTree CHARACTER111709193217 false 270 388 true 1 false 0 0 
 BirchTree CHARACTER012610213038 false 486 268 true 1 false 0 0 
-BirchTree CHARACTER021310225212 false 443 329 true 30 false 11 72.0997 
+BirchTree CHARACTER021310225212 false 443 329 true 30 false 0 79.4997 
 BirchTree CHARACTER033010202429 false 392 332 true 1 false 0 0 
 BirchTree CHARACTER111709193215 false 229 128 true 1 false 0 0 
 BirchTree CHARACTER033010205832 false 380 409 true 1 false 0 0 
@@ -756,7 +758,7 @@ BirchTree CHARACTER033010211912 false 482 343 false 1 false 0 0
 BirchTree CHARACTER042510212352 false 349 348 false 1 false 0 0 
 BirchTree CHARACTER042510212405 false 349 325 false 1 false 0 0 
 BirchTree CHARACTER042510212412 false 498 310 false 1 false 0 0 
-BirchTree CHARACTER032910215520 false 482 345 true 16 false 7 12.9375 
+BirchTree CHARACTER032910215520 false 482 345 true 16 false 2 303.5 
 BirdTrees CHARACTER122809162205 false 0 306 true 1 false 0 0 
 BirdTrees CHARACTER122909072813 false 196 24 true 1 false 0 0 
 BirdTrees CHARACTER122909072836 false 596 403 true 1 false 0 0 
@@ -780,8 +782,8 @@ BirdTrees CHARACTER122909072924 false 498 336 true 1 false 0 0
 BirdTrees CHARACTER122909072926 false 325 81 true 1 false 0 0 
 BirdTrees CHARACTER122909072932 false 196 424 true 1 false 0 0 
 BirdTrees CHARACTER122909072933 false 228 359 true 1 false 0 0 
-BirdTrees CHARACTER122909093104 false 335 211 true 20 false 0 455.7 
-BirdTrees CHARACTER122909093111 false 368 265 true 17 false 1 515.526 
+BirdTrees CHARACTER122909093104 false 335 211 true 20 false 1 615.85 
+BirdTrees CHARACTER122909093111 false 368 265 true 17 false 0 770.173 
 DoorYard CHARACTER111709193223 false 245 0 true 34 false 0 0 
 DoorYard CHARACTER111709193224 false 392 347 true 34 false 0 0 
 DoorYard CHARACTER111709193225 false 530 282 true 34 false 0 0 
@@ -851,7 +853,7 @@ HorseShoeLantern CHARACTER111709193321 false 484 257 true 1 false 0 0
 HorseShoeLantern CHARACTER111709193322 false 265 79 true 1 false 0 0 
 HorseShoeLantern CHARACTER111709193316 false 283 283 true 34 false 0 0 
 HorseShoeLantern CHARACTER111709193315 false 164 407 true 34 false 0 0 
-HorseShoeLantern CHARACTER112509091013 false 598 136 true 1 false 3 23709 
+HorseShoeLantern CHARACTER112509091013 false 598 136 true 1 false 2 20 
 HorseShoeLowerLeft CHARACTER111709193323 false 204 28 true 1 false 0 0 
 HorseShoeLowerLeft CHARACTER111709193324 false 140 294 true 1 false 0 0 
 HorseShoeLowerLeft CHARACTER111709193325 false 581 403 true 1 false 0 0 
@@ -875,19 +877,19 @@ HouseBasement CHARACTER040310071142 false 529 193 true 1 false 0 0
 HouseBasement CHARACTER041510074441 false 70 77 true 1 false 0 0 
 HouseFamilyRoom CHARACTER122009222602 false 1 446 true 1 false 0 0 
 HouseFamilyRoom CHARACTER122009222616 false 114 312 true 1 false 0 0 
-HouseFamilyRoom CHARACTER012210220829 false 548 282 true 1 false 0 0 
+HouseFamilyRoom CHARACTER012210220829 false 548 282 false 1 false 0 0 
 HouseFamilyRoom CHARACTER030410201050 false 596 123 true 1 false 0 0 
 HouseFamilyRoom CHARACTER040310084319 false 229 222 true 1 false 0 0 
-HouseFamilyRoom CHARACTER040310070408 false 231 223 false 10 false 0 0 
-HouseGarage CHARACTER111709193255 false 449 194 true 1 false 0 0 
+HouseFamilyRoom CHARACTER040310070408 false 231 223 true 10 false 2 5661 
+HouseGarage CHARACTER111709193255 false 449 194 false 1 false 0 0 
 HouseKitchen CHARACTER022210202217 false 337 255 true 1 false 0 0 
-HouseKitchen CHARACTER022710184446 false 380 215 true 10 false 0 259 
-HouseKitchen CHARACTER022710221155 false 336 246 true 10 false 12 59 
+HouseKitchen CHARACTER022710184446 false 380 215 true 10 false 2 320 
+HouseKitchen CHARACTER022710221155 false 336 246 true 10 false 6 220 
 HouseKitchen CHARACTER030210215300 false 336 246 false 10 false 0 0 
-HouseKitchen CHARACTER022810190514 false 410 222 true 20 false 42 9 
+HouseKitchen CHARACTER022810190514 false 410 222 true 20 false 14 320 
 HouseKitchen CHARACTER022810204856 false 224 275 false 1 false 0 0 
 HouseKitchen CHARACTER022810205401 false 225 275 true 1 false 0 0 
-HouseKitchen CHARACTER022810215050 false 472 241 true 15 false 2 259 
+HouseKitchen CHARACTER022810215050 false 472 241 true 15 false 5 320 
 HouseKitchen CHARACTER030210213600 false 475 264 false 1 false 0 0 
 HouseKitchen CHARACTER030210213629 false 362 277 false 1 false 0 0 
 HouseLivingRoom CHARACTER022110075612 false 488 341 true 1 false 0 0 
@@ -928,19 +930,19 @@ InsideBarn CHARACTER030610072928 false 308 384 false 1 false 0 0
 InsideBarn CHARACTER030610072934 false 254 348 true 1 false 0 0 
 InsideBarn CHARACTER030610071141 false 167 375 true 1 false 0 0 
 InsideBarn CHARACTER030610071151 false 172 374 false 1 false 0 0 
-InsideBarn CHARACTER030610122116 false 207 359 true 10 false 0 487 
+InsideBarn CHARACTER030610122116 false 207 359 true 10 false 0 608 
 InsideBarn CHARACTER032310195538 false 123 313 true 1 false 0 0 
-InsideBarn CHARACTER032310195550 false 138 346 true 1 false 0 0 
-KQ1-Castle-Left CHARACTER121509221043 false 461 21 true 10 false 4 8359 
-KQ1-Castle-Left CHARACTER121509221052 false 522 19 true 10 false 4 8359 
-KQ1-Castle-Left CHARACTER121509221100 false 582 21 true 10 false 4 8359 
+InsideBarn CHARACTER032310195550 false 138 346 false 1 false 0 0 
+KQ1-Castle-Left CHARACTER121509221043 false 461 21 true 10 false 3 20 
+KQ1-Castle-Left CHARACTER121509221052 false 522 19 true 10 false 3 20 
+KQ1-Castle-Left CHARACTER121509221100 false 582 21 true 10 false 3 20 
 KQ1-Castle-Left CHARACTER121509222120 false 20 0 true 10 false 0 0 
 KQ1-Castle-Left CHARACTER121509223442 false 262 0 true 1 false 0 0 
 KQ1-Castle-Left CHARACTER123109073235 false 404 152 true 1 false 0 0 
 KQ1-Castle-Right CHARACTER111709202000 false 399 3 true 1 false 0 0 
-KQ1-Castle-Right CHARACTER121509220614 false 140 22 true 10 false 4 8359 
-KQ1-Castle-Right CHARACTER121509220709 false 80 20 true 10 false 4 8359 
-KQ1-Castle-Right CHARACTER121509220722 false 20 23 true 10 false 4 8359 
+KQ1-Castle-Right CHARACTER121509220614 false 140 22 true 10 false 3 20 
+KQ1-Castle-Right CHARACTER121509220709 false 80 20 true 10 false 3 20 
+KQ1-Castle-Right CHARACTER121509220722 false 20 23 true 10 false 3 20 
 KQ1-Castle-Right CHARACTER121509223502 false 314 0 true 1 false 0 0 
 KQ1-Castle-Right CHARACTER122909161001 false 557 208 false 20 false 0 0 
 KQ1-Castle-Right CHARACTER122909161015 false 452 193 false 27 false 0 0 
@@ -960,24 +962,24 @@ MailBox CHARACTER111709193386 false 8 115 true 1 false 0 0
 MailBox CHARACTER111709193399 false 2 25 true 1 false 0 0 
 MailBox CHARACTER111709193340 false 103 431 true 1 false 0 0 
 MailBox CHARACTER111709193377 false 50 50 false 1 false 0 0 
-NorthField1 CHARACTER020410195320 false 275 168 true 1 true 0 0 
-NorthField1 CHARACTER020610074707 false 447 247 true 1 true 0 0 
-NorthField1 CHARACTER020610074730 false 597 247 true 1 true 0 0 
-NorthField1 CHARACTER021110192334 false 278 246 true 1 true 0 0 
-NorthField1 CHARACTER021110192323 false 278 339 true 1 true 0 0 
-NorthField1 CHARACTER021110192408 false 278 433 true 1 true 0 0 
-NorthField1 CHARACTER122409084821 false 507 273 true 1 true 0 0 
-NorthField1 CHARACTER122409084823 false 497 280 true 1 true 0 0 
-NorthField1 CHARACTER122409084824 false 521 291 true 1 true 0 0 
-NorthField1 CHARACTER122409084825 false 148 353 true 1 true 0 0 
-NorthField1 CHARACTER122409084827 false 155 358 true 1 true 0 0 
-NorthField1 CHARACTER122409084828 false 135 368 true 1 true 0 0 
-NorthField1 CHARACTER122409084829 false 211 233 true 1 true 0 0 
-NorthField1 CHARACTER122409084830 false 437 388 true 1 true 0 0 
-NorthField1 CHARACTER032310205252 false 452 313 false 40 true 0 0 
-NorthField1 CHARACTER032310210306 false 330 359 false 50 true 0 0 
-NorthField1 CHARACTER032310210310 false 442 383 false 65 true 0 0 
-NorthField1 CHARACTER032810195415 false 7 78 true 6 true 4 769 
+NorthField1 CHARACTER020410195320 false 275 168 true 1 false 0 0 
+NorthField1 CHARACTER020610074707 false 447 247 true 1 false 0 0 
+NorthField1 CHARACTER020610074730 false 597 247 true 1 false 0 0 
+NorthField1 CHARACTER021110192334 false 278 246 true 1 false 0 0 
+NorthField1 CHARACTER021110192323 false 278 339 true 1 false 0 0 
+NorthField1 CHARACTER021110192408 false 278 433 true 1 false 0 0 
+NorthField1 CHARACTER122409084821 false 507 273 true 1 false 0 0 
+NorthField1 CHARACTER122409084823 false 497 280 true 1 false 0 0 
+NorthField1 CHARACTER122409084824 false 521 291 true 1 false 0 0 
+NorthField1 CHARACTER122409084825 false 148 353 true 1 false 0 0 
+NorthField1 CHARACTER122409084827 false 155 358 true 1 false 0 0 
+NorthField1 CHARACTER122409084828 false 135 368 true 1 false 0 0 
+NorthField1 CHARACTER122409084829 false 211 233 true 1 false 0 0 
+NorthField1 CHARACTER122409084830 false 437 388 true 1 false 0 0 
+NorthField1 CHARACTER032310205252 false 452 313 true 40 false 4 261 
+NorthField1 CHARACTER032310210306 false 330 359 true 50 false 3 104 
+NorthField1 CHARACTER032310210310 false 442 383 true 65 false 3 237.923 
+NorthField1 CHARACTER032810195415 false 7 78 false 6 false 4 2458 
 NorthField10 CHARACTER122409074803 false 578 350 true 1 false 0 0 
 NorthField10 CHARACTER122409074807 false 585 366 true 1 false 0 0 
 NorthField10 CHARACTER122409074808 false 565 374 true 1 false 0 0 
@@ -993,15 +995,15 @@ NorthField10 CHARACTER122409074823 false 0 408 true 1 false 0 0
 NorthField10 CHARACTER122809154638 false 608 286 true 1 false 0 0 
 NorthField10 CHARACTER122809154719 false 412 303 false 1 false 0 0 
 NorthField10 CHARACTER041610072341 false 624 408 true 1 false 0 0 
-NorthField2 CHARACTER021310083510 false 0 247 true 1 false 0 0 
-NorthField2 CHARACTER020610075138 false 150 247 true 1 false 0 0 
-NorthField2 CHARACTER021110192642 false 151 360 true 1 false 0 0 
-NorthField2 CHARACTER122409085020 false 534 273 true 1 false 0 0 
-NorthField2 CHARACTER122409085022 false 482 305 true 1 false 0 0 
-NorthField2 CHARACTER122409085023 false 256 387 true 1 false 0 0 
-NorthField2 CHARACTER122409085024 false 120 241 true 1 false 0 0 
-NorthField2 CHARACTER122409085025 false 29 376 true 1 false 0 0 
-NorthField2 CHARACTER122409085026 false 585 448 true 1 false 0 0 
+NorthField2 CHARACTER021310083510 false 0 247 true 1 true 0 0 
+NorthField2 CHARACTER020610075138 false 150 247 true 1 true 0 0 
+NorthField2 CHARACTER021110192642 false 151 360 true 1 true 0 0 
+NorthField2 CHARACTER122409085020 false 534 273 true 1 true 0 0 
+NorthField2 CHARACTER122409085022 false 482 305 true 1 true 0 0 
+NorthField2 CHARACTER122409085023 false 256 387 true 1 true 0 0 
+NorthField2 CHARACTER122409085024 false 120 241 true 1 true 0 0 
+NorthField2 CHARACTER122409085025 false 29 376 true 1 true 0 0 
+NorthField2 CHARACTER122409085026 false 585 448 true 1 true 0 0 
 NorthField3 CHARACTER122409085108 false 536 275 true 1 false 0 0 
 NorthField3 CHARACTER122409085109 false 518 295 true 1 false 0 0 
 NorthField3 CHARACTER122409085110 false 347 413 true 1 false 0 0 

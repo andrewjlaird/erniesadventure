@@ -153,7 +153,7 @@ BORDER_SCENES_END
 
 
 MUSIC
-InTheHouse.mp3
+InTheHouse.wav
 
 
 INPUT_START
@@ -438,7 +438,7 @@ INPUT_START
 
 EVENT_ID EVENT032510191732
 INPUT_TEXT look net
-CRITERIA ObjectInCurrentSceneCriteria NOT CHARACTER030610072934
+CRITERIA ObjectInCurrentSceneCriteria CHARACTER030610072928
 ACTION DisplayTextAction There is a large net on the ground.
 
 INPUT_END
@@ -479,7 +479,32 @@ EVENT_ID EVENT032920202900
 INPUT_TEXT look floor
 INPUT_TEXT look ground
 CRITERIA ObjectInCurrentSceneCriteria CHARACTER032310195550
+CRITERIA ObjectInCurrentSceneCriteria NOT CHARACTER030610072928
 ACTION DisplayTextAction There is a cat, a food bowl, the cat food bin, a grain bucket and a small pile of grain on the floor.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT033020104000
+INPUT_TEXT look floor
+INPUT_TEXT look ground
+CRITERIA ObjectInCurrentSceneCriteria NOT CHARACTER032310195550
+CRITERIA ObjectInCurrentSceneCriteria CHARACTER030610072928
+ACTION DisplayTextAction There is a cat, a food bowl, the cat food bin, a grain bucket and a net on the floor.
+
+INPUT_END
+
+
+INPUT_START
+
+EVENT_ID EVENT033020103600
+INPUT_TEXT look floor
+INPUT_TEXT look ground
+CRITERIA ObjectInCurrentSceneCriteria CHARACTER032310195550
+CRITERIA ObjectInCurrentSceneCriteria CHARACTER030610072928
+ACTION DisplayTextAction There is a cat, a food bowl, the cat food bin, a grain bucket, a small pile of grain and the net on the floor.
 
 INPUT_END
 
@@ -490,6 +515,7 @@ EVENT_ID EVENT032920203200
 INPUT_TEXT look floor
 INPUT_TEXT look ground
 CRITERIA ObjectInCurrentSceneCriteria NOT CHARACTER032310195550
+CRITERIA ObjectInCurrentSceneCriteria NOT CHARACTER030610072928
 ACTION DisplayTextAction There is a cat, a food bowl, the cat food bin and a grain bucket on the floor.
 
 INPUT_END

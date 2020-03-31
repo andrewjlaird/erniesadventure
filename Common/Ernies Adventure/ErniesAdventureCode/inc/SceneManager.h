@@ -3,9 +3,9 @@
 
 #include <vector>
 #include <allegro.h>
-#ifdef _WIN32
-#include <winalleg.h>
-#endif
+//#ifdef _WIN32
+//#include <winalleg.h>
+//#endif
 #include <map>
 
 #include "SceneSettings.h"

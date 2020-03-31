@@ -63,6 +63,8 @@ SceneManager::SceneManager(DisplayDriver& displayDriver)
       std::cout << "Error initializing sound system" << std::endl;
    }
 
+   set_display_switch_mode(SWITCH_BACKGROUND);
+   
    // (U) Load up the common settings
    if (!loadGameSettings())
    {
@@ -78,7 +80,7 @@ SceneManager::SceneManager(DisplayDriver& displayDriver)
    // (U) Load music
    audioManager.loadMusic();
 
-   audioManager.changeBackgroundMusic("OnTheFarm.mp3");
+   audioManager.changeBackgroundMusic("OnTheFarm.wav");
 
    // (U) Create map first so the scenes can be linked
    for (int i = 0 ; i < sceneNames.size() ; i++)
