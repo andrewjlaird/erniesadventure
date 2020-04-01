@@ -105,15 +105,18 @@ FFLAGS=
 ASFLAGS=
 
 # Link Libraries and Options
-LDLIBSOPTIONS=-L../../allegro-mingw-4.2.2/lib -lalleg
+LDLIBSOPTIONS=-L../../allegro-4.4.2-mingw-3.4.5/include ../../allegro-4.4.2-mingw-3.4.5/bin/allegro-4.4.2-monolith-mt.dll
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/scenewriterrev3.exe
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/SceneWriter.exe
+	${CP} ../../allegro-4.4.2-mingw-3.4.5/bin/allegro-4.4.2-monolith-mt.dll ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/scenewriterrev3.exe: ${OBJECTFILES}
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/SceneWriter.exe: ../../allegro-4.4.2-mingw-3.4.5/bin/allegro-4.4.2-monolith-mt.dll
+
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/SceneWriter.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/scenewriterrev3 ${OBJECTFILES} ${LDLIBSOPTIONS}
+	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/SceneWriter ${OBJECTFILES} ${LDLIBSOPTIONS}
 
 ${OBJECTDIR}/_ext/4d9236b7/Action.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/Action.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7
@@ -391,6 +394,8 @@ ${OBJECTDIR}/_ext/c88eb9ba/SpriteWindow.o: ../../Common/Ernies\ Adventure/SceneW
 # Clean Targets
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r ${CND_BUILDDIR}/${CND_CONF}
+	${RM} -r ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/allegro-4.4.2-monolith-mt.dll
+	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/SceneWriter.exe
 
 # Subprojects
 .clean-subprojects:

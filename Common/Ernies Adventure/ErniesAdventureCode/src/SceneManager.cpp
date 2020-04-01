@@ -64,6 +64,7 @@ SceneManager::SceneManager(DisplayDriver& displayDriver)
    }
 
    set_display_switch_mode(SWITCH_BACKGROUND);
+   set_keyboard_rate(1000, 100);
    
    // (U) Load up the common settings
    if (!loadGameSettings())

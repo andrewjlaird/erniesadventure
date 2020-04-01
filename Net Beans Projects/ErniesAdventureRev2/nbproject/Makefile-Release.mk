@@ -105,11 +105,11 @@ LDLIBSOPTIONS=-L../../allegro-4.4.2-mingw-3.4.5/bin -lallegro-4.4.2-monolith-mt
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/erniesadventurerev2.exe
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/ErniesAdventure.exe
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/erniesadventurerev2.exe: ${OBJECTFILES}
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/ErniesAdventure.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/erniesadventurerev2 ${OBJECTFILES} ${LDLIBSOPTIONS}
+	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/ErniesAdventure ${OBJECTFILES} ${LDLIBSOPTIONS}
 
 ${OBJECTDIR}/_ext/4d9236b7/Action.o: ../../Common/Ernies\ Adventure/ErniesAdventureCode/src/Action.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/4d9236b7

@@ -9,7 +9,8 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
-   int screenMode = GFX_AUTODETECT_WINDOWED;
+   int screenMode = GFX_AUTODETECT;
+   //screenMode = GFX_AUTODETECT_WINDOWED;
 
    for (int i = 0 ; i < argc ; i++)
    {
@@ -46,6 +47,8 @@ int main(int argc, char *argv[])
    }
     
    cout << "Graphics initialized.\n";
+   
+   set_display_switch_mode(SWITCH_BACKGROUND);
 
    /* RGB -> color mapping table. Not needed, but speeds things up */
    RGB_MAP rgb_table;

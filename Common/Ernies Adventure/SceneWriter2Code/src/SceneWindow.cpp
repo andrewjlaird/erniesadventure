@@ -949,6 +949,8 @@ void SceneWindow::getNextFrame(BITMAP* frame)
       }
       case StartPoints:
       {
+         std::cout << "StartPoints" << std::endl;
+          
          if (selectedSceneX != -1 &&
              selectedSceneY != -1 &&
              selectedSceneX < sceneGrid.size() &&
@@ -956,6 +958,8 @@ void SceneWindow::getNextFrame(BITMAP* frame)
              sceneGrid[selectedSceneX][selectedSceneY] != NULL)
          {
             std::vector<Point> startPoints = sceneGrid[selectedSceneX][selectedSceneY]->getRandomStartPoints();
+            
+            std::cout << "start points length: " << startPoints.size() << " for scene " << sceneGrid[selectedSceneX][selectedSceneY]->getName() << std::endl;
 
             for (int i = 0 ; i < startPoints.size() ; i++)
             {
@@ -2314,8 +2318,21 @@ void SceneWindow::checkKeyboard()
                                               pathStartPoint.y,
                                               1);
 
-            // (U) wait for F8 to start character
-            std::cout << "waiting for F8" << std::endl;
+            if (pathCharacter == NULL || !pathCharacter->loadCharacter())
+            {
+               std::cout << "Failed to create path character" << std::endl;
+                
+               if (pathCharacter != NULL)
+               {
+                    delete pathCharacter;
+                    pathCharacter = NULL;
+               }
+            }
+            else
+            {            
+               // (U) wait for F8 to start character
+               std::cout << "waiting for F8" << std::endl;
+            }
          }
       }
       else if(key[KEY_F8])
@@ -2338,118 +2355,40 @@ void SceneWindow::checkKeyboard()
          keyDown = false;
       }
    }
+   else if (currentMode == JumpPointMode)
+   {
+      if(key[KEY_PGDN])
+      {
+         if (!keyDown)
+         {
+            keyDown = true;
+            
+            if (currentSceneId > 0)
+            {      
+               currentSceneId = currentSceneId - 1;
+            }
+         }
+      }
+      else if(key[KEY_PGUP])
+      {
+         if (!keyDown)
+         {
+            keyDown = true;
+            
+            std::vector<std::string> sceneNames = sceneManager.getSceneNames();
+            
+            if (currentSceneId < sceneNames.size() + 1)
+            {      
+               currentSceneId = currentSceneId + 1;
+            }
+         }
+      }
+   }
    else
    {
       if (key_shifts & KB_CTRL_FLAG)
       {
-         if (key[KEY_RIGHT])
-         {
-            std::vector<std::string> sceneNames = sceneManager.getSceneNames();
-            
-            sceneNames.push_back("UnknownScene");
-            
-            int choice = userSelectFromMenu(sceneNames);
-      
-            if (choice != -1)
-            {      
-               SceneIdType newSceneId = sceneManager.sceneNameToSceneId(sceneNames[choice]);
-         
-               if (selectedSceneY != -1 && 
-                   selectedSceneX < sceneGrid.size() && 
-                   selectedSceneY < sceneGrid[selectedSceneX].size() && 
-                   sceneGrid[selectedSceneX][selectedSceneY] != NULL)
-               {
-                  sceneGrid[selectedSceneX][selectedSceneY]->setRightScene(newSceneId);        
-               }
-               else
-               {
-                  std::cout << "Could not find scene" << std::endl;
-               }
-            }
-            // (U) Else esc
-         }
-         else if(key[KEY_LEFT])
-         {
-            std::vector<std::string> sceneNames = sceneManager.getSceneNames();
-
-            sceneNames.push_back("UnknownScene");
-
-            int choice = userSelectFromMenu(sceneNames);
-      
-            if (choice != -1)
-            {   
-               SceneIdType newSceneId = sceneManager.sceneNameToSceneId(sceneNames[choice]);
-         
-               if (selectedSceneX != -1 && 
-                   selectedSceneY != -1 && 
-                   selectedSceneX < sceneGrid.size() && 
-                   selectedSceneY < sceneGrid[selectedSceneX].size() && 
-                   sceneGrid[selectedSceneX][selectedSceneY] != NULL)
-               {
-                  sceneGrid[selectedSceneX][selectedSceneY]->setLeftScene(newSceneId);        
-               }
-               else
-               {
-                  std::cout << "Could not find scene" << std::endl;
-               }
-            }
-            // (U) Else esc
-         }
-         else if(key[KEY_UP])
-         {
-            std::vector<std::string> sceneNames = sceneManager.getSceneNames();
-
-            sceneNames.push_back("UnknownScene");
-            
-            int choice = userSelectFromMenu(sceneNames);
-      
-            if (choice != -1)
-            {      
-               SceneIdType newSceneId = sceneManager.sceneNameToSceneId(sceneNames[choice]);
-         
-               if (selectedSceneX != -1 && 
-                   selectedSceneY != -1 && 
-                   selectedSceneX < sceneGrid.size() && 
-                   selectedSceneY < sceneGrid[selectedSceneX].size() && 
-                   sceneGrid[selectedSceneX][selectedSceneY] != NULL)
-               {
-                  sceneGrid[selectedSceneX][selectedSceneY]->setUpScene(newSceneId);        
-               }
-               else
-               {
-                  std::cout << "Could not find scene" << std::endl;
-               }
-            }
-            // (U) Else esc
-         }
-         else if(key[KEY_DOWN])
-         {
-            std::vector<std::string> sceneNames = sceneManager.getSceneNames();
-
-            sceneNames.push_back("UnknownScene");
-            
-            int choice = userSelectFromMenu(sceneNames);
-      
-            if (choice != -1)
-            {      
-               SceneIdType newSceneId = sceneManager.sceneNameToSceneId(sceneNames[choice]);
-         
-               if (selectedSceneX != -1 && 
-                   selectedSceneY != -1 && 
-                   selectedSceneX < sceneGrid.size() && 
-                   selectedSceneY < sceneGrid[selectedSceneX].size() && 
-                   sceneGrid[selectedSceneX][selectedSceneY] != NULL)
-               {
-                  sceneGrid[selectedSceneX][selectedSceneY]->setDownScene(newSceneId);        
-               }
-               else
-               {
-                  std::cout << "Could not find scene" << std::endl;
-               }
-            }
-            // (U) Else esc
-         }
-         else if(key[KEY_L])
+         if(key[KEY_L])
          {
             if (!keyDown)
             {
@@ -2575,51 +2514,6 @@ void SceneWindow::checkKeyboard()
                {
                   waitForAnyKey("That scene already exists");
                }
-            }
-         }
-         else if(key[KEY_1])
-         {
-            if (!keyDown)
-            {
-               keyDown = true;
-
-               currentMode = JumpLine;
-            }
-         }
-         else if(key[KEY_2])
-         {
-            if (!keyDown)
-            {
-               keyDown = true;
-
-               currentMode = JumpPointMode;
-            }
-         }
-         else if(key[KEY_3])
-         {
-            if (!keyDown)
-            {
-               keyDown = true;
-
-               currentMode = ObjectPlacement;
-            }
-         }
-         else if(key[KEY_4])
-         {
-            if (!keyDown)
-            {
-               keyDown = true;
-
-               currentMode = SceneMovement;
-            }
-         }
-         else if(key[KEY_5])
-         {
-            if (!keyDown)
-            {
-               keyDown = true;
-
-               currentMode = Border;
             }
          }
          else
@@ -2800,32 +2694,6 @@ void SceneWindow::checkKeyboard()
             addSceneToGrid(selectedSceneX, selectedSceneY - 1);
          }
       }
-      else if(key[KEY_PGDN])
-      {
-         if (!keyDown)
-         {
-            keyDown = true;
-            
-            if (currentSceneId > 0)
-            {      
-               currentSceneId = currentSceneId - 1;
-            }
-         }
-      }
-      else if(key[KEY_PGUP])
-      {
-         if (!keyDown)
-         {
-            keyDown = true;
-            
-            std::vector<std::string> sceneNames = sceneManager.getSceneNames();
-            
-            if (currentSceneId < sceneNames.size() + 1)
-            {      
-               currentSceneId = currentSceneId + 1;
-            }
-         }
-      }
       else
       {
          keyDown = false;
@@ -2835,7 +2703,114 @@ void SceneWindow::checkKeyboard()
    // (U) Anytime keys
    if (!keyDown && currentMode != Path && key_shifts & KB_CTRL_FLAG)
    {
-      if(key[KEY_S])
+      if (key[KEY_RIGHT])
+      {
+         std::vector<std::string> sceneNames = sceneManager.getSceneNames();
+            
+         sceneNames.push_back("UnknownScene");
+            
+         int choice = userSelectFromMenu(sceneNames);
+      
+         if (choice != -1)
+         {      
+            SceneIdType newSceneId = sceneManager.sceneNameToSceneId(sceneNames[choice]);
+         
+            if (selectedSceneY != -1 && 
+                selectedSceneX < sceneGrid.size() && 
+                selectedSceneY < sceneGrid[selectedSceneX].size() && 
+                sceneGrid[selectedSceneX][selectedSceneY] != NULL)
+            {
+               sceneGrid[selectedSceneX][selectedSceneY]->setRightScene(newSceneId);        
+            }
+            else
+            {
+               std::cout << "Could not find scene" << std::endl;
+            }
+         }
+         // (U) Else esc
+      }
+      else if(key[KEY_LEFT])
+      {
+         std::vector<std::string> sceneNames = sceneManager.getSceneNames();
+
+         sceneNames.push_back("UnknownScene");
+
+         int choice = userSelectFromMenu(sceneNames);
+
+         if (choice != -1)
+         {   
+            SceneIdType newSceneId = sceneManager.sceneNameToSceneId(sceneNames[choice]);
+
+            if (selectedSceneX != -1 && 
+                    selectedSceneY != -1 && 
+                selectedSceneX < sceneGrid.size() && 
+                selectedSceneY < sceneGrid[selectedSceneX].size() && 
+                sceneGrid[selectedSceneX][selectedSceneY] != NULL)
+            {
+               sceneGrid[selectedSceneX][selectedSceneY]->setLeftScene(newSceneId);        
+            }
+            else
+            {
+               std::cout << "Could not find scene" << std::endl;
+              }
+         }
+         // (U) Else esc
+      }
+      else if(key[KEY_UP])
+      {
+         std::vector<std::string> sceneNames = sceneManager.getSceneNames();
+
+         sceneNames.push_back("UnknownScene");
+
+         int choice = userSelectFromMenu(sceneNames);
+
+         if (choice != -1)
+         {      
+            SceneIdType newSceneId = sceneManager.sceneNameToSceneId(sceneNames[choice]);
+
+            if (selectedSceneX != -1 && 
+                  selectedSceneY != -1 && 
+                selectedSceneX < sceneGrid.size() && 
+                selectedSceneY < sceneGrid[selectedSceneX].size() && 
+                sceneGrid[selectedSceneX][selectedSceneY] != NULL)
+            {
+               sceneGrid[selectedSceneX][selectedSceneY]->setUpScene(newSceneId);        
+            }
+            else
+            {
+               std::cout << "Could not find scene" << std::endl;
+            }
+         }
+         // (U) Else esc
+      }
+      else if(key[KEY_DOWN])
+      {
+         std::vector<std::string> sceneNames = sceneManager.getSceneNames();
+  
+         sceneNames.push_back("UnknownScene");
+
+         int choice = userSelectFromMenu(sceneNames);
+
+         if (choice != -1)
+         {      
+            SceneIdType newSceneId = sceneManager.sceneNameToSceneId(sceneNames[choice]);
+
+            if (selectedSceneX != -1 && 
+                selectedSceneY != -1 && 
+                selectedSceneX < sceneGrid.size() && 
+                selectedSceneY < sceneGrid[selectedSceneX].size() && 
+                sceneGrid[selectedSceneX][selectedSceneY] != NULL)
+            {
+               sceneGrid[selectedSceneX][selectedSceneY]->setDownScene(newSceneId);        
+            }
+            else
+            {
+               std::cout << "Could not find scene" << std::endl;
+            }
+         }
+         // (U) Else esc
+      }
+      else if(key[KEY_S])
       {
          if (!keyDown)
          {
@@ -2861,6 +2836,51 @@ void SceneWindow::checkKeyboard()
          else
          {
             keyDown = false;
+         }
+      }
+      else if(key[KEY_1])
+      {
+         if (!keyDown)
+         {
+            keyDown = true;
+
+            currentMode = JumpLine;
+         }
+      }
+      else if(key[KEY_2])
+      {
+         if (!keyDown)
+         {
+            keyDown = true;
+
+            currentMode = JumpPointMode;
+         }
+      }
+      else if(key[KEY_3])
+      {
+         if (!keyDown)
+         {
+            keyDown = true;
+
+            currentMode = ObjectPlacement;
+         }
+      }
+      else if(key[KEY_4])
+      {
+         if (!keyDown)
+         {
+            keyDown = true;
+
+            currentMode = SceneMovement;
+         }
+      }
+      else if(key[KEY_5])
+      {
+         if (!keyDown)
+         {
+            keyDown = true;
+
+            currentMode = Border;
          }
       }
    }

@@ -145,11 +145,12 @@ PIXELS_PER_SECOND 75
 BRAIN_TYPE ChaseBrain
 START_TIME_MIN 1
 START_TIME_MAX 3
-START_TEXT The cat known as the Black Panther has come into the area.  He spots Ernie and runs at him.  This guy will kill the ern if he catches him by himself.
-END_TEXT The Black Panther attacks the Ern.  Needless to say, we'll just end the game here, since this is a kid's game.
+START_TEXT The cat known as the Black Panther has come into the area. He spots Ernie and runs at him. This guy will kill the ern if he catches him by himself. 
+END_TEXT The Black Panther attacks the Ern. Needless to say, we'll just end the game here, since this is a kid's game. 
 CHARACTER_TO_FOLLOW CHARACTER111709193403
 
 SCENE_CHARACTER_END
+
 
 
 BORDER_SCENES_START
@@ -198,3 +199,4 @@ ACTION RemoveObjectFromGameAction CHARACTER111909215921
 ACTION AddToScoreAction 1
 
 INPUT_END
+

@@ -35,6 +35,8 @@ DisplayManager::DisplayManager(DisplayDriver& inDisplayDriver,
    speed(1.0),
    elapsedTime(0.0),
    currentCommand(""),
+   blinkingCursor('_'),
+   cursorBlinkTime(0.0),
    lastChar(0),
    keyDown(false),
    altDown(false),
@@ -188,6 +190,22 @@ void DisplayManager::run()
       }
 
       handleUserInput(adjustedDt * 1000);
+
+      cursorBlinkTime += adjustedDt * 1000;
+
+      if (cursorBlinkTime > 500.0)
+      {
+         cursorBlinkTime = 0;
+
+         if (blinkingCursor == '_')
+         {
+            blinkingCursor = ' ';
+         }
+         else
+         {
+            blinkingCursor = '_';
+         }
+      }
 
       int totalSeconds = 0;
       int red = 0;
@@ -584,7 +602,7 @@ void DisplayManager::mergeToBitmap(BITMAP* mergedBitmap,
          }
       }
       
-      textprintf_ex(mergedBitmap, font, 5, 470, makecol(255, 255, 255), -1, "> %s", currentCommand.c_str());
+      textprintf_ex(mergedBitmap, font, 5, 470, makecol(255, 255, 255), -1, "> %s%c", currentCommand.c_str(), blinkingCursor);
       //textprintf_ex(mergedBitmap, font, 600, 470, makecol(255, 255, 255), -1, "%d", lastChar);
 
       // (U) Recolor the upper 13 pixels so that the text stands out
@@ -1262,18 +1280,18 @@ void DisplayManager::handleUserInput(double dt)
                displayDriver.toggleFullScreen();
             }
          }
-         // (U) Enter gets us out of text window active mode
+         // (U) Press any key to get out of the text window active
          else if (textWindowActive)
          {
-            if (scanCode == KEY_ENTER)
-            {
-               textSequenceNumber++;
+            //if (scanCode == KEY_ENTER)
+            //{
+            textSequenceNumber++;
 
-               if (textSequenceNumber == textToDisplay.size())
-               {
-                  textWindowActive = false;
-               }
+            if (textSequenceNumber == textToDisplay.size())
+            {
+               textWindowActive = false;
             }
+            //}
          }
          else if(dialogWindowActive)
          {

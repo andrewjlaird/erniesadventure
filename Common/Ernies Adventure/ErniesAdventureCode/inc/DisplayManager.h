@@ -147,6 +147,8 @@ class DisplayManager
 
       // (U) Input
       std::string currentCommand;
+      char blinkingCursor;
+      double cursorBlinkTime;
       int lastChar;
       bool keyDown;
       bool altDown;

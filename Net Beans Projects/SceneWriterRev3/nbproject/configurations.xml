@@ -179,14 +179,45 @@
           </incDir>
         </ccTool>
         <linkerTool>
+          <output>${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/SceneWriter</output>
           <linkerAddLib>
-            <pElem>../../allegro-mingw-4.2.2/lib</pElem>
+            <pElem>../../allegro-4.4.2-mingw-3.4.5/include</pElem>
           </linkerAddLib>
+          <linkerCopySharedLibs>true</linkerCopySharedLibs>
           <linkerLibItems>
-            <linkerLibLibItem>alleg</linkerLibLibItem>
+            <linkerLibFileItem>../../allegro-4.4.2-mingw-3.4.5/bin/allegro-4.4.2-monolith-mt.dll</linkerLibFileItem>
           </linkerLibItems>
         </linkerTool>
       </compileType>
+      <packaging>
+        <packType>Tar</packType>
+        <packFileList>
+          <packFileListElem type="File"
+                            to="${PACKAGE_TOP_DIR}bin/allegro-4.4.2-monolith-mt.dll"
+                            from="${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/allegro-4.4.2-monolith-mt.dll"
+                            perm="755"
+                            owner="root"
+                            group="bin"/>
+          <packFileListElem type="File"
+                            to="${PACKAGE_TOP_DIR}bin/${OUTPUT_BASENAME}.exe"
+                            from="${OUTPUT_PATH}.exe"
+                            perm="755"
+                            owner="root"
+                            group="bin"/>
+          <packFileListElem type="File"
+                            to="${PACKAGE_TOP_DIR}bin/allegro-4.4.2-monolith-mt.dll"
+                            from="${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/allegro-4.4.2-monolith-mt.dll"
+                            perm="755"
+                            owner="root"
+                            group="bin"/>
+          <packFileListElem type="File"
+                            to="${PACKAGE_TOP_DIR}bin/${OUTPUT_BASENAME}.exe"
+                            from="${OUTPUT_PATH}.exe"
+                            perm="755"
+                            owner="root"
+                            group="bin"/>
+        </packFileList>
+      </packaging>
       <item path="../../Common/Ernies Adventure/ErniesAdventureCode/inc/Action.h"
             ex="false"
             tool="3"

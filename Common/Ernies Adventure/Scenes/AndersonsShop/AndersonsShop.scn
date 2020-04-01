@@ -247,13 +247,10 @@ ACTION DisplayTextAction Ernie jumps in the truck and away they go.
 ACTION StartNextStepAction CHARACTER031910233121
 ACTION RemoveObjectFromGameAction CHARACTER032710100305
 ACTION RemoveObjectFromGameAction CHARACTER111709193403
-
 ACTION PlaceObjectInGameAction CHARACTER122909093104 -1 -1
 ACTION PlaceObjectInGameAction CHARACTER122909093111 -1 -1
-
 ACTION RemoveObjectFromGameAction CHARACTER123109083103
 ACTION RemoveObjectFromGameAction CHARACTER123109083110
-
 ACTION AddToScoreAction 1
 
 INPUT_END

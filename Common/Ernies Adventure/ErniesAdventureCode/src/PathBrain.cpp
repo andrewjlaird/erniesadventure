@@ -283,7 +283,7 @@ bool PathBrain::startCommand(std::pair<PathCommand, std::vector<std::string> > p
          // (U) Look up sprite's id and set new sprite to in game
          if (pathPair.second.size() > 1)
          {
-            printf("Loading sprite: %s %s", pathPair.second[0].c_str(), pathPair.second[1].c_str());
+            std::cout << "Loading sprite: " << pathPair.second[0] << " " << pathPair.second[1] << std::endl;
             loadSprite(pathPair.second[0], StringToBool(pathPair.second[1]));
          }
       

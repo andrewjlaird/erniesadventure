@@ -58,7 +58,8 @@ build: .build-post
 # Add your pre 'build' code here...
 
 .build-post: .build-impl
-# Add your post 'build' code here...
+	# Just to keep things complicated, adding space back into name since netbeans didn't let me do that in the output file name
+	cp "dist/Release/MinGW-Windows/ErniesAdventure.exe" "../../Common/Ernies Adventure/Ernies Adventure.exe"
 
 
 # clean

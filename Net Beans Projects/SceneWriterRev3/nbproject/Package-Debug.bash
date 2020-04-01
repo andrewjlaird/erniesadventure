@@ -13,8 +13,8 @@ CND_BUILDDIR=build
 CND_DLIB_EXT=dll
 NBTMPDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}/tmp-packaging
 TMPDIRNAME=tmp-packaging
-OUTPUT_PATH=${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/scenewriterrev3
-OUTPUT_BASENAME=scenewriterrev3
+OUTPUT_PATH=${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/SceneWriter
+OUTPUT_BASENAME=SceneWriter
 PACKAGE_TOP_DIR=scenewriterrev3/
 
 # Functions
@@ -59,6 +59,18 @@ rm -rf ${NBTMPDIR}
 mkdir -p ${NBTMPDIR}
 
 # Copy files and create directories and links
+cd "${TOP}"
+makeDirectory "${NBTMPDIR}/scenewriterrev3/bin"
+copyFileToTmpDir "${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/allegro-4.4.2-monolith-mt.dll" "${NBTMPDIR}/${PACKAGE_TOP_DIR}bin/allegro-4.4.2-monolith-mt.dll" 0755
+
+cd "${TOP}"
+makeDirectory "${NBTMPDIR}/scenewriterrev3/bin"
+copyFileToTmpDir "${OUTPUT_PATH}.exe" "${NBTMPDIR}/${PACKAGE_TOP_DIR}bin/${OUTPUT_BASENAME}.exe" 0755
+
+cd "${TOP}"
+makeDirectory "${NBTMPDIR}/scenewriterrev3/bin"
+copyFileToTmpDir "${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/allegro-4.4.2-monolith-mt.dll" "${NBTMPDIR}/${PACKAGE_TOP_DIR}bin/allegro-4.4.2-monolith-mt.dll" 0755
+
 cd "${TOP}"
 makeDirectory "${NBTMPDIR}/scenewriterrev3/bin"
 copyFileToTmpDir "${OUTPUT_PATH}.exe" "${NBTMPDIR}/${PACKAGE_TOP_DIR}bin/${OUTPUT_BASENAME}.exe" 0755

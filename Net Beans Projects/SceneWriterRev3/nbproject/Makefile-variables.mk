@@ -9,8 +9,8 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=MinGW-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/MinGW-Windows
-CND_ARTIFACT_NAME_Debug=scenewriterrev3
-CND_ARTIFACT_PATH_Debug=dist/Debug/MinGW-Windows/scenewriterrev3
+CND_ARTIFACT_NAME_Debug=SceneWriter
+CND_ARTIFACT_PATH_Debug=dist/Debug/MinGW-Windows/SceneWriter
 CND_PACKAGE_DIR_Debug=dist/Debug/MinGW-Windows/package
 CND_PACKAGE_NAME_Debug=scenewriterrev3.tar
 CND_PACKAGE_PATH_Debug=dist/Debug/MinGW-Windows/package/scenewriterrev3.tar

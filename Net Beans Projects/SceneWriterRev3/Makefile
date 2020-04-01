@@ -58,7 +58,7 @@ build: .build-post
 # Add your pre 'build' code here...
 
 .build-post: .build-impl
-# Add your post 'build' code here...
+	cp "dist/Debug/MinGW-Windows/SceneWriter.exe" "../../Common/Ernies Adventure/Scene Writer.exe"
 
 
 # clean

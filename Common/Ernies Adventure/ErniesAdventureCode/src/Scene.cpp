@@ -1258,6 +1258,10 @@ bool Scene::saveScene()
 
       scenefile << std::endl << "BORDER_SCENES_END" << std::endl << std::endl;
 
+      // (U) Add music
+      scenefile << std::endl << "MUSIC" << std::endl;
+      scenefile << musicFileName << std::endl << std::endl;
+
       // (U) Scene inputs
       for (int i = 0 ; i < inputLines.size() ; i++)
       {

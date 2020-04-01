@@ -142,6 +142,7 @@
                    projectFiles="false">
       <itemPath>../../Common/Ernies Adventure/Common Sprites</itemPath>
       <itemPath>Makefile</itemPath>
+      <itemPath>../../Common/Ernies Adventure/PathBrainSequences</itemPath>
       <itemPath>../../Common/Ernies Adventure/Scenes</itemPath>
     </logicalFolder>
   </logicalFolder>
@@ -714,6 +715,7 @@
           <developmentMode>5</developmentMode>
         </fortranCompilerTool>
         <linkerTool>
+          <output>${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/ErniesAdventure</output>
           <linkerAddLib>
             <pElem>../../allegro-4.4.2-mingw-3.4.5/bin</pElem>
           </linkerAddLib>

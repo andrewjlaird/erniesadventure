@@ -17,8 +17,8 @@ CND_PACKAGE_PATH_Debug=dist/Debug/MinGW-Windows/package/erniesadventurerev2.tar
 # Release configuration
 CND_PLATFORM_Release=MinGW-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/MinGW-Windows
-CND_ARTIFACT_NAME_Release=erniesadventurerev2
-CND_ARTIFACT_PATH_Release=dist/Release/MinGW-Windows/erniesadventurerev2
+CND_ARTIFACT_NAME_Release=ErniesAdventure
+CND_ARTIFACT_PATH_Release=dist/Release/MinGW-Windows/ErniesAdventure
 CND_PACKAGE_DIR_Release=dist/Release/MinGW-Windows/package
 CND_PACKAGE_NAME_Release=erniesadventurerev2.tar
 CND_PACKAGE_PATH_Release=dist/Release/MinGW-Windows/package/erniesadventurerev2.tar
