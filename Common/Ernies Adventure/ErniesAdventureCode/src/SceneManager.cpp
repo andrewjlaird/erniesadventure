@@ -42,7 +42,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 
-SceneManager::SceneManager(DisplayDriver& displayDriver)
+SceneManager::SceneManager(DisplayDriver& displayDriver, bool startWithMusic)
  : sceneFolder("Scenes"),
    inventoryFolder("Inventory Images"),
    pathSequenceFolder("PathBrainSequences"),
@@ -81,7 +81,14 @@ SceneManager::SceneManager(DisplayDriver& displayDriver)
    // (U) Load music
    audioManager.loadMusic();
 
-   audioManager.changeBackgroundMusic("OnTheFarm.wav");
+   if (startWithMusic)
+   {
+      audioManager.changeBackgroundMusic("OnTheFarm.wav");
+   }
+   else
+   {
+      audioManager.toggleMusic();
+   }
 
    // (U) Create map first so the scenes can be linked
    for (int i = 0 ; i < sceneNames.size() ; i++)

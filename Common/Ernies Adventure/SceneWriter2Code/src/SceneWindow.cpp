@@ -87,7 +87,7 @@ SceneWindow::SceneWindow()
    currentSceneId(0),
    currentJumpToPoint(-1, -1),
    displayDriver(true),
-   sceneManager(displayDriver)/*,
+   sceneManager(displayDriver, false)/*,
    spriteManager(sceneManager),
    variableManager(),
    inventory(),
@@ -949,8 +949,6 @@ void SceneWindow::getNextFrame(BITMAP* frame)
       }
       case StartPoints:
       {
-         std::cout << "StartPoints" << std::endl;
-          
          if (selectedSceneX != -1 &&
              selectedSceneY != -1 &&
              selectedSceneX < sceneGrid.size() &&
@@ -959,8 +957,6 @@ void SceneWindow::getNextFrame(BITMAP* frame)
          {
             std::vector<Point> startPoints = sceneGrid[selectedSceneX][selectedSceneY]->getRandomStartPoints();
             
-            std::cout << "start points length: " << startPoints.size() << " for scene " << sceneGrid[selectedSceneX][selectedSceneY]->getName() << std::endl;
-
             for (int i = 0 ; i < startPoints.size() ; i++)
             {
                line(frame,

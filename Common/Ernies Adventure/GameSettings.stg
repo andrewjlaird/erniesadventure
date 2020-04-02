@@ -324,8 +324,8 @@ INPUT_TEXT show grain thirty
 INPUT_TEXT show 30 grain
 INPUT_TEXT show thirty grain
 INPUT_TEXT show cow grain
-INPUT_TEXT dead with grain
-INPUT_TEXT dead cow with grain
+INPUT_TEXT lead with grain
+INPUT_TEXT lead cow with grain
 CRITERIA ObjectInInventoryCriteria Grain
 CRITERIA ObjectsAreNearCriteria CHARACTER012610211136 CHARACTER111709193403 800
 CRITERIA VariableHasValueCriteria showedGrain 0
@@ -348,22 +348,14 @@ INPUT_TEXT give grain 30
 INPUT_TEXT give grain thirty
 INPUT_TEXT feed grain
 INPUT_TEXT feed cow grain
+INPUT_TEXT drop grain
+INPUT_TEXT drop grain ground
 CRITERIA ObjectInInventoryCriteria Grain
 CRITERIA ObjectsAreNearCriteria CHARACTER012610211136 CHARACTER111709193403 800
 CRITERIA VariableHasValueCriteria showedGrain 0
 ACTION RemoveObjectFromInventoryAction Grain
-ACTION DisplayTextAction The cow, 30, eats the grain.
+ACTION DisplayTextAction The cow, 30, eats the grain and just stands there looking for more grain.  She won't follow you.
 ACTION SubtractFromScoreAction 1
-
-INPUT_END
-
-
-INPUT_START
-
-EVENT_ID EVENT032510190300
-INPUT_TEXT look cow
-CRITERIA ObjectsAreNearCriteria CHARACTER012610211136 CHARACTER111709193403 800
-ACTION DisplayTextAction This cow is called 30.  It is very friendly and will now allow you to herd her.  You must find something to temp her into the corral with.
 
 INPUT_END
 

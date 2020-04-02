@@ -31,7 +31,7 @@ class SceneManager
 
       // (U) Creates each Scene and calls loadScene on each sprite.
       // If loadSprite works, add it to spriteVector.
-      SceneManager(DisplayDriver& displayDriver);
+      SceneManager(DisplayDriver& displayDriver, bool startWithMusic = true);
       
       ~SceneManager();
 

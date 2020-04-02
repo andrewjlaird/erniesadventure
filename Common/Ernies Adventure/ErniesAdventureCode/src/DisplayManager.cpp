@@ -1283,15 +1283,16 @@ void DisplayManager::handleUserInput(double dt)
          // (U) Press any key to get out of the text window active
          else if (textWindowActive)
          {
-            //if (scanCode == KEY_ENTER)
-            //{
-            textSequenceNumber++;
-
-            if (textSequenceNumber == textToDisplay.size())
+            // Accept all keys other than arrow keys
+            if (scanCode != KEY_UP && scanCode != KEY_DOWN && scanCode != KEY_RIGHT && scanCode != KEY_LEFT)
             {
-               textWindowActive = false;
+               textSequenceNumber++;
+
+               if (textSequenceNumber == textToDisplay.size())
+               {
+                  textWindowActive = false;
+               }
             }
-            //}
          }
          else if(dialogWindowActive)
          {

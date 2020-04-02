@@ -159,7 +159,7 @@ InTheHouse.wav
 INPUT_START
 
 EVENT_ID EVENT030610074800
-CRITERIA ObjectsAreNearCriteria CHARACTER013110212148 CHARACTER030610071133 30
+CRITERIA ObjectsAreNearCriteria CHARACTER013110212148 CHARACTER030610071133 60
 CRITERIA VariableHasValueCriteria catsAreFed 0
 ACTION DisplayTextAction `Alex`"Wow the cats are out of food," Alex says. He throws the net on the ground, opens the trash can and feeds the cats.
 ACTION RemoveObjectFromGameAction CHARACTER030610072934
@@ -174,7 +174,7 @@ INPUT_END
 INPUT_START
 
 EVENT_ID EVENT030610074801
-CRITERIA ObjectsAreNearCriteria CHARACTER013110212113 CHARACTER030610071133 30
+CRITERIA ObjectsAreNearCriteria CHARACTER013110212113 CHARACTER030610071133 60
 CRITERIA VariableHasValueCriteria catsAreFed 0
 ACTION DisplayTextAction `Dad`"Wow the cats are out of food," Dad says. He throws the net on the ground, opens the trash can and feeds the cats.
 ACTION RemoveObjectFromGameAction CHARACTER030610072934
@@ -189,7 +189,7 @@ INPUT_END
 INPUT_START
 
 EVENT_ID EVENT030610074802
-CRITERIA ObjectsAreNearCriteria CHARACTER013110212149 CHARACTER030610071133 30
+CRITERIA ObjectsAreNearCriteria CHARACTER013110212149 CHARACTER030610071133 60
 CRITERIA VariableHasValueCriteria catsAreFed 0
 ACTION DisplayTextAction `Stephen`"Wow the cats are out of food," Stephen says. He throws the net on the ground, opens the trash can and feeds the cats.
 ACTION RemoveObjectFromGameAction CHARACTER030610072934
@@ -266,7 +266,7 @@ INPUT_TEXT help cats
 INPUT_TEXT feed cat
 INPUT_TEXT help cat
 CRITERIA ObjectInCurrentSceneCriteria CHARACTER013110212148
-CRITERIA ObjectsAreNearCriteria NOT CHARACTER013110212148 CHARACTER030610071133 30
+CRITERIA ObjectsAreNearCriteria NOT CHARACTER013110212148 CHARACTER030610071133 60
 ACTION DisplayTextAction Alex can help feed the cats, but he needs to be closer to the can to help.
 
 INPUT_END
@@ -281,7 +281,7 @@ INPUT_TEXT help cats
 INPUT_TEXT feed cat
 INPUT_TEXT help cat
 CRITERIA ObjectInCurrentSceneCriteria CHARACTER013110212113
-CRITERIA ObjectsAreNearCriteria NOT CHARACTER013110212113 CHARACTER030610071133 30
+CRITERIA ObjectsAreNearCriteria NOT CHARACTER013110212113 CHARACTER030610071133 60
 ACTION DisplayTextAction Dad can help feed the cats, but he needs to be closer to the can to help.
 
 INPUT_END
@@ -296,7 +296,7 @@ INPUT_TEXT help cats
 INPUT_TEXT feed cat
 INPUT_TEXT help cat
 CRITERIA ObjectInCurrentSceneCriteria CHARACTER013110212149
-CRITERIA ObjectsAreNearCriteria NOT CHARACTER013110212149 CHARACTER030610071133 30
+CRITERIA ObjectsAreNearCriteria NOT CHARACTER013110212149 CHARACTER030610071133 60
 ACTION DisplayTextAction Stephen can help feed the cats, but he needs to be closer to the can to help.
 
 INPUT_END
@@ -326,9 +326,20 @@ INPUT_END
 
 INPUT_START
 
+EVENT_ID EVENT040120201300
+INPUT_TEXT get grain
+CRITERIA ObjectsAreNearCriteria NOT CHARACTER032310195538 CHARACTER030610071133 100
+ACTION DisplayTextAction Ernie is not close enough to pick up the grain.
+
+INPUT_END
+
+
+INPUT_START
+
 EVENT_ID EVENT032310195656
 INPUT_TEXT get grain
 CRITERIA ObjectInCurrentSceneCriteria CHARACTER032310195550
+CRITERIA ObjectsAreNearCriteria CHARACTER032310195538 CHARACTER030610071133 100
 ACTION AddToScoreAction 1
 ACTION DisplayTextAction Ernie picks up the spilled grain from the floor.
 ACTION AddObjectToInventoryAction Grain
@@ -555,6 +566,7 @@ INPUT_START
 EVENT_ID EVENT040810213623
 INPUT_TEXT get grain
 CRITERIA ObjectInCurrentSceneCriteria NOT CHARACTER032310195550
+CRITERIA ObjectsAreNearCriteria CHARACTER032310195538 CHARACTER030610071133 100
 ACTION DisplayTextAction Ernie gets some more grain from the grain bucket.
 ACTION AddObjectToInventoryAction Grain
 

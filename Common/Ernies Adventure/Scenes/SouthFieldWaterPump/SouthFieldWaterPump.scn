@@ -328,6 +328,18 @@ INPUT_END
 
 INPUT_START
 
+EVENT_ID EVENT040120092100
+INPUT_TEXT look
+INPUT_TEXT look hole
+CRITERIA VariableHasValueCriteria foundBlackberry 1
+CRITERIA VariableHasValueCriteria gotBlackberry 0
+ACTION DisplayTextAction Ernie is in the pasture.  A fence runs along the south of the scene.~There's a small black phone in the hole Ernie just dug.  He thinks it's called a Blackberry.
+
+INPUT_END
+
+
+INPUT_START
+
 EVENT_ID EVENT032510185544
 INPUT_TEXT look
 ACTION DisplayTextAction Ernie is in the pasture.  A fence runs along the south of the scene.
